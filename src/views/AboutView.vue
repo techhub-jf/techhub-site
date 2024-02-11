@@ -1,4 +1,10 @@
+<script setup lang="ts">
+  import InitialRouter from '../components/InitialRouter.vue'
+</script>
+
 <template>
+  <InitialRouter />
+
   <div class="about">
     <h1>Sua comunidade tech em JF e região.</h1>
   </div>
