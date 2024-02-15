@@ -299,5 +299,6 @@
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 50px;
+    text-align: center;
   }
 </style>
