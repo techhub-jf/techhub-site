@@ -7,6 +7,15 @@
       <!-- <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a> -->
       <a href="#location" class="buttonHeader">LOCAL</a>
       <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
+      <a href="https://www.papercall.io/tech-hub-conf-2024" target="_blank" class="buttonHeader">SUBMETA SUA TALK</a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/techhubconf" target="_blank" class="social-icon">
+          <InstagramIcon />
+        </a>
+        <a href="https://www.linkedin.com/company/tech-hub-conf" target="_blank" class="social-icon">
+          <LinkedinIcon />
+        </a>
+      </div>
     </nav>
   </header>
   <div class="main">
@@ -18,22 +27,36 @@
       </div>
       <a href="" class="homeButton">INSCREVA-SE</a>
     </section>
-    <section id="about">
+    <section id="about" class="infoSections">
       <h1 class="section-title">Sobre</h1>
-      <p class="section-text">O maior evento de tecnologia de Juiz de Fora e região</p>
+      <p class="section-text"><b>O maior evento de tecnologia de Juiz de Fora e região</b></p>
+      <br>
+      <p class="section-text">O Tech Hub Conf será um evento da comunidade de desenvolvedores para a comunidade de desenvolvedores, com foco no aprimoramento de habilidades, conexões significativas e inspiração, será um ponto de encontro para profissionais de TI.</p>
     </section>
     <!-- <section id="schedule">
       <h1 class="section-title">Programação</h1>
     </section> -->
-    <section id="location">
+    <section id="location" class="infoSections">
       <h1 class="section-title">Local</h1>
       <div class="location-main">
-        <div>
+        <div class="locationText">
           <h2 class="section-text-location-title">Moinho</h2>
-          <p class="section-text-location">Av. Presidente Juscelino Kubitschek, 900 - Francisco Bernardino,</p>
+          <p class="section-text-location">Av. Presidente Juscelino Kubitschek, 900 - Francisco Bernardino</p>
           <p class="section-text-location">Juiz de Fora - MG</p>
         </div>
         <img alt="Moinho" class="localtionImg" src="@/assets/moinho-location.jpg"/>
+      </div>
+    </section>
+
+    <section id="sponsors" class="infoSections">
+      <h1 class="section-title">Patrocinadores</h1>
+      <p class="section-text" style="margin-top: -30px">Gostaria de patrocinar? </p>
+      <p class="section-text" style="margin-bottom: 20px">Entre em contato através do email <a href="mailto:techhubjf@gmail.com">techhubjf@gmail.com</a></p>
+      <div class="sponsor-class">
+        <h2 class="section-title">Bronze</h2>
+        <div class="sponsors-images">
+          <img alt="Buona Cerva" class="sponsor-image" src="@/assets/buona-cerva.jpg"/>
+        </div>
       </div>
     </section>
   </div>
@@ -42,7 +65,17 @@
   </footer>
 </template>
 
+<script setup lang="ts">
+  import InstagramIcon from '../components/icons/IconInstagram.vue'
+  import LinkedinIcon from '../components/icons/IconLinkedin.vue'
+</script>
+
+
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
+
   :root {
     --color-background: white;
   }
@@ -75,6 +108,11 @@
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 50px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
   }
 
   .buttonHeader {
@@ -90,8 +128,24 @@
     color: #0052F5;
   }
 
+  .social-icons {
+    margin-left: 20px;
+  }
+
+  .social-icon:hover{
+    background-color: transparent;
+  }
+
+  .social-icon {
+    margin-left: 5px;
+  }
+
   .homeText {
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .logoBanner {
@@ -101,14 +155,27 @@
   }
 
   .homeTextFieldDate {
-    color: white;
+    color: black;
+    mix-blend-mode: screen;
+    background-color: white;
     font-size: 25px;
     font-weight: bold;
+    width: fit-content;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
   }
 
   .homeTextFieldLocation {
-    color: white;
+    color: black;
+    mix-blend-mode: screen;
+    background-color: white;
     font-size: 20px;
+    width: fit-content;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .homeButton {
@@ -142,29 +209,24 @@
     text-align: center;
   }
 
-  header {
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-  }
-
   .section-title{
     font-size: 40px;
     font-weight: bold;
-    color: black;
-    margin-top: 50px;
+    color: #031D42;
     margin-bottom: 50px;
   }
 
   .section-text{
     font-size: 20px;
     color: black;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .section-text-location-title{
     font-size: 30px;
+    font-weight: bold;
     color: black;
   }
 
@@ -173,17 +235,60 @@
     color: black;
   }
 
+  .section-text a {
+    color: #0052F5;
+  }
+
   .location-main{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 50px; 
     margin-right: 50px;
   }
 
+  #location {
+    background-color: rgb(241, 241, 241);
+  }
+
+  .locationText{
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .localtionImg{
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .infoSections{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50px;
+    margin-top: 5vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    scroll-margin-top: 15vh;
+  }
+
+  .sponsors-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .sponsor-image {
     height: 200px;
+    border-radius: 20px;
   }
 
   footer {

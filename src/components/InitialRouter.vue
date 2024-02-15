@@ -1,14 +1,6 @@
-<script setup lang="ts">
-    import { RouterLink } from 'vue-router'
-</script>
-
 <template>
   <header>
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="400" />
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
   </header>
 </template>
 
