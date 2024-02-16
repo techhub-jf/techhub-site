@@ -1,4 +1,5 @@
 <template>
+  <div class="app">
   <header>
     <img alt="Tech Hub Logo" class="logoHeader" src="@/assets/logo-dark.png" />
     <nav>
@@ -25,7 +26,7 @@
         <h2 class="homeTextFieldDate">27 de Abril</h2>
         <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
       </div>
-      <a href="" class="homeButton">INSCREVA-SE</a>
+      <!-- <a href="" class="homeButton">INSCREVA-SE</a> -->
     </section>
     <section id="about" class="infoSections">
       <h1 class="section-title">Sobre</h1>
@@ -63,6 +64,7 @@
   <footer>
     <p>© 2024 Tech Hub JF</p>
   </footer>
+</div>
 </template>
 
 <script setup lang="ts">
@@ -70,23 +72,15 @@
   import LinkedinIcon from '../components/icons/IconLinkedin.vue'
 </script>
 
-
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-
-  :root {
-    --color-background: white;
-  }
-
-  #app {
+<style scoped>
+  .app {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     max-width: 100%;
+    background-color: white;
   }
 
   #home {
@@ -108,11 +102,16 @@
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 50px;
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .logoHeader {
+    height: 5vh;
   }
 
   .buttonHeader {

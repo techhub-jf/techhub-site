@@ -4,9 +4,20 @@
 </script>
 
 <template>
-  <InitialRouter />
-  
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="app">
+    <InitialRouter />
+    
+    <main>
+      <TheWelcome />
+    </main>
+  </div>
 </template>
+
+<style>
+  .app {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+</style>

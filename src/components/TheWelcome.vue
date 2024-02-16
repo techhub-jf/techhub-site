@@ -6,7 +6,7 @@ import GroupIcon from './icons/IconGroup.vue'
 </script>
 
 <template>
-  <WelcomeItem link="/conf" :highlight="true">
+  <WelcomeItem link="/conf" :internalRoute=true :highlight="true">
     <template #icon>
       <GroupIcon />
     </template>

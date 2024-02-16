@@ -1,5 +1,5 @@
 <template>
-  <a class="item" :href="link">
+  <a :class="internalRoute?'nodisplay':''" class="item" :href="link">
     <i>
       <slot name="icon"></slot>
     </i>
@@ -10,10 +10,22 @@
       <slot></slot>
     </div>
   </a>
+
+  <RouterLink :class="internalRoute?'':'nodisplay'" class="item" :to="link">
+    <i>
+      <slot name="icon"></slot>
+    </i>
+    <div class="details">
+      <h3 :class="highlight?'item-highlight':''">
+        <slot name="heading"></slot>
+      </h3>
+      <slot></slot>
+    </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
-  defineProps(['link', 'highlight'])
+  defineProps(['link', 'highlight', 'internalRoute'])
 </script>
 
 <style scoped>
@@ -22,6 +34,10 @@
   display: flex;
   position: relative;
   border-radius: 10px;
+}
+
+.nodisplay {
+  display: none;
 }
 
 .item-highlight {
