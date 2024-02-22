@@ -26,13 +26,36 @@
         <h2 class="homeTextFieldDate">27 de Abril</h2>
         <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
       </div>
-      <!-- <a href="" class="homeButton">INSCREVA-SE</a> -->
+      <a href="https://www.sympla.com.br/evento/tech-hub-conf-2024/2346537" class="homeButton">INSCREVA-SE</a>
     </section>
     <section id="about" class="infoSections">
       <h1 class="section-title">Sobre</h1>
       <p class="section-text"><b>O maior evento de tecnologia de Juiz de Fora e região</b></p>
       <br>
-      <p class="section-text">O Tech Hub Conf será um evento da comunidade de desenvolvedores para a comunidade de desenvolvedores, com foco no aprimoramento de habilidades, conexões significativas e inspiração, será um ponto de encontro para profissionais de TI.</p>
+      <p class="section-text">O Tech Hub Conf será um evento da comunidade de tecnologia para a comunidade de tecnologia, com foco no aprimoramento de habilidades, conexões significativas e inspiração, será um ponto de encontro para profissionais de TI.</p>
+      <br>
+      <p class="section-text">Será um dia cheio de palestras e workshops.</p>
+      <p class="section-text">Entre os assuntos abordados teremos:</p>
+      <br>
+      <div class="section-list-container">
+        <ul class="section-list">
+          <li class="section-list-text">Padrões de projeto</li>
+          <li class="section-list-text">Linguagens de programação: Go, JS, Java, PHP, etc…</li>
+          <li class="section-list-text">Testes</li> 
+          <li class="section-list-text">Saúde mental, estresse e esgotamento</li>
+          <li class="section-list-text">Aprendendo com as falhas</li>
+          <li class="section-list-text">Liderança técnica</li>
+          <li class="section-list-text">Metodologias ágeis</li>
+          <li class="section-list-text">DevOps</li>
+          <li class="section-list-text">Microserviços</li>
+          <li class="section-list-text">Construindo cultura</li>
+          <li class="section-list-text">Diversidade em TI</li>
+          <li class="section-list-text">Melhoria contínua</li>
+          <li class="section-list-text">IA</li>
+          <li class="section-list-text">Segurança da informação</li>
+          <li class="section-list-text">Entre outros!</li>
+        </ul>
+      </div>
     </section>
     <!-- <section id="schedule">
       <h1 class="section-title">Programação</h1>
@@ -52,11 +75,24 @@
     <section id="sponsors" class="infoSections">
       <h1 class="section-title">Patrocinadores</h1>
       <p class="section-text" style="margin-top: -30px">Gostaria de patrocinar? </p>
-      <p class="section-text" style="margin-bottom: 20px">Entre em contato através do email <a href="mailto:techhubjf@gmail.com">techhubjf@gmail.com</a></p>
+      <p class="section-text" style="margin-bottom: 20px">Confira nossas <a href="sponsors.pdf" target="_blank">opções de patrocínio</a> e entre em contato através do email <a href="mailto:techhubjf@gmail.com">techhubjf@gmail.com</a></p>
       <div class="sponsor-class">
         <h2 class="section-title">Bronze</h2>
         <div class="sponsors-images">
-          <img alt="Buona Cerva" class="sponsor-image" src="@/assets/buona-cerva.jpg"/>
+          <a href="https://www.instagram.com/cervejariabuonacerva/" style="border-radius: 20px;" target="_blank">
+            <img alt="Buona Cerva" class="sponsor-image" src="@/assets/buona-cerva.png"/>
+          </a>
+        </div>
+      </div>
+      <div class="sponsor-class">
+        <h2 class="section-title">Apoiadores</h2>
+        <div class="sponsors-images">
+          <a href="https://www.jetbrains.com/" style="border-radius: 20px;" target="_blank">
+            <img alt="Buona Cerva" class="sponsor-image" src="@/assets/jb_beam.svg"/>
+          </a>
+          <a href="https://www.nossomoinho.com/" style="border-radius: 20px;" target="_blank">
+            <img alt="Buona Cerva" class="sponsor-image" src="@/assets/logo-moinho.png"/>
+          </a>
         </div>
       </div>
     </section>
@@ -112,6 +148,12 @@
 
   .logoHeader {
     height: 5vh;
+  }
+
+  @media screen and (max-width: 600px) {
+      .logoHeader {
+      height: 1vh;
+    }
   }
 
   .buttonHeader {
@@ -223,6 +265,25 @@
     margin-right: 20px;
   }
 
+  .section-list-container{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  }
+
+  .section-list{
+    text-align: center;
+    list-style-position: inside;
+  }
+
+  .section-list-text{
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+  }  
+
   .section-text-location-title{
     font-size: 30px;
     font-weight: bold;
@@ -232,6 +293,10 @@
   .section-text-location{
     font-size: 20px;
     color: black;
+  }
+
+  .sponsor-class{
+    margin-bottom: 50px;
   }
 
   .section-text a {
