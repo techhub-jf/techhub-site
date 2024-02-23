@@ -402,9 +402,9 @@
     margin-bottom: 10px;
     color: #0052F5;
     background-color: rgb(241, 241, 241);
-    border-radius: 60px;
+    border-radius: 50px;
     max-width: fit-content;
-    height: 5vh;
+    height: 50px;
   }
 
   .maps-icon svg {
@@ -547,6 +547,7 @@
       padding-right: 10px;
       padding-top: 20px;
       padding-bottom: 20px;
+      height: 40vh;
     }
 
     .localtionImg{
