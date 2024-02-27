@@ -7,17 +7,31 @@
   <div class="app">
     <InitialRouter />
     
-    <main>
+    <main class="main">
       <TheWelcome />
     </main>
   </div>
 </template>
 
-<style>
+<style scoped>
   .app {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .app {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .main {
+      align-self: center;
+      margin-top: 10vh;
+      margin-right: 10vw;
+      margin-left: 10vw;
+    }
   }
 </style>

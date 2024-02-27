@@ -459,7 +459,7 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1024px) {
     header {
       padding-left: 30px;
       padding-right: 30px;
