@@ -1,27 +1,59 @@
 <template>
-  <div class="item">
+  <a :class="internalRoute?'nodisplay':''" class="item" :href="link">
     <i>
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <h3>
+      <h3 :class="highlight?'item-highlight':''">
         <slot name="heading"></slot>
       </h3>
       <slot></slot>
     </div>
-  </div>
+  </a>
+
+  <RouterLink :class="internalRoute?'':'nodisplay'" class="item" :to="link">
+    <i>
+      <slot name="icon"></slot>
+    </i>
+    <div class="details">
+      <h3 :class="highlight?'item-highlight':''">
+        <slot name="heading"></slot>
+      </h3>
+      <slot></slot>
+    </div>
+  </RouterLink>
 </template>
+
+<script setup lang="ts">
+  defineProps(['link', 'highlight', 'internalRoute'])
+</script>
 
 <style scoped>
 .item {
   margin-top: 2rem;
   display: flex;
   position: relative;
+  border-radius: 10px;
+}
+
+.nodisplay {
+  display: none;
+}
+
+.item-highlight {
+  color: black;
+  mix-blend-mode: lighten;
+  background-color: white;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
 }
 
 .details {
   flex: 1;
   margin-left: 1rem;
+  margin-right: 20px;
 }
 
 i {
@@ -44,7 +76,7 @@ h3 {
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    padding: 0.4rem 0 1rem calc(var(--section-gap) / 3);
   }
 
   i {
