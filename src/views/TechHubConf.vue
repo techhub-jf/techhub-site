@@ -93,6 +93,14 @@
       <p class="section-text" style="margin-top: -30px">Gostaria de patrocinar? </p>
       <p class="section-text" style="margin-bottom: 20px">Confira nossas <a href="sponsors.pdf" target="_blank">opções de patrocínio</a> e entre em contato através do email <a href="mailto:techhubjf@gmail.com">techhubjf@gmail.com</a></p>
       <div class="sponsor-class">
+        <h2 class="section-title">Platina</h2>
+        <div class="sponsors-images">
+          <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
+            <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg"/>
+          </a>
+        </div>
+      </div>
+      <div class="sponsor-class">
         <h2 class="section-title">Bronze</h2>
         <div class="sponsors-images">
           <a href="https://www.instagram.com/cervejariabuonacerva/" class="sponsor-image-link" target="_blank">
@@ -442,6 +450,12 @@
 
   .sponsor-image {
     height: 25vh;
+    width: 25vh;
+  }
+
+  .sponsor-image-rectangular {
+    height: 15vh;
+    width: 35vh;
   }
 
   .sponsor-image-link{
