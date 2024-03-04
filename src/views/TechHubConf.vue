@@ -95,6 +95,9 @@
       <div class="sponsor-class">
         <h2 class="section-title">Platina</h2>
         <div class="sponsors-images">
+          <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
+            <img alt="U&M" class="sponsor-image-rectangular" src="@/assets/uem.svg"/>
+          </a>
           <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
             <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg"/>
           </a>
@@ -506,6 +509,10 @@
       width: 100%;
       padding-left: 5vh;
       padding-right: 5vh;
+      margin-bottom: 5vh;
+    }
+
+    .sponsor-image-link{
       margin-bottom: 5vh;
     }
 
