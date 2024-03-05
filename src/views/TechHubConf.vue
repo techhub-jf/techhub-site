@@ -104,6 +104,14 @@
         </div>
       </div>
       <div class="sponsor-class">
+        <h2 class="section-title">Ouro</h2>
+        <div class="sponsors-images">
+          <a href="https://www.alura.com.br/" class="sponsor-image-link" target="_blank">
+            <img alt="Alura" class="sponsor-image-rectangular" src="@/assets/alura.svg"/>
+          </a>
+        </div>
+      </div>
+      <div class="sponsor-class">
         <h2 class="section-title">Bronze</h2>
         <div class="sponsors-images">
           <a href="https://www.instagram.com/cervejariabuonacerva/" class="sponsor-image-link" target="_blank">
