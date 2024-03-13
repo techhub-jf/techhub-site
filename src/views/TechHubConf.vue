@@ -27,7 +27,6 @@
       </div>
       <div class="homeButtons">
         <a href="https://www.sympla.com.br/evento/tech-hub-conf-2024/2346537" target="_blank" class="homeButton">INSCREVA-SE</a>
-        <a href="https://www.papercall.io/tech-hub-conf-2024" target="_blank" class="homeButton">SUBMETA SUA TALK</a>
       </div>
     </section>
     <section id="about" class="infoSections">
@@ -100,6 +99,12 @@
           </a>
           <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
             <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg"/>
+          </a>
+          <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
+            <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png"/>
+          </a>
+          <a href="https://maislaudo.com.br/" class="sponsor-image-link" target="_blank">
+            <img alt="Mais Laudo" class="sponsor-image-vertical" src="@/assets/mais-laudo.png"/>
           </a>
         </div>
       </div>
@@ -465,12 +470,20 @@
   }
 
   .sponsor-image-rectangular {
-    height: 15vh;
+    max-height: 13vh;
     width: 35vh;
+  }
+
+  .sponsor-image-vertical {
+    width: 17vh;
   }
 
   .sponsor-image-link{
     border-radius: 20px;
+    align-self: center;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    padding: 10px;
   }
 
   footer {
@@ -521,7 +534,8 @@
     }
 
     .sponsor-image-link{
-      margin-bottom: 5vh;
+      margin-bottom: 3vh;
+      margin-top: 3vh;
     }
 
     .buttonHeader {
