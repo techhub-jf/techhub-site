@@ -115,7 +115,7 @@
             <p class="speaker-text">Compass UOL</p>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/henrique-cabral-a6b7ba176/" target="_blank" class="speaker-card">
+        <a href="https://www.linkedin.com/in/cintia-esteves/" target="_blank" class="speaker-card">
           <div class="speaker-image">
             <img alt="Speaker 1" class="speaker-img" src="@/assets/cintia.jpeg"/>
           </div>
