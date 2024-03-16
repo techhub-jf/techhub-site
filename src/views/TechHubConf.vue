@@ -5,7 +5,8 @@
     <nav>
       <a href="#home" class="buttonHeader">HOME</a>
       <a href="#about" class="buttonHeader">SOBRE</a>
-      <!-- <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a> -->
+      <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a>
+      <a href="#speakers" class="buttonHeader">PALESTRANTES</a>
       <a href="#location" class="buttonHeader">LOCAL</a>
       <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
       <div class="social-icons">
@@ -60,9 +61,72 @@
         </div>
       </div>
     </section>
-    <!-- <section id="schedule">
+    <section id="schedule" class="infoSections">
       <h1 class="section-title">Programação</h1>
-    </section> -->
+      <div class="schedule-main">
+        <div class="schedule-card">
+          <div class="schedule-type type-security">
+            <p class="schedule-type-text">Segurança</p>
+          </div>
+          <div class="schedule-subject">
+            <p class="schedule-subject-text bold-text">Shift-Left Security e o porquê você deve se importar com isso</p>
+          </div>
+          <div class="schedule-speaker">
+            <div class="schedule-speaker-image">
+              <img alt="Speaker 1" class="schedule-speaker-img" src="@/assets/henrique.jpeg"/>
+            </div>
+            <div class="schedule-speaker-about">
+              <p class="schedule-speaker-text bold-text">Henrique Cabral</p>
+              <p class="schedule-speaker-text">Application Security Leader</p>
+              <p class="schedule-speaker-text">Compass UOL</p>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-card">
+          <div class="schedule-type type-diversity">
+            <p class="schedule-type-text">Diversidade</p>
+          </div>
+          <div class="schedule-subject">
+            <p class="schedule-subject-text bold-text">Mulheres & Tecnologia - Estratégias para se destacar no mercado</p>
+          </div>
+          <div class="schedule-speaker">
+            <div class="schedule-speaker-image">
+              <img alt="Speaker 1" class="schedule-speaker-img" src="@/assets/cintia.jpeg"/>
+            </div>
+            <div class="schedule-speaker-about">
+              <p class="schedule-speaker-text bold-text">Cintia Esteves</p>
+              <p class="schedule-speaker-text">Engineering Tech Manager</p>
+              <p class="schedule-speaker-text">Nubank</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="speakers" class="infoSections">
+      <h1 class="section-title">Palestrantes</h1>
+      <div class="speakers-main">
+        <a href="https://www.linkedin.com/in/henrique-cabral-a6b7ba176/" target="_blank" class="speaker-card">
+          <div class="speaker-image">
+            <img alt="Speaker 1" class="speaker-img" src="@/assets/henrique.jpeg"/>
+          </div>
+          <div class="speaker-about">
+            <p class="speaker-text bold-text">Henrique Cabral</p>
+            <p class="speaker-text">Application Security Leader</p>
+            <p class="speaker-text">Compass UOL</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/henrique-cabral-a6b7ba176/" target="_blank" class="speaker-card">
+          <div class="speaker-image">
+            <img alt="Speaker 1" class="speaker-img" src="@/assets/cintia.jpeg"/>
+          </div>
+          <div class="speaker-about">
+            <p class="speaker-text bold-text">Cintia Esteves</p>
+            <p class="speaker-text">Engineering Tech Manager</p>
+            <p class="speaker-text">Nubank</p>
+          </div>
+        </a>
+      </div>
+    </section>
     <section id="location" class="infoSections">
       <h1 class="section-title">Local</h1>
       <div class="location-main">
@@ -74,7 +138,7 @@
               </div>
             </div>
             <h2 class="section-text-location-title">Moinho</h2>
-            <p class="section-text-location">Av. Presidente Juscelino Kubitschek, 900 - Francisco Bernardino</p>
+            <p class="section-text-location">Av. Presidente Juscelino Kubitschek, 900</p>
             <p class="section-text-location">Juiz de Fora - MG</p>
           </div>
           <div class="google-map">
@@ -86,7 +150,6 @@
         </div>
       </div>
     </section>
-
     <section id="sponsors" class="infoSections">
       <h1 class="section-title">Patrocinadores</h1>
       <p class="section-text" style="margin-top: -30px">Gostaria de patrocinar? </p>
@@ -360,7 +423,7 @@
     color: black;
   }
 
-  .sponsor-class{
+  .sponsor-class {
     margin-bottom: 50px;
   }
 
@@ -368,7 +431,7 @@
     color: #0052F5;
   }
 
-  .location-main{
+  .location-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -423,7 +486,6 @@
   }
 
   .maps-icon{
-    margin-bottom: 10px;
     color: #0052F5;
     background-color: rgb(241, 241, 241);
     border-radius: 50px;
@@ -450,8 +512,8 @@
     background-color: rgb(241, 241, 241);
     border-radius: 50px;
     margin-top: 5vh;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
     scroll-margin-top: 15vh;
   }
 
@@ -459,9 +521,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 20px;
+    flex-wrap: wrap;
   }
 
   .sponsor-image {
@@ -495,6 +558,244 @@
     padding-left: 30px;
     padding-right: 50px;
     text-align: center;
+  }
+
+  @keyframes border-animation {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @-webkit-keyframes border-animation {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+
+  .speakers-main {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .speaker-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 180px;
+    display: block;
+    border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+    overflow: hidden;
+    padding: 0;
+    transition: auto;
+
+    --border-size: 0.2rem;
+    border: var(--border-size) solid transparent;
+  }
+
+  .speaker-card:hover {
+    .speaker-img{
+      width: 170%;
+    }
+  }
+
+  .speaker-image {
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+    height: 230px;
+    border: 0px;
+    box-sizing: border-box;
+  }
+
+  .speaker-img {
+    transition: width 0.2s ease-in-out;
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .speaker-about {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .speaker-text {
+    font-size: 13px;
+    color: black;
+    text-align: left;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .speaker-text-subject {
+    background-color: rgb(51, 51, 51);
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  @supports (background: paint(houdini)) {
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
+      }
+    }
+
+    .speaker-card:hover {
+      border: var(--border-size) dotted transparent;
+      background-image: linear-gradient(
+          to right,
+          rgb(255 255 255),
+          rgb(255 255 255)
+        ),
+        conic-gradient(
+          from var(--angle),
+          #739cee 0deg 270deg,
+          #0052F5 270deg 360deg
+        );
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      animation: rotate 4s linear infinite;
+    }
+
+    .schedule-card:hover {
+      border: var(--border-size) dotted transparent;
+      background-image: linear-gradient(
+          to right,
+          rgb(255 255 255),
+          rgb(255 255 255)
+        ),
+        conic-gradient(
+          from var(--angle),
+          #739cee 0deg 270deg,
+          #0052F5 270deg 360deg
+        );
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      animation: rotate 4s linear infinite;
+    }
+  }
+
+  .schedule-main {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .schedule-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+    overflow: hidden;
+    padding: 0;
+    transition: auto;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    --border-size: 0.2rem;
+    border: var(--border-size) solid transparent;
+  }
+
+  .schedule-type {
+    width: fit-content;
+    background-color: #0052F5;
+    color: white;
+    border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+    padding: 0px 0.5rem 0px 0.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .schedule-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: black;
+  }
+
+  .schedule-subject-text {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: start;
+  }
+
+  .schedule-speaker {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .schedule-speaker-image {
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  .schedule-speaker-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .schedule-speaker-about {
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .schedule-speaker-text {
+    font-size: 13px;
+    color: black;
+    text-align: left;
+  }
+
+  .schedule-text-title {
+    background-color: rgb(51, 51, 51);
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .type-security {
+    background-color: #e03535;
+  }
+
+  .type-diversity {
+    background-color: #c530be;
   }
 
   @media screen and (max-width: 1024px) {
@@ -611,6 +912,25 @@
 
     .social-icon {
       margin-left: 15px;
+    }
+
+    .schedule-main {
+      margin-left: 2px;
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .schedule-card {
+      max-width: 100%;
+    }
+
+    .speakers-main {
+      margin-left: 2px;
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 </style>
