@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="schedule-description">
-      <p class="shcedule-description-text">{{ description }}</p>
+      <p class="schedule-description-text">{{ description }}</p>
     </div>
   </div>
 </template>
@@ -114,35 +114,33 @@ defineProps(['img', 'name', 'role', 'company', 'type', 'title', 'typeName', 'des
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgb(51, 51, 51);
+  background-color: rgba(51, 51, 51, .97);
   transform: translateY(0);
   height: 0;
-  overflow: hidden;
   transition: all 0.3s ease-in-out;
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: justify;
+  overflow-y: scroll;
 }
 
 .schedule-description-text {
   font-size: 15px;
   color: white;
-  text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Courier New', Courier, monospace;
+  white-space: pre-line
 }
 
 .schedule-card:hover {
   .schedule-description {
-    height: 100%; /* Adjust height to reveal message */
-    transform: translateY(-100%); /* Slide down halfway */
-  }
-}
-
-.schedule-card-parent:hover {
-  .schedule-description {
-    display: block;
-    transform: translateY(100%);
+    height: 101%;
+    transform: translateY(-100%);
   }
 }
 
@@ -178,12 +176,35 @@ defineProps(['img', 'name', 'role', 'company', 'type', 'title', 'typeName', 'des
   background-color: #cc6c1d;
 }
 
+.type-robotics {
+  background-color: #cc6c1d;
+}
+
 .type-devops {
   background-color: #08a8a8;
 }
 
 .type-data{
   background-color: #cc1d92;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 @supports (background: paint(houdini)) {

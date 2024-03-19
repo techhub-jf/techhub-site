@@ -69,37 +69,172 @@
         <div class="schedule-main">
           <Schedule :img="SpeakerHenrique" name="Henrique Cabral" role="Application Security Leader"
             company="Compass UOL" type="security" typeName="Segurança"
-            title="Shift-Left Security e o porquê você deve se importar com isso" />
+            title="Shift-Left Security e o porquê você deve se importar com isso"
+            description="Nessa talk, o objetivo principal será reforçar a importância do shift-left no SDLC, sua implicações e metodologias para implementarmos uma cultura de segurança sólida no contexto de trabalho dos desenvolvedores. 
+            
+            Iremos abordar sobre modelagem de ameaças, análise de arquitetura e controles de segurança, princípios do desenvolvimento seguro, ferramentas de análise estática de código, entre outros assuntos que conversam de Segurança e Desenvolvimento." />
           <Schedule :img="SpeakerCintia" name="Cintia Esteves" role="Engineering Tech Manager" company="Nubank"
             type="diversity" typeName="Diversidade"
-            title="Mulheres & Tecnologia - Estratégias para se destacar no mercado" />
+            title="Mulheres & Tecnologia - Estratégias para se destacar no mercado"
+            description="A realidade é que os times de tecnologia são massivamente compostos por homens brancos e muitas mulheres evitam ou se sentem acuadas neste ambiente. 
+
+            Há diversas empresas trabalhando intencionalmente e comunidades de mulheres vem surgindo a cada dia para que possamos ter mais equidade de gênero nas equipes de tecnologia.
+
+            Mas como cada uma de nós pode contribuir para esta mudança?
+            Como eu trago a minha experiência para a mesa? 
+            Como eu vendo o meu perfil diferenciado do resto do time como uma vantagem competitiva para o grupo?
+            Como eu sobrevivo ao preconceito dos meus pares?
+
+            Representatividade é importante: algumas mulheres em quem eu posso me inspirar nas áreas de engenharia de dados, engenharia de software, proteção de dados, segurança da informação, entre outras.
+
+            Acredito que em algum momento você pode ser a única mulher do time, e ser a única ou ser a primeira é desafiador. Mas há estratégias, não apenas para sobreviver, mas que a médio e longo prazo te destacarão na multidão.
+
+            E em um futuro próximo, você se tornará uma representante para que outras mulheres ingressem no mercado de tecnologia." />
           <Schedule :img="SpeakerFabricio" name="Fabricio Lima" role="Data Platform Engineer" company="Méliuz"
             type="hardware" typeName="Hardware"
-            title="Home Server: a melhor forma de reaproveitar seu hardware velho" />
+            title="Home Server: a melhor forma de reaproveitar seu hardware velho"
+            description="Nesta palestra iremos conversar sobre basicamente tudo que aprendi nesse mundo incrível que são os servidores caseiros. 
+            
+            Começando por o que é e por que todo mundo teria utilidade para um. Explicando o passo a passo para fazer o servidor mais simples e rápido possível, em questão de 10 minutos você pode ter um servidor caseiro funcional! Vamos falar um pouco sobre outros níveis de servidores também, com as vantagens e desvantagens de cada um. Por fim, vou mostrar como está organizado hoje o meu próprio servidor." />
           <Schedule :img="SpeakerJoao" name="João Medina" role="Especialista Backend" company="Grupo Boticário"
             type="backend" typeName="Backend"
-            title="Desbravando a Distribuição de Dados em Múltiplos Ambientes: Uma Jornada Escalável e Orientada a Eventos" />
+            title="Desbravando a Distribuição de Dados em Múltiplos Ambientes: Uma Jornada Escalável e Orientada a Eventos"
+            description="Já se encontrou diante do desafio de distribuir dados em vários ambientes simultaneamente? 
+            
+            Nesta talk, mergulharemos no mundo da distribuição de dados de forma escalável e orientada a eventos. 
+            
+            Descubra como enfrentamos os desafios do dia a dia ao distribuir dados de maneira eficiente e performática, explorando as necessidades que impulsionaram essa jornada, e tudo isso olhando na prática no dia a dia de uma empresa com milhões de dados sendo trafegados por minutos. " />
           <Schedule :img="SpeakerLais" name="Laís Bomtempo" role="Software Engineer" company="Metal Toad"
-            type="frontend" typeName="Frontend" title="Entendendo os fundamentos do Next.js 14" />
-          <Schedule :img="SpeakerLuiza" name="Luiza Bartels" role="Coordenadora" company="U&M" type="hardware"
-            typeName="Hardware" title="Desenvolvimento de Veículos Autônomos: bem ao seu lado e você não sabia" />
+            type="frontend" typeName="Frontend" title="Entendendo os fundamentos do Next.js 14"
+            description="Quando não entendemos como uma ferramenta funciona, podemos cometer erros básicos no desenvolvimento do nosso projeto, ou ficarmos muito tempo num bug que poderia ser facilmente solucionado, caso tivéssemos essa compreensão do que ocorre por “debaixo dos panos”.
+
+            Focada em profissionais que já trabalham com JavaScript e React, esta palestra tem como objetivo explicar os fundamentos do Next.js 14, de forma a facilitar e/ou aprimorar o desenvolvimento futuro com o framework." />
+          <Schedule :img="SpeakerLuiza" name="Luiza Bartels" role="Coordenadora" company="U&M" type="robotics"
+            typeName="Robótica" title="Desenvolvimento de Veículos Autônomos: bem ao seu lado e você não sabia"
+            description="Há 7 anos uma empresa em Matias Barbosa investe no desenvolvimento de  um kit autônomo para habilitar uma frota de equipamentos para operação autônoma. O melhor é o fato de o desenvolvimento ser 100% brasileiro e reconhecido internacionalmente.
+            
+            Uma conversa sobre o desenvolvimento de um kit autônomo para habilitar equipamentos pesados para operação autônomos, as tecnologias mais utilizadas e as tendências do mercado e da indústria." />
           <Schedule :img="SpeakerNatalia" name="Natalia Granato" role="DevOps Engineer" company="Jack Experts"
-            type="devops" typeName="Devops" title="Assessement e boas práticas em Kubernetes" />
+            type="devops" typeName="Devops" title="Assessement e boas práticas em Kubernetes"
+            description="Realizarei uma breve introdução sobre o ecossistema do Amazon Elastic Kubernetes Service (EKS) tendo em vista o que o serviço pode entregar. 
+            
+            A palestra será dedicada à realização de assessements em clusters EKS e a implementação de práticas essenciais em Kubernetes, desde a implementação, configuração, desempenho e finanças. 
+            
+            Explicarei o que é o assessements, em um formato hands-on utilizarei ferramentas open source para dar visibilidade ao ambiente e a partir dos relatórios gerados, como ele pode pavimentar o caminho para adoção de boas práticas no kubernetes de acordo com o nível de maturidade das equipes de DevOps e Cloud. Aqui estão alguns pontos que considerarei durante a avaliação:
+
+            Introdução ao EKS: Uma visão abrangente do Amazon EKS e suas vantagens para orquestração de contêineres.
+
+            Assessment em Kubernetes: Como avaliar efetivamente o desempenho e a eficiência de seus clusters EKS, utilizando ferramentas open source que não requerem instalação no cluster. As ferramentas utilizadas serão: popeye, rancher, pluto, kube-capacity e kubectl.
+
+            Capacidade e Setup EKS:
+            A capacidade e o setup eficientes são fundamentais para otimizar o desempenho do Kubernetes. Ao dimensionar a capacidade, é crucial entender as demandas da aplicação e provisionar recursos adequadamente. O setup adequado inclui a configuração do cluster, nós e redes de maneira coesa. 
+
+            Exemplo: configuração e avaliação de nodegroups, dimensionamento de capacidade, utilização de instâncias spot para economizar recursos financeiros, como proceder diante da necessidade de uma atualização, configuração de backup, visão sobre storage e se há monitoramento voltado para o cluster e etc.
+
+            Boas práticas voltadas ao EKS
+
+            Boas práticas voltadas à definição de aplicações para Kubernetes
+
+            Arquitetura do Cluster:
+            Avaliação da arquitetura do cluster Kubernetes, incluindo o número de nós (nodes), a distribuição de carga e a configuração de alta disponibilidade.
+
+            Configuração:
+            Revisão das configurações do Kubernetes para garantir que estejam alinhadas com as melhores práticas e requisitos específicos do ambiente.
+
+            Monitoramento e Logging:
+            Avaliação das soluções de monitoramento e logging para garantir a visibilidade adequada sobre o estado e o desempenho do cluster.
+
+            Atualizações e Patches:
+            Verificação do processo de atualização e aplicação de patches para garantir que o cluster esteja utilizando versões seguras e estáveis do Kubernetes.
+
+            Escalabilidade:
+            Avaliação da capacidade do cluster de escalar horizontalmente para lidar com aumentos na carga de trabalho.
+
+            Gerenciamento de Aplicações:
+            Revisão das práticas e ferramentas utilizadas para implantar e gerenciar aplicações no Kubernetes." />
           <Schedule :img="SpeakerRanieri" name="Ranieri Imperatori" role="Head of Data Analytics"
             company="300 Inteligência de Negócio" type="ai" typeName="AI"
-            title="Doenças Cardíacas em Números: A Relevância de Média e Mediana na Análise Preditiva com Machine Learning" />
+            title="Doenças Cardíacas em Números: A Relevância de Média e Mediana na Análise Preditiva com Machine Learning"
+            description="Na era da inteligência artificial e machine learning, compreender conceitos estatísticos fundamentais é essencial para o cientista de dados ou àqueles que estão almejando esta posição profissional. Esta palestra focará na importância da média, mediana, distribuição normal, e suas relações com as métricas de erro MAE (Mean Absolute Error) e MSE (Mean Squared Error) no contexto de modelos de machine learning com método de aprendizagem supervisionado. 
+
+            Ao explorar a média e a mediana – conceitos básicos aprendidos no ensino médio, percebemos que a média representa o valor médio de um conjunto de dados, enquanto a mediana é o valor que divide o conjunto ao meio. A média é útil para entender a tendência central dos dados, sendo sensível a valores extremos. Por outro lado, a mediana é robusta contra outliers, proporcionando uma visão representativa em conjuntos de dados com distribuição assimétrica. 
+
+            A distribuição normal é amplamente observada em conjuntos de dados naturais e desempenha um papel crucial em diversos métodos estatísticos. Ao compreender essa distribuição, os cientistas de dados podem realizar inferências sobre a probabilidade de eventos e embasar decisões informadas. A utilização da média e mediana emerge como uma ferramenta valiosa na identificação da distribuição normal. 
+
+            Além disso, a palestra aborda as relações entre métricas de erro de modelos preditivos e conceitos estatísticos básicos. O Mean Absolute Error (MAE) relaciona-se diretamente com a mediana, sendo menos sensível a outliers e tornando-se uma métrica robusta para avaliação de modelos em conjuntos de dados com distribuições assimétricas. Por outro lado, o Mean Squared Error (MSE) está correlacionado com a média, sendo sensível a outliers devido ao termo quadrático, sendo ideal para situações em que desvios maiores devem ser penalizados mais fortemente. 
+
+            Na conclusão desta palestra, será destacada a interconexão essencial entre os conceitos básicos da estatística e o universo de machine learning. A apresentação incluirá uma demonstração prática da construção de modelos utilizando a linguagem de programação Python, onde dados reais de pacientes com características relacionadas a doenças cardíacas serão explorados. Essa abordagem prática não apenas ilustrará a aplicação direta dos princípios discutidos, mas também fornecerá uma visão concreta de como os conceitos estatísticos fundamentais são implementados na criação e otimização de modelos no contexto de machine learning. " />
           <Schedule :img="SpeakerBrendo" name="Brendo Freitas" role="Desenvolvedor .Net" company="webfis" type="devops"
-            typeName="Devops" title="Docker Scout protegendo a cadeia de fornecimento de Software" />
+            typeName="Devops" title="Docker Scout protegendo a cadeia de fornecimento de Software"
+            description="Na palestra sobre Docker Scout, mergulharemos nas profundezas da segurança em ambientes Docker, revelando sua capacidade única de detectar e corrigir vulnerabilidades em imagens.
+            
+            Começaremos desvendando as nuances das falhas de segurança em contêineres, destacando a importância crítica de proteger nossos ecossistemas digitais. Docker Scout emerge como a resposta essencial, proporcionando uma visão abrangente das vulnerabilidades, não apenas identificando-as, mas também oferecendo soluções eficazes.
+            
+            Uma faceta distintiva do Docker Scout reside na sua capacidade de acessar um banco de dados centralizado de vulnerabilidades em imagens Docker. Este recurso estratégico permite que os usuários consultem informações atualizadas sobre possíveis ameaças, equipando-os com o conhecimento necessário para fortalecer suas defesas.
+            
+            Ao guiarmos os participantes através de um panorama detalhado, exploraremos as etapas práticas para corrigir falhas de segurança. Desde a identificação até a aplicação de correções, cada passo será desdobrado, capacitando a audiência a implementar práticas de segurança robustas em suas implementações Docker.
+            
+            A palestra não apenas oferece insights teóricos, mas também demonstrações práticas, destacando a eficácia do Docker Scout em ação. Os participantes experimentarão, em tempo real, como esse recurso pode transformar a segurança, fornecendo confiança e tranquilidade em seus ambientes de desenvolvimento.
+            
+            Ao final da palestra, os participantes não apenas compreenderão a importância da segurança em contêineres, mas também terão as ferramentas e o conhecimento necessários para integrar o Docker Scout em suas práticas diárias. Esta palestra é mais do que uma visão; é uma imersão prática na revolução da segurança em contêineres, destacando o Docker Scout como a ferramenta indispensável para impulsionar a confiança e a robustez em projetos Docker."  />
           <Schedule :img="SpeakerEmerson" name="Emerson Pombo" role="Quality Assurance Engineer"
             company="Atlas Technologies" type="qa" typeName="QA"
-            title="QA Além dos Testes: Conduzindo Projetos ao Pico da Eficiência e Satisfação do Cliente" />
+            title="QA Além dos Testes: Conduzindo Projetos ao Pico da Eficiência e Satisfação do Cliente"
+            description="Esta palestra abordará o papel fundamental da Garantia de Qualidade (QA) no desenvolvimento de software, destacando como uma abordagem sólida de QA pode impactar positivamente a qualidade, eficiência e satisfação do cliente. Ao longo de 30 minutos, exploraremos as responsabilidades-chave do QA, desde o início do projeto até a entrega, discutindo metodologias de teste, ferramentas de automação e melhores práticas. Além disso, serão compartilhados insights sobre como o QA supera desafios comuns e contribui para o sucesso do projeto.
+
+            Principais Tópicos:
+
+            O que é QA?
+            Definição de Garantia de Qualidade.
+            Distinção entre QA e Controle de Qualidade.
+
+            Papéis e Responsabilidades do QA:
+            Responsabilidades-chave ao longo do ciclo de desenvolvimento.
+            Colaboração efetiva com a equipe de desenvolvimento.
+
+            Metodologias de Teste:
+            Exploração de diferentes metodologias, incluindo teste funcional, teste de desempenho e teste de segurança.
+
+            Ferramentas de Teste:
+            Introdução a ferramentas populares de teste de software.
+            Automatização e aprimoramento da eficiência.
+
+            Desafios e Soluções em QA:
+            Abordagem de desafios comuns enfrentados pelo QA.
+            Estratégias e melhores práticas para superar esses desafios.
+
+            Importância do QA para o Sucesso do Projeto:
+            Contribuição para confiabilidade, segurança e satisfação do cliente." />
           <Schedule :img="SpeakerLucasCarrilho" name="Lucas Carrilho" role="Desenvolvedor Backend"
             company="V3 Tecnologia" type="career" typeName="Carreira"
-            title="Ingressando na Carreira de Programação em 2024: Desmistificando as Primeiras Oportunidades" />
+            title="Ingressando na Carreira de Programação em 2024: Desmistificando as Primeiras Oportunidades"
+            description="Nesta palestra, vou compartilhar minha experiência na migração de carreira e em concursos públicos, focando nas diversas formas de conseguir a tão sonhada primeira oportunidade como programador.
+
+            Vou abordar os seguintes assuntos:
+
+            Formas de ingressar:
+            - Estagiário
+            - Trainee / Aprendiz
+            - Junior
+            - Concurso Público T.I
+            - Freelancer
+
+            Para facilitar a compreensão da comparação entre as formas de ingressar na carreira de programação, apresentarei gráficos
+            e exemplos para cada um deles, como: conhecimento esperado, skills necessárias, dificuldade de conseguir, remuneração média inicial e crescimento na carreira e, para isso, usarei fontes de dados reais e exemplos práticos, como a seguir: 
+
+            A apresentação não será focada em linguagem em específica, será um 'geral'" />
           <Schedule :img="SpeakerLucasLopes" name="Lucas Lopes" role="Analista de Dados" company="BeFly" type="data"
-            typeName="Dados" title="Dados: O novo petróleo" />
+            typeName="Dados" title="Dados: O novo petróleo"
+            description="Em um mundo onde os dados são considerados o novo petróleo do século 21, esse talk irá oferecer uma imersão simplificada na importância vital desses ativos para o sucesso nos negócios. 
+            
+            Ela aborda desde a complexidade subjacente à análise de dados, desde a utilização da inteligência artificial (IA) e outras ferramentas tecnológicas para alavancar estratégias empresariais eficazes. Da fase inicial de coleta até a interpretação avançada, são exploradas etapas cruciais para aproveitar plenamente as oportunidades oferecidas pela era dos dados. 
+            
+            Este mergulho buscará oferecer informações valiosas e práticas para quem busca prosperar em um ambiente cada vez mais orientado por informações e digitalizado, incluindo o uso de linguagens de programação voltadas para dados." />
           <Schedule :img="SpeakerCarlos" name="Carlos Alexandre" role="Estudante Pós-graduação" company="UFJF"
-            type="career" typeName="Carreira" title="O que os estudantes fazem durante a sua formação na Computação?" />
+            type="career" typeName="Carreira" title="O que os estudantes fazem durante a sua formação na Computação?"
+            description="A palestra abordará em alguns projetos executados por estudantes da universidade na área da tecnologia. Será uma oportunidade de conhecer uma variedade de projetos que abrangem desde pesquisas científicas até iniciativas sociais e tecnológicas.
+
+            Os projetos não apenas enriquecem o ambiente acadêmico da UFJF, mas também têm um impacto significativo na comunidade local." />
         </div>
       </section>
       <section id="speakers" class="infoSections">
