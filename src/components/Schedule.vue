@@ -1,7 +1,9 @@
 <template>
   <div class="schedule-card">
-    <div class="schedule-type" :class="'type-' + type">
-      <p class="schedule-type-text">{{ typeName }}</p>
+    <div class="schedule-card-header">
+      <div class="schedule-type" :class="'type-' + type.id" v-for="type in types">
+        <p class="schedule-type-text">{{ type.name }}</p>
+      </div>
     </div>
     <div class="schedule-subject">
       <p class="schedule-subject-text bold-text">{{ title }}</p>
@@ -23,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps(['img', 'name', 'role', 'company', 'type', 'title', 'typeName', 'description'])
+defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description'])
 </script>
 
 <style scoped>
@@ -48,6 +50,11 @@ defineProps(['img', 'name', 'role', 'company', 'type', 'title', 'typeName', 'des
   border: var(--border-size) solid transparent;
 }
 
+.schedule-card-header {
+  display: flex;
+  flex-direction: row;
+}
+
 .schedule-type {
   width: fit-content;
   background-color: #0052F5;
@@ -55,6 +62,7 @@ defineProps(['img', 'name', 'role', 'company', 'type', 'title', 'typeName', 'des
   border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
   padding: 0px 0.5rem 0px 0.5rem;
   margin-top: 20px;
+  margin-right: 10px;
 }
 
 .schedule-title {
