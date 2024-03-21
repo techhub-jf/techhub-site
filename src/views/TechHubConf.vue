@@ -285,7 +285,8 @@
             role="Software Engineer" company="Metal Toad" />
           <Speaker :img="SpeakerLuiza" link="https://www.linkedin.com/in/luizabartelsdeoliveira/" name="Luiza Bartels"
             role="Coordenadora" company="U&M" />
-          <Speaker :img="SpeakerAna" name="Ana Carolina Carius" role="Professora" company="IFRJ" />
+          <Speaker :img="SpeakerAna" link="https://www.instagram.com/aninhacarius" name="Ana Carolina Carius" 
+            role="Professora" company="IFRJ" />
           <Speaker :img="SpeakerDanilo" link="https://www.linkedin.com/in/danilo-oliveira-santos/" name="Danilo Oliveira Santos" 
             role="Professor" company="EnsinE"/>
           <Speaker :img="SpeakerNatalia" link="https://www.linkedin.com/in/nataliagranato/" name="Natalia Granato"
