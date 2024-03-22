@@ -109,6 +109,13 @@
             description="Quando não entendemos como uma ferramenta funciona, podemos cometer erros básicos no desenvolvimento do nosso projeto, ou ficarmos muito tempo num bug que poderia ser facilmente solucionado, caso tivéssemos essa compreensão do que ocorre por “debaixo dos panos”.
 
             Focada em profissionais que já trabalham com JavaScript e React, esta palestra tem como objetivo explicar os fundamentos do Next.js 14, de forma a facilitar e/ou aprimorar o desenvolvimento futuro com o framework." />
+          <Schedule :img="SpeakerFran" name="Fran Weidt" role="Flutter Engineer" company="Simplebet"
+            :types="[{id: 'mobile', name: 'Mobile'}]" title="Flutter para Visualização de Dados em Tempo Real"
+            description="Em um mundo hiper-conectado, a visualização de dados em tempo real tornou-se uma parte essencial de muitas aplicações. 
+            
+            Ela permite aos usuários interpretar e analisar dados complexos de uma forma visualmente mais rica e atraente. Nesta palestra, vamos explorar como o Flutter pode ser usado para desbloquear experiências visuais geradas a partir de dados recebidos em tempo real. 
+            
+            Em paralelo, iremos apresentar conceitos do Flutter e seu ecossistema buscando contribuir e dialogar com um público abrangente, desde aqueles que querem conhecer melhor o potencial desta tecnologia, mas nunca a utilizaram, até aqueles que já possuem conhecimento dela." />
           <Schedule :img="SpeakerLuiza" name="Luiza Bartels" role="Coordenadora" company="U&M" :types="[{id: 'robotics', name: 'Robótica'}]"
             title="Desenvolvimento de Veículos Autônomos: bem ao seu lado e você não sabia"
             description="Há 7 anos uma empresa em Matias Barbosa investe no desenvolvimento de  um kit autônomo para habilitar uma frota de equipamentos para operação autônoma. O melhor é o fato de o desenvolvimento ser 100% brasileiro e reconhecido internacionalmente.
@@ -283,6 +290,8 @@
             role="Especialista Backend" company="Grupo Boticário" />
           <Speaker :img="SpeakerLais" link="https://www.linkedin.com/in/lais-silveira-martins/" name="Laís Bomtempo"
             role="Software Engineer" company="Metal Toad" />
+          <Speaker :img="SpeakerFran" link="https://www.linkedin.com/in/franweidt/" name="Fran Weidt"
+            role="Flutter Engineer" company="Simplebet" />
           <Speaker :img="SpeakerLuiza" link="https://www.linkedin.com/in/luizabartelsdeoliveira/" name="Luiza Bartels"
             role="Coordenadora" company="U&M" />
           <Speaker :img="SpeakerAna" link="https://www.instagram.com/aninhacarius" name="Ana Carolina Carius" 
@@ -410,6 +419,7 @@ import SpeakerLais from '@/assets/lais-bomtempo.jpeg'
 import SpeakerCarlos from '@/assets/carlos-alexandre.png'
 import SpeakerAna from '@/assets/ana-carius.png'
 import SpeakerDanilo from '@/assets/danilo-oliveira.jpeg'
+import SpeakerFran from '@/assets/fran-weidt.jpeg'
 </script>
 
 <style scoped>

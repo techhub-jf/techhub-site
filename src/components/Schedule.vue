@@ -172,6 +172,10 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description'])
   background-color: #037aca;
 }
 
+.type-mobile {
+  background-color: #ca0360;
+}
+
 .type-ai {
   background-color: #000000;
 }
