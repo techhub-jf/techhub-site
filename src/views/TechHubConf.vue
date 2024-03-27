@@ -121,6 +121,11 @@
             description="Há 7 anos uma empresa em Matias Barbosa investe no desenvolvimento de  um kit autônomo para habilitar uma frota de equipamentos para operação autônoma. O melhor é o fato de o desenvolvimento ser 100% brasileiro e reconhecido internacionalmente.
             
             Uma conversa sobre o desenvolvimento de um kit autônomo para habilitar equipamentos pesados para operação autônomos, as tecnologias mais utilizadas e as tendências do mercado e da indústria." />
+          <Schedule :img="SpeakerRuan" name="Ruan Carlos" role="Executivo de operações e delivery" company="Jack Experts" :types="[{id: 'startups', name: 'Startups'}]"
+            title="Empreendendo em TI na Pandemia: O que não te contam"
+            description="Se você trabalha com TI, então já é um empreendedor! Empreender é mais do que ter uma empresa, é a vontade de fazer diferente, ser inconformado e ir além. O profissional de TI não pode e nem tem tempo de se conformar, ou também não te contaram isso?
+            
+            Nesta palestra, irei contar um pouco dos desafios, sucessos e claro, insucessos tanto da carreira quanto do caminho percorrido na pandemia com o propósito de ter um time focado em Cloud Native: a Jack Experts." />
           <Schedule :img="SpeakerAna" name="Ana Carolina Carius" role="Professora" company="IFRJ" :types="[{id: 'ai', name: 'AI'}]"
             title="Tecnologia do Reconhecimento Facial: Desvendando os Mistérios por Trás das Matrizes"
             description="As redes neurais convolucionais (CNNs) são amplamente aplicadas em reconhecimento de imagens, com o uso essencial de matrizes. Essas matrizes, ou tensores, são fundamentais para processar imagens, pixel por pixel.
@@ -217,6 +222,17 @@
             A palestra não apenas oferece insights teóricos, mas também demonstrações práticas, destacando a eficácia do Docker Scout em ação. Os participantes experimentarão, em tempo real, como esse recurso pode transformar a segurança, fornecendo confiança e tranquilidade em seus ambientes de desenvolvimento.
             
             Ao final da palestra, os participantes não apenas compreenderão a importância da segurança em contêineres, mas também terão as ferramentas e o conhecimento necessários para integrar o Docker Scout em suas práticas diárias. Esta palestra é mais do que uma visão; é uma imersão prática na revolução da segurança em contêineres, destacando o Docker Scout como a ferramenta indispensável para impulsionar a confiança e a robustez em projetos Docker."  />
+          <Schedule :img="SpeakerCamilla" name="Camilla Martins" role="SRE Egineer" company="Storyblok" :types="[{id: 'career', name: 'Carreira'}]"
+            title="DevOps para o Exterior: O que tem sido diferente"
+            description="Nessa talk vou falar sobre como é trabalhar com DevOps no exterior, abordando pontos importantes, como: 
+
+            - O que trabalhamos lá
+            - Ritmo de trabalho
+            - Quais os desafios na assinatura do contrato e no PJ/CLT
+            - Contabilidade
+            - Onde ver comparativos salariais e a qualidade da empresa
+            - Onde encontrar bons locais de trabalho
+            - Dicas gerais pra você se dar bem como no inglês e como funciona o dia a dia"/>
           <Schedule :img="SpeakerEmerson" name="Emerson Pombo" role="Quality Assurance Engineer"
             company="Atlas Technologies" :types="[{id: 'qa', name: 'QA'}]"
             title="QA Além dos Testes: Conduzindo Projetos ao Pico da Eficiência e Satisfação do Cliente"
@@ -294,6 +310,8 @@
             role="Flutter Engineer" company="Simplebet" />
           <Speaker :img="SpeakerLuiza" link="https://www.linkedin.com/in/luizabartelsdeoliveira/" name="Luiza Bartels"
             role="Coordenadora" company="U&M" />
+          <Speaker :img="SpeakerRuan" link="https://www.linkedin.com/in/ruan-sysadmin/" name="Ruan Carlos" 
+            role="Executivo de operações e delivery" company="Jack Experts" />
           <Speaker :img="SpeakerAna" link="https://www.instagram.com/aninhacarius" name="Ana Carolina Carius" 
             role="Professora" company="IFRJ" />
           <Speaker :img="SpeakerDanilo" link="https://www.linkedin.com/in/danilo-oliveira-santos/" name="Danilo Oliveira Santos" 
@@ -304,6 +322,8 @@
             name="Ranieri Imperatori" role="Head of Data Analytics" company="300 Inteligência de Negócio" />
           <Speaker :img="SpeakerBrendo" link="https://www.linkedin.com/in/brendo-f-00b75416a/" name="Brendo Freitas"
             role="Desenvolvedor .Net" company="webfis" />
+          <Speaker :img="SpeakerCamilla" link="https://www.linkedin.com/in/camilla-martins-603344115/" name="Camilla Martins"
+            role="SRE Egineer" company="Storyblok" />
           <Speaker :img="SpeakerEmerson" link="https://www.linkedin.com/in/emerson-pombo/" name="Emerson Pombo"
             role="Quality Assurance Engineer" company="Atlas Technologies" />
           <Speaker :img="SpeakerLucasCarrilho" link="https://www.linkedin.com/in/karilho/" name="Lucas Carrilho"
@@ -369,6 +389,9 @@
             <a href="https://www.alura.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="Alura" class="sponsor-image-rectangular" src="@/assets/alura.svg" />
             </a>
+            <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
+              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/m3-oculos.png" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
@@ -387,6 +410,9 @@
             </a>
             <a href="https://www.nossomoinho.com/" class="sponsor-image-link" target="_blank">
               <img alt="Moinho" class="sponsor-image" src="@/assets/logo-moinho.png" />
+            </a>
+            <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
+              <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
             </a>
           </div>
         </div>
@@ -420,6 +446,8 @@ import SpeakerCarlos from '@/assets/carlos-alexandre.png'
 import SpeakerAna from '@/assets/ana-carius.png'
 import SpeakerDanilo from '@/assets/danilo-oliveira.jpeg'
 import SpeakerFran from '@/assets/fran-weidt.jpeg'
+import SpeakerRuan from '@/assets/ruan-carlos.jpeg'
+import SpeakerCamilla from '@/assets/camilla-martins.jpg'
 </script>
 
 <style scoped>
