@@ -381,6 +381,9 @@
             <a href="https://maislaudo.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="Mais Laudo" class="sponsor-image-vertical" src="@/assets/mais-laudo.png" />
             </a>
+            <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
+              <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
@@ -759,8 +762,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-radius: 20px;
   flex-wrap: wrap;
 }
@@ -785,6 +788,7 @@ nav {
   margin-left: 3vh;
   margin-right: 3vh;
   padding: 10px;
+  margin-top: 10px;
 }
 
 footer {
