@@ -384,6 +384,9 @@
             <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
               <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
             </a>
+            <a href="https://jackexperts.com/" class="sponsor-image-link" target="_blank">
+              <img alt="Jack Experts" class="sponsor-image" src="@/assets/jack.png" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
