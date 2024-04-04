@@ -1,8 +1,14 @@
 <template>
   <div class="schedule-card">
     <div class="schedule-card-header">
-      <div class="schedule-type" :class="'type-' + type.id" v-for="type in types">
-        <p class="schedule-type-text">{{ type.name }}</p>
+      <div class="schedule-types">
+        <div class="schedule-type" :class="'type-' + type.id" v-for="type in types">
+          <p class="schedule-type-text">{{ type.name }}</p>
+        </div>
+      </div>
+      <div class="schedule-time">
+        <ClockIcon class="schedule-time-icon"/>
+        <p class="schedule-type-text">{{ time }}</p>
       </div>
     </div>
     <div class="schedule-subject">
@@ -25,15 +31,15 @@
 </template>
 
 <script setup lang="ts">
-defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description'])
+import ClockIcon from '../components/icons/IconClock.vue'
+
+defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 'time'])
 </script>
 
 <style scoped>
 .schedule-card {
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
-  width: 45%;
+  /* width: 45%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,9 +56,20 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description'])
   border: var(--border-size) solid transparent;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+
 .schedule-card-header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.schedule-types {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .schedule-type {
@@ -63,6 +80,23 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description'])
   padding: 0px 0.5rem 0px 0.5rem;
   margin-top: 20px;
   margin-right: 10px;
+}
+
+.schedule-time {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background-color: #0052F5;
+  color: white;
+  border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.schedule-time-icon {
+  margin-right: 5px;
 }
 
 .schedule-title {
