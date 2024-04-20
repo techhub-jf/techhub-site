@@ -125,7 +125,7 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 
 
 .door-icon{
   margin-right: 5px;
-  max-height: 30px;
+  max-height: 25px;
 }
 
 .schedule-title {
