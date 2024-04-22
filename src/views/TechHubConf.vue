@@ -67,7 +67,8 @@
       <section id="schedule" class="infoSections">
         <h1 class="section-title">Programação</h1>
         <div class="schedule-main">
-          <ScheduleTile time="8:00 - 9:00" title="Credenciamento"/>
+          <ScheduleTile time="8:00 - 8:30" title="Credenciamento"/>
+          <ScheduleTile time="8:30 - 9:00" title="Abertura"/>
           <Schedule :img="SpeakerHenrique" name="Henrique Cabral" role="Application Security Leader"
             company="Compass UOL" :types="[{id: 'security', name: 'Segurança'}]" time="9:00 - 10:00"
             title="Shift-Left Security e o porquê você deve se importar com isso"
@@ -404,6 +405,9 @@
             <a href="https://jackexperts.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jack Experts" class="sponsor-image" src="@/assets/jack.png" />
             </a>
+            <a href="https://reportei.com/" class="sponsor-image-link" target="_blank">
+              <img alt="Jack Experts" class="sponsor-image-rectangular" src="@/assets/reportei.svg" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
@@ -436,6 +440,9 @@
             </a>
             <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
               <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
+            </a>
+            <a href="https://www.instagram.com/microraptorufjf/" class="sponsor-image-link" target="_blank">
+              <img alt="Café das Minas" class="sponsor-image-vertical" src="@/assets/microraptor.png" />
             </a>
           </div>
         </div>
