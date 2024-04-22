@@ -460,6 +460,9 @@
             <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
               <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
             </a>
+            <a href="https://www.instagram.com/microraptorufjf/" class="sponsor-image-link" target="_blank">
+              <img alt="Microraptor" class="sponsor-image-vertical" src="@/assets/microraptor.png" />
+            </a>
           </div>
         </div>
       </section>
