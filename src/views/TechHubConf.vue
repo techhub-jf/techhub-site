@@ -427,6 +427,9 @@
             <a href="https://jackexperts.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jack Experts" class="sponsor-image" src="@/assets/jack.png" />
             </a>
+            <a href="https://reportei.com/" class="sponsor-image-link" target="_blank">
+              <img alt="Jack Experts" class="sponsor-image-rectangular" src="@/assets/reportei.svg" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
