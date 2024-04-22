@@ -1,6 +1,12 @@
 <template>
   <div class="schedule-card">
     <div class="schedule-card-header">
+      <div class="schedule-door">
+        <DoorIcon class="door-icon"/>
+        <p class="schedule-type-text">{{ door }}</p>
+      </div>
+    </div>
+    <div class="schedule-card-header">
       <div class="schedule-types">
         <div class="schedule-type" :class="'type-' + type.id" v-for="type in types">
           <p class="schedule-type-text">{{ type.name }}</p>
@@ -32,8 +38,9 @@
 
 <script setup lang="ts">
 import ClockIcon from '../components/icons/IconClock.vue'
+import DoorIcon from '../components/icons/IconDoor.vue'
 
-defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 'time'])
+defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'door'])
 </script>
 
 <style scoped>
@@ -97,6 +104,28 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 
 
 .schedule-time-icon {
   margin-right: 5px;
+}
+
+.schedule-door {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background-color: #0052F5;
+  color: white;
+  border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 100%;
+  padding: 5px;
+  max-width: 250px;
+  margin: 10px auto 0 auto;
+}
+
+.door-icon{
+  margin-right: 5px;
+  max-height: 25px;
 }
 
 .schedule-title {
