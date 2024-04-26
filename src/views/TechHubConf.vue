@@ -67,85 +67,242 @@
       <section id="schedule" class="infoSections">
         <h1 class="section-title">Programação</h1>
         <div class="schedule-main">
-          <ScheduleTile time="8:00 - 8:40" title="Credenciamento"/>
+          <ScheduleTile time="8:00 - 8:40" title="Credenciamento" location="Entrada"/>
 
-          <ScheduleTile time="8:40 - 9:00" title="Abertura"/>
+          <ScheduleTile time="8:40 - 9:00" title="Abertura" location="Auditório: Teste em Produção"/>
           
-          <Schedule :img="SpeakerCintia" name="Cintia Esteves" role="Engineering Tech Manager" company="Nubank"
-            :types="[{id: 'diversity', name: 'Diversidade'}]" time="11:00 - 12:00" typeName="Diversidade" door="Auditório: Teste em Produção"
-            title="Mulheres & Tecnologia - Estratégias para se destacar no mercado"
-            description="A realidade é que os times de tecnologia são massivamente compostos por homens brancos e muitas mulheres evitam ou se sentem acuadas neste ambiente. 
+          <div class="schedule-two-col">
+            <Schedule :img="SpeakerCintia" name="Cintia Esteves" role="Engineering Tech Manager" company="Nubank"
+              :types="[{id: 'diversity', name: 'Diversidade'}]" time="9:00 - 10:00" typeName="Diversidade" location="Auditório: Teste em Produção"
+              title="Mulheres & Tecnologia - Estratégias para se destacar no mercado"
+              description="A realidade é que os times de tecnologia são massivamente compostos por homens brancos e muitas mulheres evitam ou se sentem acuadas neste ambiente. 
 
-            Há diversas empresas trabalhando intencionalmente e comunidades de mulheres vem surgindo a cada dia para que possamos ter mais equidade de gênero nas equipes de tecnologia.
+              Há diversas empresas trabalhando intencionalmente e comunidades de mulheres vem surgindo a cada dia para que possamos ter mais equidade de gênero nas equipes de tecnologia.
 
-            Mas como cada uma de nós pode contribuir para esta mudança?
-            Como eu trago a minha experiência para a mesa? 
-            Como eu vendo o meu perfil diferenciado do resto do time como uma vantagem competitiva para o grupo?
-            Como eu sobrevivo ao preconceito dos meus pares?
+              Mas como cada uma de nós pode contribuir para esta mudança?
+              Como eu trago a minha experiência para a mesa? 
+              Como eu vendo o meu perfil diferenciado do resto do time como uma vantagem competitiva para o grupo?
+              Como eu sobrevivo ao preconceito dos meus pares?
 
-            Representatividade é importante: algumas mulheres em quem eu posso me inspirar nas áreas de engenharia de dados, engenharia de software, proteção de dados, segurança da informação, entre outras.
+              Representatividade é importante: algumas mulheres em quem eu posso me inspirar nas áreas de engenharia de dados, engenharia de software, proteção de dados, segurança da informação, entre outras.
 
-            Acredito que em algum momento você pode ser a única mulher do time, e ser a única ou ser a primeira é desafiador. Mas há estratégias, não apenas para sobreviver, mas que a médio e longo prazo te destacarão na multidão.
+              Acredito que em algum momento você pode ser a única mulher do time, e ser a única ou ser a primeira é desafiador. Mas há estratégias, não apenas para sobreviver, mas que a médio e longo prazo te destacarão na multidão.
 
-            E em um futuro próximo, você se tornará uma representante para que outras mulheres ingressem no mercado de tecnologia." />
+              E em um futuro próximo, você se tornará uma representante para que outras mulheres ingressem no mercado de tecnologia." />
+            
+            <Schedule :img="SpeakerDanilo" name="Danilo Oliveira Santos" role="Professor" company="EnsinE" 
+              :types="[{id: 'data', name: 'Dados'}, {id: 'workshop', name: 'Workshop'}]" time="9:00 - 10:00"
+              title="Banco de Dados - Mão Na Massa" location="Sala: Deploy da Sexta" 
+              description="WORKSHOP: Mão na Massa em Banco de Dados! 
 
+              Neste curso, mergulharemos no universo dos bancos de dados, desmistificando conceitos e capacitando para lidar com dados de forma eficiente.
+
+              Fundamentos Essenciais:
+              Compreender o que é um Banco de Dados (BD) e as diferenças entre os modelos Relacional e Não Relacional.
+              Explorar os tipos de dados comuns em bancos de dados, desde números até textos e datas.
+              Dominar os comandos SQL, a linguagem padrão para consultas e manipulação de dados.
+
+              Consultas de Dados:
+              Do básico ao avançado, você aprenderá a realizar consultas de dados. Desde as mais simples, como filtrar registros, até as mais complexas, como junções e agregações.
+              Descobrirá como extrair informações relevantes de grandes conjuntos de dados.
+
+              Aplicações Práticas:
+              Nosso foco é a prática. Você terá a oportunidade de aplicar seus conhecimentos em cenários reais.
+              Criar consultas que atendam às necessidades de negócios, desde relatórios gerenciais até análises profundas." />
+          </div>
+
+          <div class="schedule-two-col">
+            <Schedule :img="SpeakerLucasCarrilho" name="Lucas Carrilho" role="Desenvolvedor Backend"
+              company="V3 Tecnologia" :types="[{id: 'career', name: 'Carreira'}]" time="10:00 - 10:30" location="Auditório: Teste em Produção"
+              title="Ingressando na Carreira de Programação em 2024: Desmistificando as Primeiras Oportunidades"
+              description="Nesta palestra, vou compartilhar minha experiência na migração de carreira e em concursos públicos, focando nas diversas formas de conseguir a tão sonhada primeira oportunidade como programador.
+
+              Vou abordar os seguintes assuntos:
+
+              Formas de ingressar:
+              - Estagiário
+              - Trainee / Aprendiz
+              - Junior
+              - Concurso Público T.I
+              - Freelancer
+
+              Para facilitar a compreensão da comparação entre as formas de ingressar na carreira de programação, apresentarei gráficos
+              e exemplos para cada um deles, como: conhecimento esperado, skills necessárias, dificuldade de conseguir, remuneração média inicial e crescimento na carreira e, para isso, usarei fontes de dados reais e exemplos práticos, como a seguir: 
+
+              A apresentação não será focada em linguagem em específica, será um 'geral'" />
+
+            <Schedule :img="SpeakerLucasLopes" name="Lucas Lopes" role="Analista de Dados" company="BeFly"
+              :types="[{id: 'data', name: 'Dados'}]" time="10:00 - 10:30" location="Sala: Deploy da Sexta"
+              title="Dados: O novo petróleo"
+              description="Em um mundo onde os dados são considerados o novo petróleo do século 21, esse talk irá oferecer uma imersão simplificada na importância vital desses ativos para o sucesso nos negócios. 
+              
+              Ela aborda desde a complexidade subjacente à análise de dados, desde a utilização da inteligência artificial (IA) e outras ferramentas tecnológicas para alavancar estratégias empresariais eficazes. Da fase inicial de coleta até a interpretação avançada, são exploradas etapas cruciais para aproveitar plenamente as oportunidades oferecidas pela era dos dados. 
+              
+              Este mergulho buscará oferecer informações valiosas e práticas para quem busca prosperar em um ambiente cada vez mais orientado por informações e digitalizado, incluindo o uso de linguagens de programação voltadas para dados." />
+          </div>
+
+          <ScheduleTile time="10:30 - 11:00" title="Coffe Break"/>
+
+          <div class="schedule-two-col">
+            <Schedule :img="SpeakerRanieri" name="Ranieri Imperatori" role="Head of Data Analytics"
+              company="300 Inteligência de Negócio" :types="[{id: 'ai', name: 'AI'}]" time="11:00 - 12:00" location="Auditório: Teste em Produção"
+              title="Como prever as Doenças Cardíacas usando a média e mediana na Análise Preditiva com Machine Learning"
+              description="Na era da inteligência artificial e machine learning, compreender conceitos estatísticos fundamentais é essencial para o cientista de dados ou àqueles que estão almejando essa posição profissional. Esta palestra focará na importância da média, mediana e sua aplicação no contexto de modelos de machine learning, com destaque para o método de regressão logística.
+
+              Ao explorar a média e a mediana – conceitos básicos aprendidos no ensino médio, percebemos que a média representa o valor médio de um conjunto de dados, enquanto a mediana é o valor que divide o conjunto ao meio. A média é útil para entender a tendência central dos dados, sendo sensível a valores extremos. Por outro lado, a mediana é robusta contra outliers, proporcionando uma visão representativa em conjuntos de dados com distribuição assimétrica.
+              
+              Além disso, será abordado o papel da média e da mediana na análise das features de treino em modelos de regressão logística. Essas medidas de tendência central são ferramentas valiosas para entender a distribuição dos dados e identificar possíveis padrões que podem influenciar o desempenho do modelo.
+              
+              Na conclusão desta palestra, será destacada a interconexão essencial entre os conceitos básicos da estatística e o universo de machine learning, com ênfase na utilização da média e da mediana para análise e otimização de modelos. A apresentação incluirá uma demonstração prática da construção de modelos de regressão logística utilizando a linguagem de programação Python, onde dados reais de pacientes com características relacionadas a doenças cardíacas serão explorados. Essa abordagem prática não apenas ilustrará a aplicação direta dos princípios discutidos, mas também fornecerá uma visão concreta de como os conceitos estatísticos fundamentais são implementados na criação e otimização de modelos no contexto de machine learning." />
+
+            <Schedule :img="SpeakerJoao" name="João Medina" role="Especialista Backend" company="Grupo Boticário"
+              :types="[{id: 'backend', name: 'Backend'}]" time="11:00 - 12:00" location="Sala: Deploy da Sexta"
+              title="Desbravando a Distribuição de Dados em Múltiplos Ambientes: Uma Jornada Escalável e Orientada a Eventos"
+              description="Já se encontrou diante do desafio de distribuir dados em vários ambientes simultaneamente? 
+              
+              Nesta talk, mergulharemos no mundo da distribuição de dados de forma escalável e orientada a eventos. 
+              
+              Descubra como enfrentamos os desafios do dia a dia ao distribuir dados de maneira eficiente e performática, explorando as necessidades que impulsionaram essa jornada, e tudo isso olhando na prática no dia a dia de uma empresa com milhões de dados sendo trafegados por minutos. " />
+          </div>
+
+          <div class="schedule-two-col">
+            <Schedule :img="SpeakerEmerson" name="Emerson Pombo" role="Quality Assurance Engineer"
+              company="Atlas Technologies" :types="[{id: 'qa', name: 'QA'}]" time="12:00 - 12:30" location="Auditório: Teste em Produção"
+              title="QA Além dos Testes: Conduzindo Projetos ao Pico da Eficiência e Satisfação do Cliente"
+              description="Esta palestra abordará o papel fundamental da Garantia de Qualidade (QA) no desenvolvimento de software, destacando como uma abordagem sólida de QA pode impactar positivamente a qualidade, eficiência e satisfação do cliente. Ao longo de 30 minutos, exploraremos as responsabilidades-chave do QA, desde o início do projeto até a entrega, discutindo metodologias de teste, ferramentas de automação e melhores práticas. Além disso, serão compartilhados insights sobre como o QA supera desafios comuns e contribui para o sucesso do projeto.
+
+              Principais Tópicos:
+
+              O que é QA?
+              Definição de Garantia de Qualidade.
+              Distinção entre QA e Controle de Qualidade.
+
+              Papéis e Responsabilidades do QA:
+              Responsabilidades-chave ao longo do ciclo de desenvolvimento.
+              Colaboração efetiva com a equipe de desenvolvimento.
+
+              Metodologias de Teste:
+              Exploração de diferentes metodologias, incluindo teste funcional, teste de desempenho e teste de segurança.
+
+              Ferramentas de Teste:
+              Introdução a ferramentas populares de teste de software.
+              Automatização e aprimoramento da eficiência.
+
+              Desafios e Soluções em QA:
+              Abordagem de desafios comuns enfrentados pelo QA.
+              Estratégias e melhores práticas para superar esses desafios.
+
+              Importância do QA para o Sucesso do Projeto:
+              Contribuição para confiabilidade, segurança e satisfação do cliente." />
+
+            <Schedule :img="SpeakerBrendo" name="Brendo Freitas" role="Desenvolvedor .Net" company="webfis"
+              :types="[{id: 'devops', name: 'Devops'}]" time="12:00 - 12:30" location="Sala: Deploy da Sexta"
+              title="Docker Scout protegendo a cadeia de fornecimento de Software"
+              description="Na palestra sobre Docker Scout, mergulharemos nas profundezas da segurança em ambientes Docker, revelando sua capacidade única de detectar e corrigir vulnerabilidades em imagens.
+              
+              Começaremos desvendando as nuances das falhas de segurança em contêineres, destacando a importância crítica de proteger nossos ecossistemas digitais. Docker Scout emerge como a resposta essencial, proporcionando uma visão abrangente das vulnerabilidades, não apenas identificando-as, mas também oferecendo soluções eficazes.
+              
+              Uma faceta distintiva do Docker Scout reside na sua capacidade de acessar um banco de dados centralizado de vulnerabilidades em imagens Docker. Este recurso estratégico permite que os usuários consultem informações atualizadas sobre possíveis ameaças, equipando-os com o conhecimento necessário para fortalecer suas defesas.
+              
+              Ao guiarmos os participantes através de um panorama detalhado, exploraremos as etapas práticas para corrigir falhas de segurança. Desde a identificação até a aplicação de correções, cada passo será desdobrado, capacitando a audiência a implementar práticas de segurança robustas em suas implementações Docker.
+              
+              A palestra não apenas oferece insights teóricos, mas também demonstrações práticas, destacando a eficácia do Docker Scout em ação. Os participantes experimentarão, em tempo real, como esse recurso pode transformar a segurança, fornecendo confiança e tranquilidade em seus ambientes de desenvolvimento.
+              
+              Ao final da palestra, os participantes não apenas compreenderão a importância da segurança em contêineres, mas também terão as ferramentas e o conhecimento necessários para integrar o Docker Scout em suas práticas diárias. Esta palestra é mais do que uma visão; é uma imersão prática na revolução da segurança em contêineres, destacando o Docker Scout como a ferramenta indispensável para impulsionar a confiança e a robustez em projetos Docker."  />
+          </div>
+
+          <ScheduleTile time="12:30 - 13:30" title="Almoço"/>
+
+          <ScheduleTile time="13:30 - 14:00" title="Ignite Talks" location="Auditório: Teste em Produção" />
+
+          <Schedule :img="SpeakerFran" name="Fran Weidt" role="Flutter Engineer" company="Simplebet"
+            :types="[{id: 'mobile', name: 'Mobile'}]" time="14:00 - 15:00"  location="Sala: Deploy da Sexta"
+            title="Flutter para Visualização de Dados em Tempo Real"
+            description="Em um mundo hiper-conectado, a visualização de dados em tempo real tornou-se uma parte essencial de muitas aplicações. 
+            
+            Ela permite aos usuários interpretar e analisar dados complexos de uma forma visualmente mais rica e atraente. Nesta palestra, vamos explorar como o Flutter pode ser usado para desbloquear experiências visuais geradas a partir de dados recebidos em tempo real. 
+            
+            Em paralelo, iremos apresentar conceitos do Flutter e seu ecossistema buscando contribuir e dialogar com um público abrangente, desde aqueles que querem conhecer melhor o potencial desta tecnologia, mas nunca a utilizaram, até aqueles que já possuem conhecimento dela." />
+          
+          <Schedule :img="SpeakerLais" name="Laís Bomtempo" role="Software Engineer" company="Metal Toad"
+            :types="[{id: 'frontend', name: 'Frontend'}]" time="14:00 - 15:00"  location="Auditório: Teste em Produção"
+            title="Entendendo os fundamentos do Next.js 14"
+            description="Quando não entendemos como uma ferramenta funciona, podemos cometer erros básicos no desenvolvimento do nosso projeto, ou ficarmos muito tempo num bug que poderia ser facilmente solucionado, caso tivéssemos essa compreensão do que ocorre por “debaixo dos panos”.
+
+            Focada em profissionais que já trabalham com JavaScript e React, esta palestra tem como objetivo explicar os fundamentos do Next.js 14, de forma a facilitar e/ou aprimorar o desenvolvimento futuro com o framework." />
+          
+          <Schedule :img="SpeakerLuiza" name="Luiza Bartels" role="Coordenadora" company="U&M"
+            :types="[{id: 'robotics', name: 'Robótica'}]" time="14:00 - 15:00" location="Sala: Delete sem Where"
+            title="Desenvolvimento de Veículos Autônomos: bem ao seu lado e você não sabia"
+            description="Há 7 anos uma empresa em Matias Barbosa investe no desenvolvimento de  um kit autônomo para habilitar uma frota de equipamentos para operação autônoma. O melhor é o fato de o desenvolvimento ser 100% brasileiro e reconhecido internacionalmente.
+            
+            Uma conversa sobre o desenvolvimento de um kit autônomo para habilitar equipamentos pesados para operação autônomos, as tecnologias mais utilizadas e as tendências do mercado e da indústria." />
+          
+          <Schedule :img="SpeakerRuan" name="Ruan Carlos" role="Executivo de operações e delivery" company="Jack Experts"
+            :types="[{id: 'startups', name: 'Startups'}]" time="15:00 - 15:30" location="Sala: Deploy da Sexta"
+            title="Empreendendo em TI na Pandemia: O que não te contam"
+            description="Se você trabalha com TI, então já é um empreendedor! Empreender é mais do que ter uma empresa, é a vontade de fazer diferente, ser inconformado e ir além. O profissional de TI não pode e nem tem tempo de se conformar, ou também não te contaram isso?
+            
+            Nesta palestra, irei contar um pouco dos desafios, sucessos e claro, insucessos tanto da carreira quanto do caminho percorrido na pandemia com o propósito de ter um time focado em Cloud Native: a Jack Experts." />
+            
+          <Schedule :img="SpeakerAna" name="Ana Carolina Carius" role="Professora" company="IFRJ"
+            :types="[{id: 'ai', name: 'AI'}]" time="15:00 - 15:30" location="Auditório: Teste em Produção"
+            title="Tecnologia do Reconhecimento Facial: Desvendando os Mistérios por Trás das Matrizes"
+            description="As redes neurais convolucionais (CNNs) são amplamente aplicadas em reconhecimento de imagens, com o uso essencial de matrizes. Essas matrizes, ou tensores, são fundamentais para processar imagens, pixel por pixel.
+            Em uma CNN, diferentes camadas convolucionais aplicam filtros sobre a imagem de entrada, realizando operações de convolução que são essencialmente multiplicação de matrizes.  
+            
+            Cada filtro é uma pequena matriz de pesos que é convoluída com a imagem, produzindo um mapa de características. Esses mapas de características são essenciais para identificar padrões complexos nas imagens, como bordas, texturas e formas.
+            
+            Ao longo do treinamento, os pesos das matrizes são ajustados iterativamente para minimizar a diferença entre as previsões do modelo e os rótulos reais das imagens. Isso é feito através de técnicas como backpropagation e otimização de gradientes.  
+            É importante destacar que gradientes são vetores (ou matrizes com uma linha ou uma coluna).  Ou seja, o processo de reconhecimento de imagens por redes neurais convolucionais nada mais é do que aplicar os conhecimentos a respeito de matrizes.
+            
+            A aplicação eficaz de matrizes em CNNs permite que esses modelos reconheçam padrões cada vez mais complexos em imagens, levando a melhorias contínuas no reconhecimento de objetos, rostos e até mesmo em diagnósticos médicos por meio de imagens de radiologia.
+            
+            Essa abordagem baseada em matrizes não apenas permite que as CNNs lidem com grandes volumes de dados de imagem, mas também contribui para a eficiência computacional, uma vez que as operações de multiplicação de matrizes podem ser otimizadas para hardware especializado, como GPUs.
+            
+            Em resumo, a aplicação de matrizes em CNNs é crucial para o avanço do reconhecimento de imagens, permitindo que máquinas interpretem e entendam o mundo visual de maneira semelhante aos humanos." />
+          
+          <Schedule :img="SpeakerCarlos" name="Carlos Alexandre" role="Estudante Pós-graduação" company="UFJF"
+            :types="[{id: 'career', name: 'Carreira'}]" time="15:00 - 15:30" location="Sala: Delete sem Where"
+            title="O que os estudantes fazem durante a sua formação na Computação?"
+            description="A palestra abordará em alguns projetos executados por estudantes da universidade na área da tecnologia. Será uma oportunidade de conhecer uma variedade de projetos que abrangem desde pesquisas científicas até iniciativas sociais e tecnológicas.
+
+            Os projetos não apenas enriquecem o ambiente acadêmico da UFJF, mas também têm um impacto significativo na comunidade local." />
+          <ScheduleTile time="15:30 - 16:00" title="Coffe Break"/>
+
+          <ScheduleTile time="16:00 - 17:00" title="Mesa Redonda - Carreira"  style="grid-column: auto;" location="Sala: Deploy da Sexta"/>
+          
           <Schedule :img="SpeakerHenrique" name="Henrique Cabral" role="Application Security Leader"
-            company="Compass UOL" :types="[{id: 'security', name: 'Segurança'}]" door="Sala: Deploy da Sexta" time="9:00 - 10:00"
-            title="Shift-Left Security e o porquê você deve se importar com isso"
-            description="Nessa talk, o objetivo principal será reforçar a importância do shift-left no SDLC, sua implicações e metodologias para implementarmos uma cultura de segurança sólida no contexto de trabalho dos desenvolvedores. 
-            
-            Iremos abordar sobre modelagem de ameaças, análise de arquitetura e controles de segurança, princípios do desenvolvimento seguro, ferramentas de análise estática de código, entre outros assuntos que conversam de Segurança e Desenvolvimento." />
+              company="Compass UOL" :types="[{id: 'security', name: 'Segurança'}]" location="Auditório: Teste em Produção" time="16:00 - 16:30"
+              title="Shift-Left Security e o porquê você deve se importar com isso"
+              description="Nessa talk, o objetivo principal será reforçar a importância do shift-left no SDLC, sua implicações e metodologias para implementarmos uma cultura de segurança sólida no contexto de trabalho dos desenvolvedores. 
+              
+              Iremos abordar sobre modelagem de ameaças, análise de arquitetura e controles de segurança, princípios do desenvolvimento seguro, ferramentas de análise estática de código, entre outros assuntos que conversam de Segurança e Desenvolvimento." />
           
-          <Schedule :img="SpeakerDanilo" name="Danilo Oliveira Santos" role="Professor" company="EnsinE" 
-            :types="[{id: 'data', name: 'Dados'}, {id: 'workshop', name: 'Workshop'}]" time="9:00 - 10:00"
-            title="Banco de Dados - Mão Na Massa" door="Sala: Delete sem Where" 
-            description="WORKSHOP: Mão na Massa em Banco de Dados! 
-
-            Neste curso, mergulharemos no universo dos bancos de dados, desmistificando conceitos e capacitando para lidar com dados de forma eficiente.
-
-            Fundamentos Essenciais:
-            Compreender o que é um Banco de Dados (BD) e as diferenças entre os modelos Relacional e Não Relacional.
-            Explorar os tipos de dados comuns em bancos de dados, desde números até textos e datas.
-            Dominar os comandos SQL, a linguagem padrão para consultas e manipulação de dados.
-
-            Consultas de Dados:
-            Do básico ao avançado, você aprenderá a realizar consultas de dados. Desde as mais simples, como filtrar registros, até as mais complexas, como junções e agregações.
-            Descobrirá como extrair informações relevantes de grandes conjuntos de dados.
-
-            Aplicações Práticas:
-            Nosso foco é a prática. Você terá a oportunidade de aplicar seus conhecimentos em cenários reais.
-            Criar consultas que atendam às necessidades de negócios, desde relatórios gerenciais até análises profundas." />
-
-          <Schedule :img="SpeakerLucasCarrilho" name="Lucas Carrilho" role="Desenvolvedor Backend"
-            company="V3 Tecnologia" :types="[{id: 'career', name: 'Carreira'}]" time="10:00 - 10:30" door="Auditório: Teste em Produção"
-            title="Ingressando na Carreira de Programação em 2024: Desmistificando as Primeiras Oportunidades"
-            description="Nesta palestra, vou compartilhar minha experiência na migração de carreira e em concursos públicos, focando nas diversas formas de conseguir a tão sonhada primeira oportunidade como programador.
-
-            Vou abordar os seguintes assuntos:
-
-            Formas de ingressar:
-            - Estagiário
-            - Trainee / Aprendiz
-            - Junior
-            - Concurso Público T.I
-            - Freelancer
-
-            Para facilitar a compreensão da comparação entre as formas de ingressar na carreira de programação, apresentarei gráficos
-            e exemplos para cada um deles, como: conhecimento esperado, skills necessárias, dificuldade de conseguir, remuneração média inicial e crescimento na carreira e, para isso, usarei fontes de dados reais e exemplos práticos, como a seguir: 
-
-            A apresentação não será focada em linguagem em específica, será um 'geral'" />
-
-          <Schedule :img="SpeakerLucasLopes" name="Lucas Lopes" role="Analista de Dados" company="BeFly"
-            :types="[{id: 'data', name: 'Dados'}]" time="10:00 - 10:30" door="Sala: Deploy da Sexta"
-            title="Dados: O novo petróleo"
-            description="Em um mundo onde os dados são considerados o novo petróleo do século 21, esse talk irá oferecer uma imersão simplificada na importância vital desses ativos para o sucesso nos negócios. 
+          <Schedule :img="SpeakerFabricio" name="Fabricio Lima" role="Data Platform Engineer" company="Méliuz"
+            :types="[{id: 'hardware', name: 'Hardware'}]" time="16:00 - 17:00" location="Sala: Delete sem Where"
+            title="Home Server: a melhor forma de reaproveitar seu hardware velho"
+            description="Nesta palestra iremos conversar sobre basicamente tudo que aprendi nesse mundo incrível que são os servidores caseiros. 
             
-            Ela aborda desde a complexidade subjacente à análise de dados, desde a utilização da inteligência artificial (IA) e outras ferramentas tecnológicas para alavancar estratégias empresariais eficazes. Da fase inicial de coleta até a interpretação avançada, são exploradas etapas cruciais para aproveitar plenamente as oportunidades oferecidas pela era dos dados. 
-            
-            Este mergulho buscará oferecer informações valiosas e práticas para quem busca prosperar em um ambiente cada vez mais orientado por informações e digitalizado, incluindo o uso de linguagens de programação voltadas para dados." />
+            Começando por o que é e por que todo mundo teria utilidade para um. Explicando o passo a passo para fazer o servidor mais simples e rápido possível, em questão de 10 minutos você pode ter um servidor caseiro funcional! Vamos falar um pouco sobre outros níveis de servidores também, com as vantagens e desvantagens de cada um. Por fim, vou mostrar como está organizado hoje o meu próprio servidor." />
+          
+          <ScheduleTile time="17:00 - 17:30" title="Mesa Redonda - Carreira" style="grid-column: auto;" location="Sala: Deploy da Sexta"/>
 
+          <Schedule :img="SpeakerCamilla" name="Camilla Martins" role="SRE Egineer" company="Storyblok"
+            :types="[{id: 'career', name: 'Carreira'}]" time="17:00 - 17:30" location="Auditório: Teste em Produção"
+            title="DevOps para o Exterior: O que tem sido diferente"
+            description="Nessa talk vou falar sobre como é trabalhar com DevOps no exterior, abordando pontos importantes, como: 
+
+            - O que trabalhamos lá
+            - Ritmo de trabalho
+            - Quais os desafios na assinatura do contrato e no PJ/CLT
+            - Contabilidade
+            - Onde ver comparativos salariais e a qualidade da empresa
+            - Onde encontrar bons locais de trabalho
+            - Dicas gerais pra você se dar bem como no inglês e como funciona o dia a dia"/>
+          
           <Schedule :img="SpeakerNatalia" name="Natalia Granato" role="DevOps Engineer" company="Dti Digital"
-            :types="[{id: 'devops', name: 'Devops'}]" time="10:00 - 10:30" title="Assessement e boas práticas em Kubernetes"  door="Sala: Delete sem Where"
+            :types="[{id: 'devops', name: 'Devops'}]" time="17:00 - 17:30" title="Assessement e boas práticas em Kubernetes"  location="Sala: Delete sem Where"
             description="Realizarei uma breve introdução sobre o ecossistema do Amazon Elastic Kubernetes Service (EKS) tendo em vista o que o serviço pode entregar. 
             
             A palestra será dedicada à realização de assessements em clusters EKS e a implementação de práticas essenciais em Kubernetes, desde a implementação, configuração, desempenho e finanças. 
@@ -183,154 +340,11 @@
             Gerenciamento de Aplicações:
             Revisão das práticas e ferramentas utilizadas para implantar e gerenciar aplicações no Kubernetes." />
 
-          <ScheduleTile time="10:30 - 11:00" title="Coffe Break"/>
-
-          <Schedule :img="SpeakerRanieri" name="Ranieri Imperatori" role="Head of Data Analytics"
-            company="300 Inteligência de Negócio" :types="[{id: 'ai', name: 'AI'}]" time="11:00 - 12:00" door="Auditório: Teste em Produção"
-            title="Como prever as Doenças Cardíacas usando a média e mediana na Análise Preditiva com Machine Learning"
-            description="Na era da inteligência artificial e machine learning, compreender conceitos estatísticos fundamentais é essencial para o cientista de dados ou àqueles que estão almejando essa posição profissional. Esta palestra focará na importância da média, mediana e sua aplicação no contexto de modelos de machine learning, com destaque para o método de regressão logística.
-
-            Ao explorar a média e a mediana – conceitos básicos aprendidos no ensino médio, percebemos que a média representa o valor médio de um conjunto de dados, enquanto a mediana é o valor que divide o conjunto ao meio. A média é útil para entender a tendência central dos dados, sendo sensível a valores extremos. Por outro lado, a mediana é robusta contra outliers, proporcionando uma visão representativa em conjuntos de dados com distribuição assimétrica.
-            
-            Além disso, será abordado o papel da média e da mediana na análise das features de treino em modelos de regressão logística. Essas medidas de tendência central são ferramentas valiosas para entender a distribuição dos dados e identificar possíveis padrões que podem influenciar o desempenho do modelo.
-            
-            Na conclusão desta palestra, será destacada a interconexão essencial entre os conceitos básicos da estatística e o universo de machine learning, com ênfase na utilização da média e da mediana para análise e otimização de modelos. A apresentação incluirá uma demonstração prática da construção de modelos de regressão logística utilizando a linguagem de programação Python, onde dados reais de pacientes com características relacionadas a doenças cardíacas serão explorados. Essa abordagem prática não apenas ilustrará a aplicação direta dos princípios discutidos, mas também fornecerá uma visão concreta de como os conceitos estatísticos fundamentais são implementados na criação e otimização de modelos no contexto de machine learning." />
-
-          <Schedule :img="SpeakerJoao" name="João Medina" role="Especialista Backend" company="Grupo Boticário"
-            :types="[{id: 'backend', name: 'Backend'}]" time="11:00 - 12:00" door="Sala: Deploy da Sexta"
-            title="Desbravando a Distribuição de Dados em Múltiplos Ambientes: Uma Jornada Escalável e Orientada a Eventos"
-            description="Já se encontrou diante do desafio de distribuir dados em vários ambientes simultaneamente? 
-            
-            Nesta talk, mergulharemos no mundo da distribuição de dados de forma escalável e orientada a eventos. 
-            
-            Descubra como enfrentamos os desafios do dia a dia ao distribuir dados de maneira eficiente e performática, explorando as necessidades que impulsionaram essa jornada, e tudo isso olhando na prática no dia a dia de uma empresa com milhões de dados sendo trafegados por minutos. " />
-
-          <Schedule :img="SpeakerFabricio" name="Fabricio Lima" role="Data Platform Engineer" company="Méliuz"
-            :types="[{id: 'hardware', name: 'Hardware'}]" time="9:00 - 10:00" door="Sala: Delete sem Where"
-            title="Home Server: a melhor forma de reaproveitar seu hardware velho"
-            description="Nesta palestra iremos conversar sobre basicamente tudo que aprendi nesse mundo incrível que são os servidores caseiros. 
-            
-            Começando por o que é e por que todo mundo teria utilidade para um. Explicando o passo a passo para fazer o servidor mais simples e rápido possível, em questão de 10 minutos você pode ter um servidor caseiro funcional! Vamos falar um pouco sobre outros níveis de servidores também, com as vantagens e desvantagens de cada um. Por fim, vou mostrar como está organizado hoje o meu próprio servidor." />
-
-          <Schedule :img="SpeakerCamilla" name="Camilla Martins" role="SRE Egineer" company="Storyblok"
-            :types="[{id: 'career', name: 'Carreira'}]" time="12:00 - 12:30" door="Auditório: Teste em Produção"
-            title="DevOps para o Exterior: O que tem sido diferente"
-            description="Nessa talk vou falar sobre como é trabalhar com DevOps no exterior, abordando pontos importantes, como: 
-
-            - O que trabalhamos lá
-            - Ritmo de trabalho
-            - Quais os desafios na assinatura do contrato e no PJ/CLT
-            - Contabilidade
-            - Onde ver comparativos salariais e a qualidade da empresa
-            - Onde encontrar bons locais de trabalho
-            - Dicas gerais pra você se dar bem como no inglês e como funciona o dia a dia"/>
-
-          <Schedule :img="SpeakerEmerson" name="Emerson Pombo" role="Quality Assurance Engineer"
-            company="Atlas Technologies" :types="[{id: 'qa', name: 'QA'}]" time="12:00 - 12:30" door="Sala: Deploy da Sexta"
-            title="QA Além dos Testes: Conduzindo Projetos ao Pico da Eficiência e Satisfação do Cliente"
-            description="Esta palestra abordará o papel fundamental da Garantia de Qualidade (QA) no desenvolvimento de software, destacando como uma abordagem sólida de QA pode impactar positivamente a qualidade, eficiência e satisfação do cliente. Ao longo de 30 minutos, exploraremos as responsabilidades-chave do QA, desde o início do projeto até a entrega, discutindo metodologias de teste, ferramentas de automação e melhores práticas. Além disso, serão compartilhados insights sobre como o QA supera desafios comuns e contribui para o sucesso do projeto.
-
-            Principais Tópicos:
-
-            O que é QA?
-            Definição de Garantia de Qualidade.
-            Distinção entre QA e Controle de Qualidade.
-
-            Papéis e Responsabilidades do QA:
-            Responsabilidades-chave ao longo do ciclo de desenvolvimento.
-            Colaboração efetiva com a equipe de desenvolvimento.
-
-            Metodologias de Teste:
-            Exploração de diferentes metodologias, incluindo teste funcional, teste de desempenho e teste de segurança.
-
-            Ferramentas de Teste:
-            Introdução a ferramentas populares de teste de software.
-            Automatização e aprimoramento da eficiência.
-
-            Desafios e Soluções em QA:
-            Abordagem de desafios comuns enfrentados pelo QA.
-            Estratégias e melhores práticas para superar esses desafios.
-
-            Importância do QA para o Sucesso do Projeto:
-            Contribuição para confiabilidade, segurança e satisfação do cliente." />
-
-          <Schedule :img="SpeakerBrendo" name="Brendo Freitas" role="Desenvolvedor .Net" company="webfis"
-            :types="[{id: 'devops', name: 'Devops'}]" time="12:00 - 12:30" door="Sala: Delete sem Where"
-            title="Docker Scout protegendo a cadeia de fornecimento de Software"
-            description="Na palestra sobre Docker Scout, mergulharemos nas profundezas da segurança em ambientes Docker, revelando sua capacidade única de detectar e corrigir vulnerabilidades em imagens.
-            
-            Começaremos desvendando as nuances das falhas de segurança em contêineres, destacando a importância crítica de proteger nossos ecossistemas digitais. Docker Scout emerge como a resposta essencial, proporcionando uma visão abrangente das vulnerabilidades, não apenas identificando-as, mas também oferecendo soluções eficazes.
-            
-            Uma faceta distintiva do Docker Scout reside na sua capacidade de acessar um banco de dados centralizado de vulnerabilidades em imagens Docker. Este recurso estratégico permite que os usuários consultem informações atualizadas sobre possíveis ameaças, equipando-os com o conhecimento necessário para fortalecer suas defesas.
-            
-            Ao guiarmos os participantes através de um panorama detalhado, exploraremos as etapas práticas para corrigir falhas de segurança. Desde a identificação até a aplicação de correções, cada passo será desdobrado, capacitando a audiência a implementar práticas de segurança robustas em suas implementações Docker.
-            
-            A palestra não apenas oferece insights teóricos, mas também demonstrações práticas, destacando a eficácia do Docker Scout em ação. Os participantes experimentarão, em tempo real, como esse recurso pode transformar a segurança, fornecendo confiança e tranquilidade em seus ambientes de desenvolvimento.
-            
-            Ao final da palestra, os participantes não apenas compreenderão a importância da segurança em contêineres, mas também terão as ferramentas e o conhecimento necessários para integrar o Docker Scout em suas práticas diárias. Esta palestra é mais do que uma visão; é uma imersão prática na revolução da segurança em contêineres, destacando o Docker Scout como a ferramenta indispensável para impulsionar a confiança e a robustez em projetos Docker."  />
-
-          <ScheduleTile time="12:30 - 13:30" title="Almoço"/>
-
-          <ScheduleTile time="13:30 - 14:00" title="Ignite Talks"/>
-
-          <Schedule :img="SpeakerLais" name="Laís Bomtempo" role="Software Engineer" company="Metal Toad"
-            :types="[{id: 'frontend', name: 'Frontend'}]" time="14:00 - 15:00"  door="Auditório: Teste em Produção"
-            title="Entendendo os fundamentos do Next.js 14"
-            description="Quando não entendemos como uma ferramenta funciona, podemos cometer erros básicos no desenvolvimento do nosso projeto, ou ficarmos muito tempo num bug que poderia ser facilmente solucionado, caso tivéssemos essa compreensão do que ocorre por “debaixo dos panos”.
-
-            Focada em profissionais que já trabalham com JavaScript e React, esta palestra tem como objetivo explicar os fundamentos do Next.js 14, de forma a facilitar e/ou aprimorar o desenvolvimento futuro com o framework." />
+          <ScheduleTile time="17:30 - 18:00" title="Open Space" location="Auditório: Teste em Produção"/>
           
-          <Schedule :img="SpeakerFran" name="Fran Weidt" role="Flutter Engineer" company="Simplebet"
-            :types="[{id: 'mobile', name: 'Mobile'}]" time="14:00 - 15:00"  door="Sala: Deploy da Sexta"
-            title="Flutter para Visualização de Dados em Tempo Real"
-            description="Em um mundo hiper-conectado, a visualização de dados em tempo real tornou-se uma parte essencial de muitas aplicações. 
-            
-            Ela permite aos usuários interpretar e analisar dados complexos de uma forma visualmente mais rica e atraente. Nesta palestra, vamos explorar como o Flutter pode ser usado para desbloquear experiências visuais geradas a partir de dados recebidos em tempo real. 
-            
-            Em paralelo, iremos apresentar conceitos do Flutter e seu ecossistema buscando contribuir e dialogar com um público abrangente, desde aqueles que querem conhecer melhor o potencial desta tecnologia, mas nunca a utilizaram, até aqueles que já possuem conhecimento dela." />
+          <ScheduleTile time="18:00 - 18:30" title="Sorteios e encerramento" location="Auditório: Teste em Produção"/>
           
-          <Schedule :img="SpeakerLuiza" name="Luiza Bartels" role="Coordenadora" company="U&M"
-            :types="[{id: 'robotics', name: 'Robótica'}]" time="14:00 - 15:00" door="Sala: Delete sem Where"
-            title="Desenvolvimento de Veículos Autônomos: bem ao seu lado e você não sabia"
-            description="Há 7 anos uma empresa em Matias Barbosa investe no desenvolvimento de  um kit autônomo para habilitar uma frota de equipamentos para operação autônoma. O melhor é o fato de o desenvolvimento ser 100% brasileiro e reconhecido internacionalmente.
-            
-            Uma conversa sobre o desenvolvimento de um kit autônomo para habilitar equipamentos pesados para operação autônomos, as tecnologias mais utilizadas e as tendências do mercado e da indústria." />
-          
-          <Schedule :img="SpeakerAna" name="Ana Carolina Carius" role="Professora" company="IFRJ"
-            :types="[{id: 'ai', name: 'AI'}]" time="15:00 - 15:30" door="Auditório: Teste em Produção"
-            title="Tecnologia do Reconhecimento Facial: Desvendando os Mistérios por Trás das Matrizes"
-            description="As redes neurais convolucionais (CNNs) são amplamente aplicadas em reconhecimento de imagens, com o uso essencial de matrizes. Essas matrizes, ou tensores, são fundamentais para processar imagens, pixel por pixel.
-            Em uma CNN, diferentes camadas convolucionais aplicam filtros sobre a imagem de entrada, realizando operações de convolução que são essencialmente multiplicação de matrizes.  
-            
-            Cada filtro é uma pequena matriz de pesos que é convoluída com a imagem, produzindo um mapa de características. Esses mapas de características são essenciais para identificar padrões complexos nas imagens, como bordas, texturas e formas.
-            
-            Ao longo do treinamento, os pesos das matrizes são ajustados iterativamente para minimizar a diferença entre as previsões do modelo e os rótulos reais das imagens. Isso é feito através de técnicas como backpropagation e otimização de gradientes.  
-            É importante destacar que gradientes são vetores (ou matrizes com uma linha ou uma coluna).  Ou seja, o processo de reconhecimento de imagens por redes neurais convolucionais nada mais é do que aplicar os conhecimentos a respeito de matrizes.
-            
-            A aplicação eficaz de matrizes em CNNs permite que esses modelos reconheçam padrões cada vez mais complexos em imagens, levando a melhorias contínuas no reconhecimento de objetos, rostos e até mesmo em diagnósticos médicos por meio de imagens de radiologia.
-            
-            Essa abordagem baseada em matrizes não apenas permite que as CNNs lidem com grandes volumes de dados de imagem, mas também contribui para a eficiência computacional, uma vez que as operações de multiplicação de matrizes podem ser otimizadas para hardware especializado, como GPUs.
-            
-            Em resumo, a aplicação de matrizes em CNNs é crucial para o avanço do reconhecimento de imagens, permitindo que máquinas interpretem e entendam o mundo visual de maneira semelhante aos humanos." />
-          
-          <Schedule :img="SpeakerRuan" name="Ruan Carlos" role="Executivo de operações e delivery" company="Jack Experts"
-            :types="[{id: 'startups', name: 'Startups'}]" time="15:00 - 15:30" door="Sala: Deploy da Sexta"
-            title="Empreendendo em TI na Pandemia: O que não te contam"
-            description="Se você trabalha com TI, então já é um empreendedor! Empreender é mais do que ter uma empresa, é a vontade de fazer diferente, ser inconformado e ir além. O profissional de TI não pode e nem tem tempo de se conformar, ou também não te contaram isso?
-            
-            Nesta palestra, irei contar um pouco dos desafios, sucessos e claro, insucessos tanto da carreira quanto do caminho percorrido na pandemia com o propósito de ter um time focado em Cloud Native: a Jack Experts." />
-
-          <Schedule :img="SpeakerCarlos" name="Carlos Alexandre" role="Estudante Pós-graduação" company="UFJF"
-            :types="[{id: 'career', name: 'Carreira'}]" time="15:00 - 15:30" door="Sala: Delete sem Where"
-            title="O que os estudantes fazem durante a sua formação na Computação?"
-            description="A palestra abordará em alguns projetos executados por estudantes da universidade na área da tecnologia. Será uma oportunidade de conhecer uma variedade de projetos que abrangem desde pesquisas científicas até iniciativas sociais e tecnológicas.
-
-            Os projetos não apenas enriquecem o ambiente acadêmico da UFJF, mas também têm um impacto significativo na comunidade local." />
-        <ScheduleTile time="15:30 - 16:00" title="Coffe Break"/>
-        <ScheduleTile time="16:00 - 17:15" title="Open Space"/>
-        <ScheduleTile time="17:15 - 18:00" title="Mesa Redonda"/>
-        <ScheduleTile time="18:00 - 18:30" title="Sorteios e encerramento"/>
-        <ScheduleTile time="18:30 - 22:00" title="Happy Hour"/>
+          <ScheduleTile time="18:30 - 22:00" title="Happy Hour" location="Auditório: Teste em Produção"/>
         </div>
       </section>
       <section id="speakers" class="infoSections">
@@ -890,6 +904,13 @@ footer {
   margin-right: 40px;
 }
 
+.schedule-two-col {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
 @media screen and (max-width: 1024px) {
   header {
     padding-left: 30px;
@@ -1011,6 +1032,8 @@ footer {
     margin-right: 10px;
     display: flex;
     flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .schedule-card {
@@ -1023,6 +1046,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .schedule-two-col {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 </style>

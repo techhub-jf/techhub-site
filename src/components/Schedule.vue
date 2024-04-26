@@ -1,12 +1,6 @@
 <template>
   <div class="schedule-card">
     <div class="schedule-card-header">
-      <div class="schedule-door">
-        <DoorIcon class="door-icon"/>
-        <p class="schedule-type-text">{{ door }}</p>
-      </div>
-    </div>
-    <div class="schedule-card-header">
       <div class="schedule-types">
         <div class="schedule-type" :class="'type-' + type.id" v-for="type in types">
           <p class="schedule-type-text">{{ type.name }}</p>
@@ -16,6 +10,10 @@
         <ClockIcon class="schedule-time-icon"/>
         <p class="schedule-type-text">{{ time }}</p>
       </div>
+    </div>
+    <div v-if="location" class="schedule-location">
+      <LocationIcon class="schedule-location-icon"/>
+      <p class="schedule-type-text">{{ location }}</p>
     </div>
     <div class="schedule-subject">
       <p class="schedule-subject-text bold-text">{{ title }}</p>
@@ -38,9 +36,9 @@
 
 <script setup lang="ts">
 import ClockIcon from '../components/icons/IconClock.vue'
-import DoorIcon from '../components/icons/IconDoor.vue'
+import LocationIcon from '../components/icons/IconLocation.vue'
 
-defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'door'])
+defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'location'])
 </script>
 
 <style scoped>
@@ -106,26 +104,19 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 
   margin-right: 5px;
 }
 
-.schedule-door {
+.schedule-location {
   align-items: center;
   display: flex;
   flex-direction: row;
   width: fit-content;
-  background-color: #0052F5;
-  color: white;
-  border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+  color: rgb(43, 43, 43);
   padding: 0.1rem 0.3rem 0.1rem 0.3rem;
-  margin-top: 20px;
-  margin-right: 10px;
-  width: 100%;
-  padding: 5px;
-  max-width: 250px;
-  margin: 10px auto 0 auto;
+  margin-top: 10px;
+  margin-left: -10px;
 }
 
-.door-icon{
-  margin-right: 5px;
-  max-height: 25px;
+.schedule-location-icon {
+  height: 30px;
 }
 
 .schedule-title {

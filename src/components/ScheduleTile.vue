@@ -5,17 +5,23 @@
         <ClockIcon class="schedule-time-icon"/>
         <p class="schedule-type-text">{{ time }}</p>
       </div>
+      <div v-if="location" class="schedule-location">
+        <LocationIcon class="schedule-location-icon"/>
+        <p class="schedule-type-text">{{ location }}</p>
+      </div>
     </div>
     <div class="schedule-subject">
       <p class="schedule-subject-text bold-text">{{ title }}</p>
     </div>
+    <div class="schedule-phantom"></div>
   </div>
 </template>
 
 <script setup lang="ts">
 import ClockIcon from '../components/icons/IconClock.vue'
+import LocationIcon from '../components/icons/IconLocation.vue'
 
-defineProps(['title', 'time'])
+defineProps(['title', 'time', 'location'])
 </script>
 
 <style scoped>
@@ -34,6 +40,8 @@ defineProps(['title', 'time'])
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+  place-content: center;
+  justify-content: space-between;
 
   --border-size: 0.2rem;
   border: var(--border-size) solid transparent;
@@ -45,8 +53,8 @@ defineProps(['title', 'time'])
 
 .schedule-card-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .schedule-time {
@@ -59,11 +67,25 @@ defineProps(['title', 'time'])
   border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
   padding: 0.1rem 0.3rem 0.1rem 0.3rem;
   margin-top: 20px;
-  margin-right: 10px;
 }
 
 .schedule-time-icon {
   margin-right: 5px;
+}
+
+.schedule-location {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  color: rgb(43, 43, 43);
+  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.schedule-location-icon {
+  height: 30px;
 }
 
 .schedule-title {
@@ -86,6 +108,12 @@ defineProps(['title', 'time'])
   text-align: center;
   margin-top: 10px;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.schedule-phantom {
+  visibility: hidden;
+  flex: 0 1 20px;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 1024px) {
