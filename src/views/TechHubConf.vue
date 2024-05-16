@@ -27,12 +27,17 @@
           <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
         </div>
         <div class="homeButtons">
-          <a href="https://www.sympla.com.br/evento/tech-hub-conf-2024/2346537" target="_blank"
-            class="homeButton">INSCREVA-SE</a>
+          <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2024/2346537" target="_blank"
+            class="homeButton">INSCREVA-SE</a> -->
+          <a href="https://drive.google.com/drive/folders/1qbk0ETeowriS6F-o25QcbBq3C6X-yJHn?usp=sharing" target="_blank"
+            class="homeButton">FOTOS</a>
         </div>
       </section>
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
+        <div class="about-image">
+          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.jpg" />
+        </div>
         <div class="about-sub-section">
           <div class="about-text">
             <p class="section-text bold-text">O maior evento de tecnologia de Juiz de Fora e região</p>
@@ -822,6 +827,19 @@ nav {
   scroll-margin-top: 15vh;
 }
 
+.about-image {
+  display: flex;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-bottom: 50px;
+}
+
+.tech-hub-conf-photo {
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 30px;
+}
+
 .sponsors-images {
   display: flex;
   flex-direction: row;
@@ -975,6 +993,13 @@ footer {
 
   .section-location-text {
     font-size: 17px;
+  }
+
+  .tech-hub-conf-photo {
+    object-fit: cover;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
   }
 
   .location-main {
