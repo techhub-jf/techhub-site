@@ -12,7 +12,7 @@ import GroupIcon from './icons/IconGroup.vue'
     </template>
     <template #heading>Tech Hub Conf</template>
 
-    O maior evento de tecnologia do Juiz de Fora e região!
+    O maior evento de tecnologia de Juiz de Fora e região!
   </WelcomeItem>
 
   <WelcomeItem link="https://www.instagram.com/techhubjf">
