@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/conf/2024',
+      name: 'conf2024',
+      component: () => import('../views/TechHubConf2024.vue')
+    },
+    {
       path: '/conf',
       name: 'conf',
       component: () => import('../views/TechHubConf.vue')
