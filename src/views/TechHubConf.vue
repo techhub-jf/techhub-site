@@ -8,7 +8,7 @@
         <!-- <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a> -->
         <!-- <a href="#speakers" class="buttonHeader">PALESTRANTES</a> -->
         <a href="#location" class="buttonHeader">LOCAL</a>
-        <!-- <a href="#sponsors" class="buttonHeader">PATROCINADORES</a> -->
+        <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" class="buttonHeader">INSCREVA-SE</a>
         <a href="https://www.papercall.io/tech-hub-conf-2025" class="buttonHeader">SUBMETA SUA PALESTRA</a>
         <a href="/conf/2024" class="buttonHeader">EDIÇÃO 2024</a>
         <div class="social-icons">
@@ -29,8 +29,8 @@
           <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
         </div>
         <div class="homeButtons">
-          <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2024/2346537" target="_blank"
-            class="homeButton">INSCREVA-SE</a> -->
+          <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" target="_blank"
+            class="homeButton">INSCREVA-SE</a>
           <a href="https://www.papercall.io/tech-hub-conf-2025" target="_blank"
             class="homeButton">SUBMETA SUA PALESTRA</a>
         </div>
@@ -424,7 +424,7 @@
       <section id="sponsors" class="infoSections">
         <h1 class="section-title">Patrocinadores</h1>
         <p class="section-text" style="margin-top: -30px">Gostaria de patrocinar? </p>
-        <p class="section-text" style="margin-bottom: 20px">Confira nossas <a href="sponsors.pdf" target="_blank">opções
+        <p class="section-text" style="margin-bottom: 20px">Confira nossas <a href="https://forms.gle/qhRQQURFEc9HN5jx8" target="_blank">opções
             de patrocínio</a> e entre em contato através do email <a
             href="mailto:techhubjf@gmail.com">techhubjf@gmail.com</a></p>
         <div class="sponsor-class">
@@ -432,6 +432,9 @@
           <div class="sponsors-images">
             <a href="https://www.nossomoinho.com/" class="sponsor-image-link" target="_blank">
               <img alt="Moinho" class="sponsor-image" src="@/assets/logo-moinho.png" />
+            </a>
+            <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
+              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
             </a>
           </div>
         </div>
