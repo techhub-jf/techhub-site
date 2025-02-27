@@ -438,42 +438,14 @@
             </a>
           </div>
         </div>
-        <!-- <div class="sponsor-class">
-          <h2 class="section-title">Ouro</h2>
-          <div class="sponsors-images">
-            <a href="https://www.alura.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="Alura" class="sponsor-image-rectangular" src="@/assets/alura.svg" />
-            </a>
-            <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
-              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/m3-oculos.png" />
-            </a>
-          </div>
-        </div>
-        <div class="sponsor-class">
-          <h2 class="section-title">Bronze</h2>
-          <div class="sponsors-images">
-            <a href="https://www.instagram.com/cervejariabuonacerva/" class="sponsor-image-link" target="_blank">
-              <img alt="Buona Cerva" class="sponsor-image" src="@/assets/buona-cerva.png" />
-            </a>
-          </div>
-        </div>
         <div class="sponsor-class">
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
             <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jet Brains" class="sponsor-image" src="@/assets/jb_beam.svg" />
-            </a>
-            <a href="https://www.nossomoinho.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Moinho" class="sponsor-image" src="@/assets/logo-moinho.png" />
-            </a>
-            <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
-              <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
-            </a>
-            <a href="https://www.instagram.com/microraptorufjf/" class="sponsor-image-link" target="_blank">
-              <img alt="Microraptor" class="sponsor-image-vertical" src="@/assets/microraptor.png" />
+              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/jetbrains.svg" />
             </a>
           </div>
-        </div> -->
+        </div>
       </section>
     </div>
     <footer>
