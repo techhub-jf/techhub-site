@@ -8,6 +8,7 @@
         <!-- <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a> -->
         <!-- <a href="#speakers" class="buttonHeader">PALESTRANTES</a> -->
         <a href="#location" class="buttonHeader">LOCAL</a>
+        <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
         <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" class="buttonHeader">INSCREVA-SE</a>
         <a href="https://www.papercall.io/tech-hub-conf-2025" class="buttonHeader">SUBMETA SUA PALESTRA</a>
         <a href="/conf/2024" class="buttonHeader">EDIÇÃO 2024</a>
