@@ -440,6 +440,9 @@
             <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
               <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
             </a>
+            <a href="https://4linux.com.br/" class="sponsor-image-link" target="_blank">
+              <img alt="4 Linux" class="sponsor-image-rectangular" src="@/assets/4linux.png" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
@@ -447,6 +450,12 @@
           <div class="sponsors-images">
             <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/jetbrains.svg" />
+            </a>
+            <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
+              <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
+            </a>
+            <a href="https://www.linkedin.com/company/capivara-tech-jf/" class="sponsor-image-link" target="_blank">
+              <img alt="Capivara Tech" class="sponsor-image" src="@/assets/capivara-tech.svg" />
             </a>
           </div>
         </div>
