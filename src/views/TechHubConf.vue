@@ -443,6 +443,17 @@
             <a href="https://4linux.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="4 Linux" class="sponsor-image-rectangular" src="@/assets/4linux.png" />
             </a>
+            <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
+              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/m3-oculos.png" />
+            </a>
+          </div>
+        </div>
+        <div class="sponsor-class">
+          <h2 class="section-title">Prata</h2>
+          <div class="sponsors-images">
+            <a href="https://linuxtips.io/" class="sponsor-image-link" target="_blank">
+              <img alt="Linux Tips" class="sponsor-image-rectangular" src="@/assets/linuxtips.png" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
