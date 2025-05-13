@@ -1,31 +1,35 @@
 <template>
   <div class="schedule-card">
-    <div class="schedule-card-header">
-      <div class="schedule-types">
-        <div class="schedule-type" :class="'type-' + type.id" v-for="type in types">
-          <p class="schedule-type-text">{{ type.name }}</p>
+    <div>
+      <div class="schedule-card-header">
+        <div class="schedule-types">
+          <div class="schedule-type" :class="'type-' + type.id" v-for="type in types" :key="type.id">
+            <p class="schedule-type-text">{{ type.name }}</p>
+          </div>
+        </div>
+        <div class="schedule-time">
+          <ClockIcon class="schedule-time-icon"/>
+          <p class="schedule-type-text">{{ time }}</p>
         </div>
       </div>
-      <div class="schedule-time">
-        <ClockIcon class="schedule-time-icon"/>
-        <p class="schedule-type-text">{{ time }}</p>
+      <div v-if="location" class="schedule-location">
+        <LocationIcon class="schedule-location-icon"/>
+        <p class="schedule-type-text">{{ location }}</p>
       </div>
-    </div>
-    <div v-if="location" class="schedule-location">
-      <LocationIcon class="schedule-location-icon"/>
-      <p class="schedule-type-text">{{ location }}</p>
     </div>
     <div class="schedule-subject">
       <p class="schedule-subject-text bold-text">{{ title }}</p>
     </div>
-    <div class="schedule-speaker">
-      <div class="schedule-speaker-image">
-        <img alt="Speaker 1" class="schedule-speaker-img" :src="img" />
-      </div>
-      <div class="schedule-speaker-about">
-        <p class="schedule-speaker-text bold-text">{{ name }}</p>
-        <p class="schedule-speaker-text">{{ role }}</p>
-        <p class="schedule-speaker-text">{{ company }}</p>
+    <div class="schedule-speakers">
+      <div class="schedule-speaker" v-for="speaker in speakers" :key="speaker.id">
+        <div class="schedule-speaker-image">
+          <img alt="Speaker 1" class="schedule-speaker-img" :src="speaker.img" />
+        </div>
+        <div class="schedule-speaker-about">
+          <p class="schedule-speaker-text bold-text">{{ speaker.name }}</p>
+          <p class="schedule-speaker-text">{{ speaker.role }}</p>
+          <p class="schedule-speaker-text">{{ speaker.company }}</p>
+        </div>
       </div>
     </div>
     <div class="schedule-description">
@@ -38,7 +42,7 @@
 import ClockIcon from '../components/icons/IconClock.vue'
 import LocationIcon from '../components/icons/IconLocation.vue'
 
-defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'location'])
+defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'location'])
 </script>
 
 <style scoped>
@@ -130,6 +134,10 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 
   margin-bottom: 10px;
   color: black;
   text-align: start;
+}
+
+.schedule-speakers {
+  display: flex;
 }
 
 .schedule-speaker {
@@ -230,6 +238,10 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 
   background-color: #ca0360;
 }
 
+.type-opensource {
+  background-color: #ca0360;
+}
+
 .type-ai {
   background-color: #000000;
 }
@@ -243,6 +255,10 @@ defineProps(['img', 'name', 'role', 'company', 'types', 'title', 'description', 
 }
 
 .type-robotics {
+  background-color: #cc6c1d;
+}
+
+.type-vr {
   background-color: #cc6c1d;
 }
 

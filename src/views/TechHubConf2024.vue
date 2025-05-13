@@ -77,7 +77,7 @@
           <ScheduleTile time="8:40 - 9:00" title="Abertura" location="Auditório: Teste em Produção"/>
           
           <div class="schedule-two-col">
-            <Schedule :img="SpeakerCintia" name="Cintia Esteves" role="Engineering Tech Manager" company="Nubank"
+            <Schedule :speakers="[{id: 'Cintia', img: SpeakerCintia, name: 'Cintia Esteves', role: 'Engineering Tech Manager', company: 'Nubank'}]"
               :types="[{id: 'diversity', name: 'Diversidade'}]" time="9:00 - 10:00" typeName="Diversidade" location="Auditório: Teste em Produção"
               title="Mulheres & Tecnologia - Estratégias para se destacar no mercado"
               description="A realidade é que os times de tecnologia são massivamente compostos por homens brancos e muitas mulheres evitam ou se sentem acuadas neste ambiente. 
@@ -95,7 +95,7 @@
 
               E em um futuro próximo, você se tornará uma representante para que outras mulheres ingressem no mercado de tecnologia." />
             
-            <Schedule :img="SpeakerDanilo" name="Danilo Oliveira Santos" role="Professor" company="EnsinE" 
+            <Schedule :img="SpeakerDanilo" name="Danilo Oliveira Santos" role="Professor" company="EnsinE" :speakers="[{id: 'Danilo', img: SpeakerDanilo, name: 'Danilo Oliveira Santos', role: 'Professor', company: 'EnsinE'}]"
               :types="[{id: 'data', name: 'Dados'}, {id: 'workshop', name: 'Workshop'}]" time="9:00 - 10:00"
               title="Banco de Dados - Mão Na Massa" location="Sala: Deploy da Sexta" 
               description="WORKSHOP: Mão na Massa em Banco de Dados! 

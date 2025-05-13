@@ -31,6 +31,10 @@
     border: var(--border-size) solid transparent;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+
 .speaker-card:hover {
     .speaker-img {
         width: 150%;
