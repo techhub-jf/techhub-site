@@ -100,14 +100,10 @@
               
             <ScheduleTile time="10:45 - 11:15" title="Vazio"  style="grid-column: auto;" location="Sala: Delete sem Where"/>
 
-            <Schedule :speakers="[{img: SpeakerGabriela, name: 'Gabriela Cunha', role: 'Analista de Dados', company: 'BeFly'}, {img: SpeakerCamillaPicoli, name: 'Camilla Picoli', role: 'Analista de Dados', company: 'BeFly'}]"
-              :types="[{id: 'data', name: 'Dados'}]" time="10:45 - 11:15" location="Auditório: Teste em Produção"
-              title="Dados: O novo petróleo"
-              description="Em um mundo onde os dados são considerados o novo petróleo do século 21, esse talk irá oferecer uma imersão simplificada na importância vital desses ativos para o sucesso nos negócios. 
-              
-              Ela aborda desde a complexidade subjacente à análise de dados, desde a utilização da inteligência artificial (IA) e outras ferramentas tecnológicas para alavancar estratégias empresariais eficazes. Da fase inicial de coleta até a interpretação avançada, são exploradas etapas cruciais para aproveitar plenamente as oportunidades oferecidas pela era dos dados. 
-              
-              Este mergulho buscará oferecer informações valiosas e práticas para quem busca prosperar em um ambiente cada vez mais orientado por informações e digitalizado, incluindo o uso de linguagens de programação voltadas para dados." />
+            <Schedule :speakers="[{img: SpeakerGabriela, name: 'Gabriela Cunha', role: 'Fundadora', company: 'Steps'}, {img: SpeakerCamillaPicoli, name: 'Camilla Picoli', role: 'Psicóloga', company: 'Steps'}]"
+              :types="[{id: 'career', name: 'Carreira'}]" time="10:45 - 11:15" location="Auditório: Teste em Produção"
+              title="Um Olhar sobre Carreira e Saúde Mental de Profissionais de Tecnologia"
+              description="A área de tecnologia é marcada por ritmo acelerado, alta competitividade e pressão por inovação constante. Esse cenário pode gerar impactos significativos na saúde mental dos profissionais. Como psicóloga, trago uma perspectiva embasada na ciência para compreender os desafios emocionais do setor." />
           
             <Schedule :speakers="[{img: SpeakerIngrid, name: 'Ingrid Coutinho', role: 'Product Manager', company: 'FIAP'}]"
               :types="[{id: 'ai', name: 'AI'}, {id: 'workshop', name: 'Workshop'}]" time="10:45 - 12:35" location="Sala: Deploy da Sexta"
@@ -135,7 +131,7 @@ Se você quer entender como o Elasticsearch pode transformar a maneira como lida
               description="Descubra como o Microsoft Fabric está revolucionando a tecnologia com soluções inteligentes e eficientes. Junte-se a nós para explorar suas funcionalidades, casos de uso e dicas práticas em uma palestra dinâmica e envolvente!" />
 
             <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho', role: 'Desenvolvedor Backend', company: 'Mercado Livre'}]"
-              :types="[{id: 'carreer', name: 'Carreira'}]" time="12:05 - 12:35" location="Sala: Deploy da Sexta"
+              :types="[{id: 'career', name: 'Carreira'}]" time="12:05 - 12:35" location="Sala: Deploy da Sexta"
               title="Como se preparar para processos seletivos de Big Techs em 2025"
               description="Hoje o objetivo ou sonho de alguns Devs, independente do nível de senioridade, é fazer parte de uma grande empresa com forte potencial tecnológico.
 Nesta talk, falaremos sobre processos e fases mais comuns de algumas dessas principais empresas do ramo, e como se preparar para essas oportunidades." />
