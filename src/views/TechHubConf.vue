@@ -5,8 +5,8 @@
       <nav>
         <a href="#home" class="buttonHeader">HOME</a>
         <a href="#about" class="buttonHeader">SOBRE</a>
-        <!-- <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a> -->
-        <!-- <a href="#speakers" class="buttonHeader">PALESTRANTES</a> -->
+        <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a>
+        <a href="#speakers" class="buttonHeader">PALESTRANTES</a>
         <a href="#location" class="buttonHeader">LOCAL</a>
         <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
         <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" class="buttonHeader">INSCREVA-SE</a>
