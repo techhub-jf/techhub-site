@@ -320,5 +320,9 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
   .schedule-card {
     width: auto;
   }
+
+  .schedule-speakers {
+    flex-direction: column;
+  }
 }
 </style>

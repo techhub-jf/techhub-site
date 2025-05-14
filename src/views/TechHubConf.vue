@@ -145,7 +145,7 @@ Nesta talk, falaremos sobre processos e fases mais comuns de algumas dessas prin
               title="Do Código à Liderança - Como unir tecnologia e gestão de pessoas"
               description="Descubra como líderes técnicos e de pessoas se complementam. Nesta palestra, troque ideias e aprenda ferramentas para equilibrar tecnologia e gestão, liderando com mais eficiência e impacto. Participe!" />
 
-            <Schedule :speakers="[{img: SpeakerFabricio, name: 'Fabricio Lima', role: 'Analytics Engineer', company: 'Nubank'}]"
+            <Schedule :speakers="[{img: SpeakerFabricio2, name: 'Fabricio Lima', role: 'Analytics Engineer', company: 'Nubank'}]"
               :types="[{id: 'data', name: 'Dados'}]" time="14:00 - 14:30" location="Auditório: Teste em Produção"
               title="Não existe só cientista! Uma conversa sobre os caminhos da área de dados"
               description="Que tal conversarmos sobre as diversas carreiras que existem na área de dados? 
@@ -220,7 +220,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             role="Desenvolvedor Backend" company="Mercado Livre" />
           <Speaker :img="SpeakerCamilla" link="https://www.linkedin.com/in/camillaschettino/" name="Camilla Schettino"
             role="Team Tech Lead" company="Levty" />
-          <Speaker :img="SpeakerFabricio" link="https://www.linkedin.com/in/fabriciooml/" name="Fabricio Lima"
+          <Speaker :img="SpeakerFabricio2" link="https://www.linkedin.com/in/fabriciooml/" name="Fabricio Lima"
             role="Analytics Engineer" company="Nubank" />
           <Speaker :img="SpeakerCibelle" link="https://www.linkedin.com/in/cibelle-castro-638bb118/" name="Cibelle Castro"
             role="Senior SQL Server Database Administrator" company="Itaú Unibanco" />
@@ -354,6 +354,7 @@ import ScheduleTile from '../components/ScheduleTile.vue'
 import SpeakerHenrique from '@/assets/henrique-cabral.jpeg'
 import SpeakerGuilherme from '@/assets/guilherme-vianna.jpeg'
 import SpeakerFabricio from '@/assets/fabricio-lima.jpeg'
+import SpeakerFabricio2 from '@/assets/fabricio-2.jpeg'
 import SpeakerJoao from '@/assets/joao-medina.jpeg'
 import SpeakerRenato from '@/assets/renato-bonario.jpeg'
 import SpeakerAna from '@/assets/ana-ovidio.jpeg'
