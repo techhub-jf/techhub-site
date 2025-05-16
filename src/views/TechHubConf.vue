@@ -310,6 +310,9 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.png" />
             </a>
+            <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
+              <img alt="Buffet" class="sponsor-image" src="@/assets/buffet.png" />
+            </a>
           </div>
         </div>
         <div class="sponsor-class">
