@@ -77,8 +77,9 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
 
 .schedule-types {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 .schedule-type {
@@ -87,8 +88,7 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
   color: white;
   border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
   padding: 0px 0.5rem 0px 0.5rem;
-  margin-top: 20px;
-  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .schedule-time {
@@ -96,6 +96,7 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
   display: flex;
   flex-direction: row;
   width: fit-content;
+  height: fit-content;
   background-color: #0052F5;
   color: white;
   border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
@@ -316,7 +317,7 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1512px) {
   .schedule-card {
     width: auto;
   }

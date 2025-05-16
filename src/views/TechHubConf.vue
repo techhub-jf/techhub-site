@@ -94,9 +94,9 @@
               title="Desmistificando IAs: Podemos fazer o nosso próprio ChatGPT?" location="Sala: Deploy da Sexta" 
               description="Desde a pandemia, as Inteligências Artificiais tem ganhado muito destaque, e vem impressionando muita gente com a capacidade em realizar certas tarefas. Embora muitas pessoas já tenham tido algum contato, a grande maioria desconhece o que tem por trás desse tipo de ferramenta. Aqui, o objetivo é explicar sobre a área de IA, mostrar como os modelos como ChatGPT, DeepSeek e Llama funcionam, e como podemos implementá-los." />
 
-            <ScheduleTile time="10:00 - 10:30" title="Coffee Break" />
+            <ScheduleTile time="10:00 - 10:15" title="Espaço Patrocinadores" location="Auditório: Teste em Produção" />
 
-            <ScheduleTile time="10:30 - 10:45" title="Espaço Patrocinadores" />
+            <ScheduleTile time="10:30 - 10:45" title="Coffee Break" />
               
             <ScheduleTile time="10:45 - 11:15" title="Vazio"  style="grid-column: auto;" location="Sala: Delete sem Where"/>
 
@@ -107,7 +107,7 @@
           
             <Schedule :speakers="[{img: SpeakerIngrid, name: 'Ingrid Coutinho', role: 'Product Manager', company: 'FIAP'}]"
               :types="[{id: 'ai', name: 'AI'}, {id: 'workshop', name: 'Workshop'}]" time="10:45 - 12:35" location="Sala: Deploy da Sexta"
-              style="grid-row: span 3; grid-column: span 1"
+              class="schedule-three-rows"
               title="Como construir produtos com IA Code"
               description="A inteligência artificial está transformando a forma como produtos são criados e entregues. Neste workshop prático, você aprenderá a integrar IA no desenvolvimento de produtos, desde a concepção até a implementação. Vamos explorar casos reais, ferramentas essenciais e boas práticas para utilizar IA de forma estratégica. Se você quer entender como a IA pode gerar valor para seu produto e impulsionar a inovação, este workshop é para você!" />
 
@@ -140,62 +140,62 @@ Nesta talk, falaremos sobre processos e fases mais comuns de algumas dessas prin
 
             <ScheduleTile time="13:30 - 14:00" title="Ignite Talks" location="Auditório: Teste em Produção" />
 
+            <ScheduleTile time="14:00 - 14:15" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
+
             <Schedule :speakers="[{img: SpeakerAldemon, name: 'Aldemon Bonifácio', role: 'Coordenador de Tecnologia', company: 'Afya'}]"
-              :types="[{id: 'menagement', name: 'Gestão'}]" time="14:00 - 14:30" location="Sala: Delete sem Where"
+              :types="[{id: 'menagement', name: 'Gestão'}]" time="14:15 - 14:45" location="Sala: Delete sem Where"
               title="Do Código à Liderança - Como unir tecnologia e gestão de pessoas"
               description="Descubra como líderes técnicos e de pessoas se complementam. Nesta palestra, troque ideias e aprenda ferramentas para equilibrar tecnologia e gestão, liderando com mais eficiência e impacto. Participe!" />
 
             <Schedule :speakers="[{img: SpeakerFabricio2, name: 'Fabricio Lima', role: 'Analytics Engineer', company: 'Nubank'}]"
-              :types="[{id: 'data', name: 'Dados'}]" time="14:00 - 14:30" location="Auditório: Teste em Produção"
+              :types="[{id: 'data', name: 'Dados'}]" time="14:15 - 14:45" location="Auditório: Teste em Produção"
               title="Não existe só cientista! Uma conversa sobre os caminhos da área de dados"
               description="Que tal conversarmos sobre as diversas carreiras que existem na área de dados? 
 Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunidade de Data Science do Brasil, falaremos desde o papel de cada cargo, até a média salarial por senioridade!"  />
             
             <Schedule :speakers="[{img: SpeakerHenrique, name: 'Henrique Cabral', role: 'Security Engineer', company: 'Aikido Security'}]"
-              :types="[{id: 'security', name: 'Segurança'}, {id: 'workshop', name: 'Workshop'}]" time="14:00 - 15:00" location="Sala: Deploy da Sexta"
-              style="grid-row: span 2; grid-column: span 1"
+              :types="[{id: 'security', name: 'Segurança'}, {id: 'workshop', name: 'Workshop'}]" time="14:15 - 15:15" location="Sala: Deploy da Sexta"
+              class="schedule-two-rows"
               title="Secure Coding Training"
               description="Reconfigurando os famosos Capture the Flag(CTF) da segurança ofensiva para atender exclusivamente desenvolvedores, este treinamento visa colocar cara-a-cara vulnerabilidades e desenvolvedores com o objetivo de ensinar as boas práticas do desenvolvimento seguro na prática."  />
 
           <Schedule :speakers="[{img: SpeakerDanton, name: 'Danton Rafael', role: 'Senior Devops Engineer', company: 'Zallpy Digital'}]"
-            :types="[{id: 'data', name: 'Dados'}]" time="14:30 - 15:00"  location="Sala: Delete sem Where"
+            :types="[{id: 'data', name: 'Dados'}]" time="14:45 - 15:15"  location="Sala: Delete sem Where"
             title="Vector Databases: O Que São e Como Funcionam?"
             description="Com o aumento do uso de aplicações de IA, principalmente aquelas que tem como base LLMs, bancos de dados tradicionais já não conseguem nos servir de forma eficiente para alguns casos de uso. Nessa palestra pretendo abordar alguns conceitos sobre Vector Databases e Use Cases para poder exemplificar." />
           
           <Schedule :speakers="[{img: SpeakerLaurene2, name: 'Laurene Alves', role: 'CEO/Fundadora', company: 'Gleba Arquitetura e Engenharia'}]"
-            :types="[{id: 'vr', name: 'Realidade Virtual'}]" time="14:30 - 15:00"  location="Auditório: Teste em Produção"
+            :types="[{id: 'vr', name: 'Realidade Virtual'}]" time="14:45 - 15:15"  location="Auditório: Teste em Produção"
             title="Realidade Virtual na Arquitetura: O Futuro das Obras Sem Surpresas"
             description="Imagine prever cada detalhe de sua obra antes mesmo de começar! Com realidade imersiva , eliminamos erros, reduzimos desperdícios e garantimos decisões mais inteligentes. Descubra como RV/A está transformando a construção civil e levando projetos a um novo nível de eficiência e sustentabilidade!" />
           
           <Schedule :speakers="[{img: SpeakerRafael, name: 'Rafael Kneip', role: 'Engenheiro Mecânico', company: 'UFJF'}]"
-            :types="[{id: 'opensource', name: 'Open Source'}]" time="15:00 - 15:30" location="Sala: Delete sem Where"
+            :types="[{id: 'opensource', name: 'Open Source'}]" time="15:15 - 15:45" location="Sala: Delete sem Where"
             title="RocketPy: a revolução open source"
             description="O que é necessário para criar um projeto open source de sucesso? Quais são os desafios para mantê-los? Como engajar sua comunidade? As respostas para essas perguntas tornam o software brasileiro de trajetória e dinâmica de voo de foguetes RocketPy referência mundial no setor. Criado em 2017 por estudantes da Universidade de São Paulo, o RocketPy é utilizado em todo o mundo por estudantes e amantes do foguetemodelismo, com destaque para sua atuação na competição acadêmica European Rocketry Challenge, na qual é o software oficial de simulação para apoio às equipes e controle de segurança. Nesta palestra, a equipe do RocketPy busca compartilhar seus conhecimentos, inspirando uma nova geração de projetos open source." />
           
           <Schedule :speakers="[{img: SpeakerTiago, name: 'Tiago Calado', role: 'Desenvolvedor Backend', company: 'Monkey'}]"
-            :types="[{id: 'qa', name: 'QA'}]" time="15:00 - 15:30" location="Sala: Deploy da Sexta"
+            :types="[{id: 'qa', name: 'QA'}]" time="15:15 - 15:45" location="Sala: Deploy da Sexta"
             title="Importância de Testes de Software na Entrega de Produtos"
             description="Redução de bugs, melhor ciclo de entregas e maior confiabilidade de marca: nesta talk irei mostrar porque os testes de software devem ser vistos como um recurso estratégico para a sua empresa e como realizá-los." />
             
           <Schedule :speakers="[{img: SpeakerJade, name: 'Jade Fonseca', role: 'Advogada', company: 'A.J Soluções Tecnológicas'}]"
-            :types="[{id: 'ai', name: 'AI'}]" time="15:00 - 15:30" location="Auditório: Teste em Produção"
+            :types="[{id: 'ai', name: 'AI'}]" time="15:15 - 15:45" location="Auditório: Teste em Produção"
             title="Desenvolvimento seguro e LGPD: protegendo dados e impulsionando sua carreira em TI"
             description="A LGPD não é só um requisito legal - é um diferencial competitivo para desenvolvedores. Dominar Privacy by Design, anonimização e gestão de consentimento torna seus projetos mais seguros e valoriza sua carreira. Aprenda a se comunicar com titulares de dados e equipes para garantir conformidade." />
 
-          <ScheduleTile time="15:30 - 16:00" title="Coffe Break"/>
-
-          <ScheduleTile time="16:00 - 16:30" title="Espaço Patrocinadores"/>
+          <ScheduleTile time="15:45 - 16:15" title="Coffe Break"/>
           
           <Schedule :speakers="[{img: SpeakerAntonio, name: 'Antonio Brito', role: 'Especialista de Inovação Empresarial', company: 'Firjan'}]"
               :types="[{id: 'management', name: 'Gestão'}]" location="Sala: Delete Sem Where" time="16:15 - 17:05"
               title="Da Cultura à Prática: Como Diagnosticar, Estruturar e Comunicar a Inovação nas Organizações"
               description="Empresas falham em inovar não por falta de ideias, mas por barreiras culturais e comunicação ineficaz. Nesta palestra, você verá como diagnosticar desafios, criar processos e estruturar estratégias de comunicação que transformam inovação em prática real." />
           
-          <ScheduleTile time="16:15 - 17:55" title="Mesa Redonda" location="Auditório: Teste em Produção" style="grid-row: span 2; grid-column: span 1"/>
+          <ScheduleTile time="16:15 - 17:55" title="Mesa Redonda - Carreira Tech" location="Auditório: Teste em Produção" class="schedule-two-rows"/>
 
           <Schedule :speakers="[{img: SpeakerAna, name: 'Ana Carolina Ovídio', role: 'Data Engineer II', company: 'iFood'}]"
             :types="[{id: 'data', name: 'Dados'}, {id: 'workshop', name: 'Workshop'}]" time="16:15 - 17:55" location="Sala: Deploy da Sexta"
-            style="grid-row: span 2; grid-column: span 1"
+            class="schedule-two-rows"
             title="Como a estatística e a computação auxiliam nas tomadas de decisões por meio de plataformas de experimentação"
             description="A experimentação antecipa impactos e reduz riscos antes de qualquer mudança efetiva em seu produto. Através de testes automátizados, é possível aplicar a mudança em uma amostra de clientes e analisar estatisticamente se o teste reflete a realidade e, aumentará as margens de lucro da empresa." />
 
@@ -203,10 +203,8 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             :types="[{id: 'ai', name: 'AI'}]" time="17:05 - 17:55" location="Sala: Delete sem Where"
             title="Entendendo Negócios, Criando Soluções: IA e Low-Code no Desenvolvimento"
             description="Na palestra 'Entendendo Negócios, Criando Soluções: IA e Low-Code no Desenvolvimento', exploraremos como a inteligência artificial pode transformar o processo de desenvolvimento de software. Com a IA, podemos focar mais na compreensão e na solução de problemas de negócios, em vez de nos aprofundarmos em linguagens de programação específicas, porém isso tudo sem diminuir a importância de um código bem escrito e a compreensão da base ad engenharia de software. Além disso, abordarei como as plataformas low-code estão revolucionando a forma de criar soluções, permitindo que profissionais de diferentes áreas contribuam para o desenvolvimento de software de maneira mais ágil e eficiente. A palestra trará insights sobre como essas tecnologias estão moldando o futuro do desenvolvimento e proporcionando novas oportunidades para empresas e profissionais."/>
-
-          <ScheduleTile time="17:55 - 18:10" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
           
-          <ScheduleTile time="18:10 - 18:30" title="Sorteios e encerramento" location="Auditório: Teste em Produção"/>
+          <ScheduleTile time="18:00 - 18:30" title="Encerramento e Sorteios" location="Auditório: Teste em Produção"/>
         </div>
       </section>
       <section id="speakers" class="infoSections">
@@ -776,11 +774,32 @@ footer {
   margin-right: 40px;
 }
 
+.schedule-two-rows {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.schedule-three-rows {
+  grid-row: span 3;
+  grid-column: span 1;
+}
+
 .schedule-two-col {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .schedule-main {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media screen and (max-width: 1024px) {
