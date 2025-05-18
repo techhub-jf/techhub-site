@@ -96,7 +96,7 @@
 
             <ScheduleTile time="10:00 - 10:15" title="Espaço Patrocinadores" location="Auditório: Teste em Produção" />
 
-            <ScheduleTile time="10:30 - 10:45" title="Coffee Break" />
+            <ScheduleTile time="10:15 - 10:45" title="Coffee Break" />
               
             <ScheduleTile time="10:45 - 11:15" title="Vazio"  style="grid-column: auto;" location="Sala: Delete sem Where"/>
 
@@ -131,7 +131,7 @@ Se você quer entender como o Elasticsearch pode transformar a maneira como lida
               description="Descubra como o Microsoft Fabric está revolucionando a tecnologia com soluções inteligentes e eficientes. Junte-se a nós para explorar suas funcionalidades, casos de uso e dicas práticas em uma palestra dinâmica e envolvente!" />
 
             <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho', role: 'Desenvolvedor Backend', company: 'Mercado Livre'}]"
-              :types="[{id: 'career', name: 'Carreira'}]" time="12:05 - 12:35" location="Sala: Deploy da Sexta"
+              :types="[{id: 'career', name: 'Carreira'}]" time="12:05 - 12:35" location="Auditório: Teste em Produção"
               title="Como se preparar para processos seletivos de Big Techs em 2025"
               description="Hoje o objetivo ou sonho de alguns Devs, independente do nível de senioridade, é fazer parte de uma grande empresa com forte potencial tecnológico.
 Nesta talk, falaremos sobre processos e fases mais comuns de algumas dessas principais empresas do ramo, e como se preparar para essas oportunidades." />
@@ -175,12 +175,12 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             description="O que é necessário para criar um projeto open source de sucesso? Quais são os desafios para mantê-los? Como engajar sua comunidade? As respostas para essas perguntas tornam o software brasileiro de trajetória e dinâmica de voo de foguetes RocketPy referência mundial no setor. Criado em 2017 por estudantes da Universidade de São Paulo, o RocketPy é utilizado em todo o mundo por estudantes e amantes do foguetemodelismo, com destaque para sua atuação na competição acadêmica European Rocketry Challenge, na qual é o software oficial de simulação para apoio às equipes e controle de segurança. Nesta palestra, a equipe do RocketPy busca compartilhar seus conhecimentos, inspirando uma nova geração de projetos open source." />
           
           <Schedule :speakers="[{img: SpeakerTiago, name: 'Tiago Calado', role: 'Desenvolvedor Backend', company: 'Monkey'}]"
-            :types="[{id: 'qa', name: 'QA'}]" time="15:15 - 15:45" location="Sala: Deploy da Sexta"
+            :types="[{id: 'qa', name: 'QA'}]" time="15:15 - 15:45" location="Auditório: Teste em Produção"
             title="Importância de Testes de Software na Entrega de Produtos"
             description="Redução de bugs, melhor ciclo de entregas e maior confiabilidade de marca: nesta talk irei mostrar porque os testes de software devem ser vistos como um recurso estratégico para a sua empresa e como realizá-los." />
             
           <Schedule :speakers="[{img: SpeakerJade, name: 'Jade Fonseca', role: 'Advogada', company: 'A.J Soluções Tecnológicas'}]"
-            :types="[{id: 'ai', name: 'AI'}]" time="15:15 - 15:45" location="Auditório: Teste em Produção"
+            :types="[{id: 'ai', name: 'AI'}]" time="15:15 - 15:45" location="Sala: Deploy de Sexta"
             title="Desenvolvimento seguro e LGPD: protegendo dados e impulsionando sua carreira em TI"
             description="A LGPD não é só um requisito legal - é um diferencial competitivo para desenvolvedores. Dominar Privacy by Design, anonimização e gestão de consentimento torna seus projetos mais seguros e valoriza sua carreira. Aprenda a se comunicar com titulares de dados e equipes para garantir conformidade." />
 

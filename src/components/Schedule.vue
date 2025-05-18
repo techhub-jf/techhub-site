@@ -151,6 +151,7 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
 .schedule-speaker-image {
   overflow: hidden;
   width: 70px;
+  min-width: 70px;
   height: 70px;
   border-radius: 50%;
 }
