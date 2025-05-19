@@ -95,7 +95,7 @@
 
               E em um futuro próximo, você se tornará uma representante para que outras mulheres ingressem no mercado de tecnologia." />
             
-            <Schedule :img="SpeakerDanilo" name="Danilo Oliveira Santos" role="Professor" company="EnsinE" :speakers="[{id: 'Danilo', img: SpeakerDanilo, name: 'Danilo Oliveira Santos', role: 'Professor', company: 'EnsinE'}]"
+            <Schedule :speakers="[{id: 'Danilo', img: SpeakerDanilo, name: 'Danilo Oliveira Santos', role: 'Professor', company: 'EnsinE'}]"
               :types="[{id: 'data', name: 'Dados'}, {id: 'workshop', name: 'Workshop'}]" time="9:00 - 10:00"
               title="Banco de Dados - Mão Na Massa" location="Sala: Deploy da Sexta" 
               description="WORKSHOP: Mão na Massa em Banco de Dados! 
@@ -117,8 +117,8 @@
           </div>
 
           <div class="schedule-two-col">
-            <Schedule :img="SpeakerLucasCarrilho" name="Lucas Carrilho" role="Desenvolvedor Backend"
-              company="V3 Tecnologia" :types="[{id: 'career', name: 'Carreira'}]" time="10:00 - 10:30" location="Auditório: Teste em Produção"
+            <Schedule :speakers="[{id: 'LucasCarrilho', img: SpeakerLucasCarrilho, name: 'Lucas Carrilho', role: 'Desenvolvedor Backend', company: 'V3 Tecnologia'}]"
+              :types="[{id: 'career', name: 'Carreira'}]" time="10:00 - 10:30" location="Auditório: Teste em Produção"
               title="Ingressando na Carreira de Programação em 2024: Desmistificando as Primeiras Oportunidades"
               description="Nesta palestra, vou compartilhar minha experiência na migração de carreira e em concursos públicos, focando nas diversas formas de conseguir a tão sonhada primeira oportunidade como programador.
 
@@ -136,7 +136,7 @@
 
               A apresentação não será focada em linguagem em específica, será um 'geral'" />
 
-            <Schedule :img="SpeakerLucasLopes" name="Lucas Lopes" role="Analista de Dados" company="BeFly"
+            <Schedule :speakers="[{id: 'LucasLopes', img: SpeakerLucasLopes, name: 'Lucas Lopes', role: 'Analista de Dados', company: 'BeFly'}]"
               :types="[{id: 'data', name: 'Dados'}]" time="10:00 - 10:30" location="Sala: Deploy da Sexta"
               title="Dados: O novo petróleo"
               description="Em um mundo onde os dados são considerados o novo petróleo do século 21, esse talk irá oferecer uma imersão simplificada na importância vital desses ativos para o sucesso nos negócios. 
@@ -149,8 +149,8 @@
           <ScheduleTile time="10:30 - 11:00" title="Coffe Break"/>
 
           <div class="schedule-two-col">
-            <Schedule :img="SpeakerRanieri" name="Ranieri Imperatori" role="Head of Data Analytics"
-              company="300 Inteligência de Negócio" :types="[{id: 'ai', name: 'AI'}]" time="11:00 - 12:00" location="Auditório: Teste em Produção"
+            <Schedule  :speakers="[{id: 'Ranieri', img: SpeakerRanieri, name: 'Ranieri Imperatori', role: 'Head of Data Analytics', company: '300 Inteligência de Negócio'}]"
+              :types="[{id: 'ai', name: 'AI'}]" time="11:00 - 12:00" location="Auditório: Teste em Produção"
               title="Como prever as Doenças Cardíacas usando a média e mediana na Análise Preditiva com Machine Learning"
               description="Na era da inteligência artificial e machine learning, compreender conceitos estatísticos fundamentais é essencial para o cientista de dados ou àqueles que estão almejando essa posição profissional. Esta palestra focará na importância da média, mediana e sua aplicação no contexto de modelos de machine learning, com destaque para o método de regressão logística.
 
@@ -160,7 +160,7 @@
               
               Na conclusão desta palestra, será destacada a interconexão essencial entre os conceitos básicos da estatística e o universo de machine learning, com ênfase na utilização da média e da mediana para análise e otimização de modelos. A apresentação incluirá uma demonstração prática da construção de modelos de regressão logística utilizando a linguagem de programação Python, onde dados reais de pacientes com características relacionadas a doenças cardíacas serão explorados. Essa abordagem prática não apenas ilustrará a aplicação direta dos princípios discutidos, mas também fornecerá uma visão concreta de como os conceitos estatísticos fundamentais são implementados na criação e otimização de modelos no contexto de machine learning." />
 
-            <Schedule :img="SpeakerJoao" name="João Medina" role="Especialista Backend" company="Grupo Boticário"
+            <Schedule :speakers="[{id: 'Joao', img: SpeakerJoao, name: 'João Medina', role: 'Especialista Backend', company: 'Grupo Boticário'}]"
               :types="[{id: 'backend', name: 'Backend'}]" time="11:00 - 12:00" location="Sala: Deploy da Sexta"
               title="Desbravando a Distribuição de Dados em Múltiplos Ambientes: Uma Jornada Escalável e Orientada a Eventos"
               description="Já se encontrou diante do desafio de distribuir dados em vários ambientes simultaneamente? 
@@ -171,8 +171,8 @@
           </div>
 
           <div class="schedule-two-col">
-            <Schedule :img="SpeakerEmerson" name="Emerson Pombo" role="Quality Assurance Engineer"
-              company="Atlas Technologies" :types="[{id: 'qa', name: 'QA'}]" time="12:00 - 12:30" location="Auditório: Teste em Produção"
+            <Schedule :speakers="[{id: 'Emerson', img: SpeakerEmerson, name: 'Emerson Pombo', role: 'Quality Assurance Engineer', company: 'Atlas Technologies'}]"
+              :types="[{id: 'qa', name: 'QA'}]" time="12:00 - 12:30" location="Auditório: Teste em Produção"
               title="QA Além dos Testes: Conduzindo Projetos ao Pico da Eficiência e Satisfação do Cliente"
               description="Esta palestra abordará o papel fundamental da Garantia de Qualidade (QA) no desenvolvimento de software, destacando como uma abordagem sólida de QA pode impactar positivamente a qualidade, eficiência e satisfação do cliente. Ao longo de 30 minutos, exploraremos as responsabilidades-chave do QA, desde o início do projeto até a entrega, discutindo metodologias de teste, ferramentas de automação e melhores práticas. Além disso, serão compartilhados insights sobre como o QA supera desafios comuns e contribui para o sucesso do projeto.
 
@@ -200,7 +200,7 @@
               Importância do QA para o Sucesso do Projeto:
               Contribuição para confiabilidade, segurança e satisfação do cliente." />
 
-            <Schedule :img="SpeakerBrendo" name="Brendo Freitas" role="Desenvolvedor .Net" company="webfis"
+            <Schedule :speakers="[{id: 'Brendo', img: SpeakerBrendo, name: 'Brendo Freitas', role: 'Desenvolvedor .Net', company: 'webfis'}]"
               :types="[{id: 'devops', name: 'Devops'}]" time="12:00 - 12:30" location="Sala: Deploy da Sexta"
               title="Docker Scout protegendo a cadeia de fornecimento de Software"
               description="Na palestra sobre Docker Scout, mergulharemos nas profundezas da segurança em ambientes Docker, revelando sua capacidade única de detectar e corrigir vulnerabilidades em imagens.
@@ -220,7 +220,7 @@
 
           <ScheduleTile time="13:30 - 14:00" title="Ignite Talks" location="Auditório: Teste em Produção" />
 
-          <Schedule :img="SpeakerFran" name="Fran Weidt" role="Flutter Engineer" company="Simplebet"
+          <Schedule :speakers="[{id: 'Fran', img: SpeakerFran, name: 'Fran Weidt', role: 'Flutter Engineer', company: 'Simplebet'}]"
             :types="[{id: 'mobile', name: 'Mobile'}]" time="14:00 - 15:00"  location="Sala: Deploy da Sexta"
             title="Flutter para Visualização de Dados em Tempo Real"
             description="Em um mundo hiper-conectado, a visualização de dados em tempo real tornou-se uma parte essencial de muitas aplicações. 
@@ -229,28 +229,28 @@
             
             Em paralelo, iremos apresentar conceitos do Flutter e seu ecossistema buscando contribuir e dialogar com um público abrangente, desde aqueles que querem conhecer melhor o potencial desta tecnologia, mas nunca a utilizaram, até aqueles que já possuem conhecimento dela." />
           
-          <Schedule :img="SpeakerLais" name="Laís Bomtempo" role="Software Engineer" company="Metal Toad"
+          <Schedule :speakers="[{id: 'Lais', img: SpeakerLais, name: 'Laís Bomtempo', role: 'Software Engineer', company: 'Metal Toad'}]"
             :types="[{id: 'frontend', name: 'Frontend'}]" time="14:00 - 15:00"  location="Auditório: Teste em Produção"
             title="Entendendo os fundamentos do Next.js 14"
             description="Quando não entendemos como uma ferramenta funciona, podemos cometer erros básicos no desenvolvimento do nosso projeto, ou ficarmos muito tempo num bug que poderia ser facilmente solucionado, caso tivéssemos essa compreensão do que ocorre por “debaixo dos panos”.
 
             Focada em profissionais que já trabalham com JavaScript e React, esta palestra tem como objetivo explicar os fundamentos do Next.js 14, de forma a facilitar e/ou aprimorar o desenvolvimento futuro com o framework." />
           
-          <Schedule :img="SpeakerLuiza" name="Luiza Bartels" role="Coordenadora" company="U&M"
+          <Schedule :speakers="[{id: 'Luiza', img: SpeakerLuiza, name: 'Luiza Bartels', role: 'Coordenadora', company: 'U&M'}]"
             :types="[{id: 'robotics', name: 'Robótica'}]" time="14:00 - 15:00" location="Sala: Delete sem Where"
             title="Desenvolvimento de Veículos Autônomos: bem ao seu lado e você não sabia"
             description="Há 7 anos uma empresa em Matias Barbosa investe no desenvolvimento de  um kit autônomo para habilitar uma frota de equipamentos para operação autônoma. O melhor é o fato de o desenvolvimento ser 100% brasileiro e reconhecido internacionalmente.
             
             Uma conversa sobre o desenvolvimento de um kit autônomo para habilitar equipamentos pesados para operação autônomos, as tecnologias mais utilizadas e as tendências do mercado e da indústria." />
           
-          <Schedule :img="SpeakerRuan" name="Ruan Carlos" role="Executivo de operações e delivery" company="Jack Experts"
+          <Schedule :speakers="[{id: 'Ruan', img: SpeakerRuan, name: 'Ruan Carlos', role: 'Executivo de operações e delivery', company: 'Jack Experts'}]"
             :types="[{id: 'startups', name: 'Startups'}]" time="15:00 - 15:30" location="Sala: Deploy da Sexta"
             title="Empreendendo em TI na Pandemia: O que não te contam"
             description="Se você trabalha com TI, então já é um empreendedor! Empreender é mais do que ter uma empresa, é a vontade de fazer diferente, ser inconformado e ir além. O profissional de TI não pode e nem tem tempo de se conformar, ou também não te contaram isso?
             
             Nesta palestra, irei contar um pouco dos desafios, sucessos e claro, insucessos tanto da carreira quanto do caminho percorrido na pandemia com o propósito de ter um time focado em Cloud Native: a Jack Experts." />
             
-          <Schedule :img="SpeakerAna" name="Ana Carolina Carius" role="Professora" company="IFRJ"
+          <Schedule :speakers="[{id: 'Ana', img: SpeakerAna, name: 'Ana Carolina Carius', role: 'Professora', company: 'IFRJ'}]"
             :types="[{id: 'ai', name: 'AI'}]" time="15:00 - 15:30" location="Auditório: Teste em Produção"
             title="Tecnologia do Reconhecimento Facial: Desvendando os Mistérios por Trás das Matrizes"
             description="As redes neurais convolucionais (CNNs) são amplamente aplicadas em reconhecimento de imagens, com o uso essencial de matrizes. Essas matrizes, ou tensores, são fundamentais para processar imagens, pixel por pixel.
@@ -267,7 +267,7 @@
             
             Em resumo, a aplicação de matrizes em CNNs é crucial para o avanço do reconhecimento de imagens, permitindo que máquinas interpretem e entendam o mundo visual de maneira semelhante aos humanos." />
           
-          <Schedule :img="SpeakerCarlos" name="Carlos Alexandre" role="Estudante Pós-graduação" company="UFJF"
+          <Schedule :speakers="[{id: 'Carlos', img: SpeakerCarlos, name: 'Carlos Alexandre', role: 'Estudante Pós-graduação', company: 'UFJF'}]"
             :types="[{id: 'career', name: 'Carreira'}]" time="15:00 - 15:30" location="Sala: Delete sem Where"
             title="O que os estudantes fazem durante a sua formação na Computação?"
             description="A palestra abordará em alguns projetos executados por estudantes da universidade na área da tecnologia. Será uma oportunidade de conhecer uma variedade de projetos que abrangem desde pesquisas científicas até iniciativas sociais e tecnológicas.
@@ -277,14 +277,14 @@
 
           <ScheduleTile time="16:00 - 17:00" title="Mesa Redonda - Carreira"  style="grid-column: auto;" location="Sala: Deploy da Sexta"/>
           
-          <Schedule :img="SpeakerHenrique" name="Henrique Cabral" role="Application Security Leader"
-              company="Compass UOL" :types="[{id: 'security', name: 'Segurança'}]" location="Auditório: Teste em Produção" time="16:00 - 16:30"
+          <Schedule :speakers="[{id: 'Henrique', img: SpeakerHenrique, name: 'Henrique Cabral', role: 'Application Security Leader', company: 'Compass UOL'}]"
+              :types="[{id: 'security', name: 'Segurança'}]" location="Auditório: Teste em Produção" time="16:00 - 16:30"
               title="Shift-Left Security e o porquê você deve se importar com isso"
               description="Nessa talk, o objetivo principal será reforçar a importância do shift-left no SDLC, sua implicações e metodologias para implementarmos uma cultura de segurança sólida no contexto de trabalho dos desenvolvedores. 
               
               Iremos abordar sobre modelagem de ameaças, análise de arquitetura e controles de segurança, princípios do desenvolvimento seguro, ferramentas de análise estática de código, entre outros assuntos que conversam de Segurança e Desenvolvimento." />
           
-          <Schedule :img="SpeakerFabricio" name="Fabricio Lima" role="Data Platform Engineer" company="Méliuz"
+          <Schedule :speakers="[{id: 'Fabricio', img: SpeakerFabricio, name: 'Fabricio Lima', role: 'Data Platform Engineer', company: 'Méliuz'}]"
             :types="[{id: 'hardware', name: 'Hardware'}]" time="16:00 - 17:00" location="Sala: Delete sem Where"
             title="Home Server: a melhor forma de reaproveitar seu hardware velho"
             description="Nesta palestra iremos conversar sobre basicamente tudo que aprendi nesse mundo incrível que são os servidores caseiros. 
@@ -293,7 +293,7 @@
           
           <ScheduleTile time="17:00 - 17:30" title="Mesa Redonda - Carreira" style="grid-column: auto;" location="Sala: Deploy da Sexta"/>
 
-          <Schedule :img="SpeakerCamilla" name="Camilla Martins" role="SRE Egineer" company="Storyblok"
+          <Schedule :speakers="[{id: 'Camilla', img: SpeakerCamilla, name: 'Camilla Martins', role: 'SRE Egineer', company: 'Storyblok'}]"
             :types="[{id: 'career', name: 'Carreira'}]" time="17:00 - 17:30" location="Auditório: Teste em Produção"
             title="DevOps para o Exterior: O que tem sido diferente"
             description="Nessa talk vou falar sobre como é trabalhar com DevOps no exterior, abordando pontos importantes, como: 
@@ -306,7 +306,7 @@
             - Onde encontrar bons locais de trabalho
             - Dicas gerais pra você se dar bem como no inglês e como funciona o dia a dia"/>
           
-          <Schedule :img="SpeakerNatalia" name="Natalia Granato" role="DevOps Engineer" company="Dti Digital"
+          <Schedule :speakers="[{id: 'Natalia', img: SpeakerNatalia, name: 'Natalia Granato', role: 'DevOps Engineer', company: 'Dti Digital'}]"
             :types="[{id: 'devops', name: 'Devops'}]" time="17:00 - 17:30" title="Assessement e boas práticas em Kubernetes"  location="Sala: Delete sem Where"
             description="Realizarei uma breve introdução sobre o ecossistema do Amazon Elastic Kubernetes Service (EKS) tendo em vista o que o serviço pode entregar. 
             
