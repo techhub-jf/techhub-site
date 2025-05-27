@@ -98,7 +98,10 @@
 
             <ScheduleTile time="10:15 - 10:45" title="Coffee Break" />
               
-            <ScheduleTile time="10:45 - 11:15" title="Vazio"  style="grid-column: auto;" location="Sala: Delete sem Where"/>
+            <Schedule :speakers="[{img: SpeakerLeandro, name: 'Leandro dos Santos', role: 'Professor de Inglês'}]"
+              :types="[{id: 'career', name: 'Carreira'}]" time="10:45 - 11:15" location="Sala: Delete sem Where"
+              title="O Inglês Como Skill Essencial para Profissionais de TI"
+              description="No universo da tecnologia, o inglês leva você além. Grandes oportunidades estão em empresas internacionais, e sem fluência, você pode estar limitando seu crescimento. O inglês não é mais um diferencial – é uma necessidade para quem deseja se destacar globalmente. Vamos explorar mais esse assunto?" />
 
             <Schedule :speakers="[{img: SpeakerGabriela, name: 'Gabriela Cunha', role: 'Fundadora', company: 'Steps'}, {img: SpeakerCamillaPicoli, name: 'Camilla Picoli', role: 'Psicóloga', company: 'Steps'}]"
               :types="[{id: 'career', name: 'Carreira'}]" time="10:45 - 11:15" location="Auditório: Teste em Produção"
@@ -252,6 +255,8 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             role="Engenheiro Mecânico" company="UFJF" />
           <Speaker :img="SpeakerDanton" link="https://www.linkedin.com/in/danton-rafael/" name="Danton Rafael"
             role="Senior Devops Engineer" company="Zallpy Digital" />
+          <Speaker :img="SpeakerLeandro" link="https://www.linkedin.com/in/leandro-souza-74b3a5175/" name="Leandro dos Santos"
+            role="Professor de Inglês" company="Autônomo" />
         </div>
       </section>
       <section id="location" class="infoSections">
@@ -380,6 +385,7 @@ import SpeakerCamillaPicoli from '@/assets/camilla-picoli.jpeg'
 import SpeakerDanton from '@/assets/danton-rafael.jpeg'
 import SpeakerLaurene from '@/assets/laurene-alves.jpeg'
 import SpeakerLaurene2 from '@/assets/laurene-alves-2.jpeg'
+import SpeakerLeandro from '@/assets/leandro.jpeg'
 </script>
 
 <style scoped>
