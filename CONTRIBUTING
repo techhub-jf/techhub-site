@@ -1,0 +1,10 @@
+- Create a new branch
+- Change the code
+- Run `npm run build`
+- Push the code
+- Create a new PR pointing to the main branch
+- Ask for a review
+- Merge the changes after approved
+- Wait a few minutes for the changes to take effect and visit https://techhubjf.org
+
+Thank you!
