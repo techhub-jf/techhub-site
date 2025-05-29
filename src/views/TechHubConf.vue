@@ -19,6 +19,9 @@
           <a href="https://www.linkedin.com/company/tech-hub-conf" target="_blank" class="social-icon">
             <LinkedinIcon />
           </a>
+          <a href="https://www.youtube.com/@techhubjf" target="_blank" class="social-icon">
+            <YoutubeIcon />
+          </a>
         </div>
       </nav>
     </header>
@@ -28,6 +31,10 @@
         <div class="homeText">
           <h2 class="homeTextFieldDate">31 de Maio</h2>
           <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
+        </div>
+        <div class="homeButtons">
+          <a href="https://linktr.ee/techhubjf" target="_blank"
+              class="homeButton">REDES SOCIAIS</a>
         </div>
         <!-- <div class="homeButtons">
           <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" target="_blank"
@@ -358,6 +365,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
 <script setup lang="ts">
 import InstagramIcon from '../components/icons/IconInstagram.vue'
 import LinkedinIcon from '../components/icons/IconLinkedin.vue'
+import YoutubeIcon from '../components/icons/IconYoutube.vue'
 import MapsIcon from '../components/icons/IconMaps.vue'
 import Speaker from '../components/Speaker.vue'
 import Schedule from '../components/Schedule.vue'
