@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
-    "postbuild": "cp ./dist/index.html ./dist/404.html; cp ./CNAME ./dist/CNAME",
+    "postbuild": "cp ./dist/** ./docs; cp ./dist/index.html ./docs/404.html; cp ./CNAME ./docs/CNAME",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
