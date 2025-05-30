@@ -215,6 +215,8 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             description="Na palestra 'Entendendo Negócios, Criando Soluções: IA e Low-Code no Desenvolvimento', exploraremos como a inteligência artificial pode transformar o processo de desenvolvimento de software. Com a IA, podemos focar mais na compreensão e na solução de problemas de negócios, em vez de nos aprofundarmos em linguagens de programação específicas, porém isso tudo sem diminuir a importância de um código bem escrito e a compreensão da base ad engenharia de software. Além disso, abordarei como as plataformas low-code estão revolucionando a forma de criar soluções, permitindo que profissionais de diferentes áreas contribuam para o desenvolvimento de software de maneira mais ágil e eficiente. A palestra trará insights sobre como essas tecnologias estão moldando o futuro do desenvolvimento e proporcionando novas oportunidades para empresas e profissionais."/>
           
           <ScheduleTile time="18:00 - 18:30" title="Encerramento e Sorteios" location="Auditório: Teste em Produção"/>
+
+          <ScheduleTile time="18:30 - ∞" title="Happy Hour" location="Experimental Bar: Av. Barão do Rio Branco, 3162" link="https://maps.app.goo.gl/omNZMw2uMBuMXQD88"/>
         </div>
       </section>
       <section id="speakers" class="infoSections">

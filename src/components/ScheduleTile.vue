@@ -1,5 +1,6 @@
 <template>
-  <div class="schedule-card">
+  <!-- <div class="schedule-card"> -->
+  <component :is="wrapperTag" :href="wrapperHref" :style="wrapperStyle" class="schedule-card" target="_blank">
     <div class="schedule-card-header">
       <div class="schedule-time">
         <ClockIcon class="schedule-time-icon"/>
@@ -14,14 +15,32 @@
       <p class="schedule-subject-text bold-text">{{ title }}</p>
     </div>
     <div class="schedule-phantom"></div>
-  </div>
+  </component>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import ClockIcon from '../components/icons/IconClock.vue'
 import LocationIcon from '../components/icons/IconLocation.vue'
 
-defineProps(['title', 'time', 'location'])
+const props = defineProps(['title', 'time', 'location', 'link'])
+
+// Define computed properties directly using the props object
+const wrapperTag = computed(() => {
+  return props.link ? 'a' : 'div';
+})
+
+const wrapperHref = computed(() => {
+  return props.link ? props.link : null;
+})
+
+const wrapperStyle = computed(() => {
+  return props.link ? { textDecoration: 'none', color: 'inherit' } : {};
+})
+
+const divStyle = computed(() => {
+  return props.link ? { cursor: 'pointer' } : {};
+})
 </script>
 
 <style scoped>
