@@ -33,15 +33,17 @@
           <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
         </div>
         <div class="homeButtons">
+          <a href="https://drive.google.com/drive/folders/1hzQdZs_rLQp4XIngGSPgq6zo5IlmhqkR?usp=sharing" target="_blank"
+            class="homeButton">FOTOS</a>
           <a href="https://linktr.ee/techhubjf" target="_blank"
               class="homeButton">REDES SOCIAIS</a>
         </div>
-        <!-- <div class="homeButtons">
-          <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" target="_blank"
+        <!-- <div class="homeButtons"> -->
+          <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" target="_blank"
             class="homeButton">INSCREVA-SE</a>
           <a href="https://www.papercall.io/tech-hub-conf-2025" target="_blank"
-            class="homeButton">SUBMETA SUA PALESTRA</a>
-        </div> -->
+            class="homeButton">SUBMETA SUA PALESTRA</a> -->
+        <!-- </div> -->
       </section>
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
