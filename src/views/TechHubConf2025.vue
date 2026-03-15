@@ -5,13 +5,13 @@
       <nav>
         <a href="#home" class="buttonHeader">HOME</a>
         <a href="#about" class="buttonHeader">SOBRE</a>
-        <!-- <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a>
-        <a href="#speakers" class="buttonHeader">PALESTRANTES</a> -->
+        <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a>
+        <a href="#speakers" class="buttonHeader">PALESTRANTES</a>
         <a href="#location" class="buttonHeader">LOCAL</a>
         <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
-        <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" class="buttonHeader">INSCREVA-SE</a>
-        <a href="https://forms.gle/64jwQb4AKkdc2cFu9" class="buttonHeader">SUBMETA SUA PALESTRA</a>
-        <a href="/conf/2025" class="buttonHeader" target="_blank">EDIÇÃO 2025</a>
+        <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" class="buttonHeader">INSCREVA-SE</a>
+        <a href="https://www.papercall.io/tech-hub-conf-2025" class="buttonHeader">SUBMETA SUA PALESTRA</a> -->
+        <a href="/conf/2024" class="buttonHeader" target="_blank">EDIÇÃO 2024</a>
         <div class="social-icons">
           <a href="https://www.instagram.com/techhubconf" target="_blank" class="social-icon">
             <InstagramIcon />
@@ -29,21 +29,21 @@
       <section id="home">
         <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/logo-dark.png" />
         <div class="homeText">
-          <h2 class="homeTextFieldDate">30 de Maio</h2>
+          <h2 class="homeTextFieldDate">31 de Maio</h2>
           <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
         </div>
-        <!-- <div class="homeButtons">
+        <div class="homeButtons">
           <a href="https://drive.google.com/drive/folders/1hzQdZs_rLQp4XIngGSPgq6zo5IlmhqkR?usp=sharing" target="_blank"
             class="homeButton">FOTOS</a>
           <a href="https://linktr.ee/techhubjf" target="_blank"
               class="homeButton">REDES SOCIAIS</a>
-        </div> -->
-        <div class="homeButtons">
-          <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" target="_blank"
-            class="homeButton">INSCREVA-SE</a>
-          <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
-            class="homeButton">SUBMETA SUA PALESTRA</a>
         </div>
+        <!-- <div class="homeButtons"> -->
+          <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" target="_blank"
+            class="homeButton">INSCREVA-SE</a>
+          <a href="https://www.papercall.io/tech-hub-conf-2025" target="_blank"
+            class="homeButton">SUBMETA SUA PALESTRA</a> -->
+        <!-- </div> -->
       </section>
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
@@ -81,7 +81,7 @@
           </div>
         </div>
       </section>
-      <!-- <section id="schedule" class="infoSections">
+      <section id="schedule" class="infoSections">
         <h1 class="section-title">Programação</h1>
         <div class="schedule-main">
           <ScheduleTile time="8:00 - 8:30" title="Credenciamento" location="Entrada"/>
@@ -269,7 +269,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
           <Speaker :img="SpeakerLeandro" link="https://www.linkedin.com/in/leandro-souza-74b3a5175/" name="Leandro dos Santos"
             role="Professor de Inglês" company="Autônomo" />
         </div>
-      </section> -->
+      </section>
       <section id="location" class="infoSections">
         <h1 class="section-title">Local</h1>
         <div class="location-main">
@@ -308,7 +308,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             <a href="https://www.nossomoinho.com/" class="sponsor-image-link" target="_blank">
               <img alt="Moinho" class="sponsor-image" src="@/assets/logo-moinho.png" />
             </a>
-            <!-- <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
+            <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
             </a>
             <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
@@ -325,10 +325,10 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             </a>
             <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.png" />
-            </a> -->
+            </a>
           </div>
         </div>
-        <!-- <div class="sponsor-class">
+        <div class="sponsor-class">
           <h2 class="section-title">Ouro</h2>
           <div class="sponsors-images">
             <a href="https://www.instagram.com/medeirosgourmetbuffet/" class="sponsor-image-link" target="_blank">
@@ -343,8 +343,8 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
               <img alt="Linux Tips" class="sponsor-image-rectangular" src="@/assets/linuxtips.png" />
             </a>
           </div>
-        </div> -->
-        <!-- <div class="sponsor-class">
+        </div>
+        <div class="sponsor-class">
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
             <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
@@ -360,7 +360,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
               <img alt="Capivara Tech" class="sponsor-image" src="@/assets/capivara-tech.svg" />
             </a>
           </div>
-        </div> -->
+        </div>
       </section>
     </div>
     <footer>
@@ -374,33 +374,33 @@ import InstagramIcon from '../components/icons/IconInstagram.vue'
 import LinkedinIcon from '../components/icons/IconLinkedin.vue'
 import YoutubeIcon from '../components/icons/IconYoutube.vue'
 import MapsIcon from '../components/icons/IconMaps.vue'
-// import Speaker from '../components/Speaker.vue'
-// import Schedule from '../components/Schedule.vue'
-// import ScheduleTile from '../components/ScheduleTile.vue'
-// import SpeakerHenrique from '@/assets/henrique-cabral.jpeg'
-// import SpeakerGuilherme from '@/assets/guilherme-vianna.jpeg'
-// import SpeakerFabricio from '@/assets/fabricio-lima.jpeg'
-// import SpeakerFabricio2 from '@/assets/fabricio-2.jpeg'
-// import SpeakerJoao from '@/assets/joao-medina.jpeg'
-// import SpeakerRenato from '@/assets/renato-bonario.jpeg'
-// import SpeakerAna from '@/assets/ana-ovidio.jpeg'
-// import SpeakerIngrid from '@/assets/ingrid-coutinho.jpeg'
-// import SpeakerAntonio from '@/assets/antonio-brito.jpeg'
-// import SpeakerJade from '@/assets/jade-fonseca.jpeg'
-// import SpeakerDanilo from '@/assets/danilo-oliveira.jpeg'
-// import SpeakerJoaoSouza from '@/assets/joao-souza.jpeg'
-// import SpeakerAldemon from '@/assets/aldemon-bonifacio.jpeg'
-// import SpeakerCibelle from '@/assets/cibelle-castro.jpeg'
-// import SpeakerCamilla from '@/assets/camilla-schettino.jpeg'
-// import SpeakerTiago from '@/assets/tiago-calado.jpeg'
-// import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.jpeg'
-// import SpeakerRafael from '@/assets/rafael-kneip.png'
-// import SpeakerGabriela from '@/assets/gabriela-cunha.jpeg'
-// import SpeakerCamillaPicoli from '@/assets/camilla-picoli.jpeg'
-// import SpeakerDanton from '@/assets/danton-rafael.jpeg'
-// import SpeakerLaurene from '@/assets/laurene-alves.jpeg'
-// import SpeakerLaurene2 from '@/assets/laurene-alves-2.jpeg'
-// import SpeakerLeandro from '@/assets/leandro.jpeg'
+import Speaker from '../components/Speaker.vue'
+import Schedule from '../components/Schedule.vue'
+import ScheduleTile from '../components/ScheduleTile.vue'
+import SpeakerHenrique from '@/assets/henrique-cabral.jpeg'
+import SpeakerGuilherme from '@/assets/guilherme-vianna.jpeg'
+import SpeakerFabricio from '@/assets/fabricio-lima.jpeg'
+import SpeakerFabricio2 from '@/assets/fabricio-2.jpeg'
+import SpeakerJoao from '@/assets/joao-medina.jpeg'
+import SpeakerRenato from '@/assets/renato-bonario.jpeg'
+import SpeakerAna from '@/assets/ana-ovidio.jpeg'
+import SpeakerIngrid from '@/assets/ingrid-coutinho.jpeg'
+import SpeakerAntonio from '@/assets/antonio-brito.jpeg'
+import SpeakerJade from '@/assets/jade-fonseca.jpeg'
+import SpeakerDanilo from '@/assets/danilo-oliveira.jpeg'
+import SpeakerJoaoSouza from '@/assets/joao-souza.jpeg'
+import SpeakerAldemon from '@/assets/aldemon-bonifacio.jpeg'
+import SpeakerCibelle from '@/assets/cibelle-castro.jpeg'
+import SpeakerCamilla from '@/assets/camilla-schettino.jpeg'
+import SpeakerTiago from '@/assets/tiago-calado.jpeg'
+import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.jpeg'
+import SpeakerRafael from '@/assets/rafael-kneip.png'
+import SpeakerGabriela from '@/assets/gabriela-cunha.jpeg'
+import SpeakerCamillaPicoli from '@/assets/camilla-picoli.jpeg'
+import SpeakerDanton from '@/assets/danton-rafael.jpeg'
+import SpeakerLaurene from '@/assets/laurene-alves.jpeg'
+import SpeakerLaurene2 from '@/assets/laurene-alves-2.jpeg'
+import SpeakerLeandro from '@/assets/leandro.jpeg'
 </script>
 
 <style scoped>

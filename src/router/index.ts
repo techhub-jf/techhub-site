@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/TechHubConf2024.vue')
     },
     {
+      path: '/conf/2025',
+      name: 'conf2025',
+      component: () => import('../views/TechHubConf2025.vue')
+    },
+    {
       path: '/conf',
       name: 'conf',
       component: () => import('../views/TechHubConf.vue')
