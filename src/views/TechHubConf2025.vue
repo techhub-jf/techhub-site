@@ -11,6 +11,7 @@
         <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
         <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2025/2793748" class="buttonHeader">INSCREVA-SE</a>
         <a href="https://www.papercall.io/tech-hub-conf-2025" class="buttonHeader">SUBMETA SUA PALESTRA</a> -->
+        <a href="/conf/2025" class="buttonHeader" target="_blank">EDIÇÃO 2025</a>
         <a href="/conf/2024" class="buttonHeader" target="_blank">EDIÇÃO 2024</a>
         <div class="social-icons">
           <a href="https://www.instagram.com/techhubconf" target="_blank" class="social-icon">
@@ -299,8 +300,8 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
       <section id="sponsors" class="infoSections">
         <h1 class="section-title">Patrocinadores</h1>
         <p class="section-text" style="margin-top: -30px">Gostaria de patrocinar? </p>
-        <p class="section-text" style="margin-bottom: 20px">Confira nossas <a href="https://forms.gle/qhRQQURFEc9HN5jx8" target="_blank">opções
-            de patrocínio</a> e entre em contato através do email <a
+        <p class="section-text" style="margin-bottom: 20px">Preencha nosso <a href="https://forms.gle/SjgMnVW8G6x4bRir6" target="_blank">formulário
+            de interesse</a> e aguarde o contato ou entre em contato através do email <a
             href="mailto:techhubjf@gmail.com">techhubjf@gmail.com</a></p>
         <div class="sponsor-class">
           <h2 class="section-title">Platina</h2>
