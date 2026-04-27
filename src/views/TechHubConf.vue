@@ -311,33 +311,36 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             </a>
             <!-- <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
-            </a>
+            </a> -->
             <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
               <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
             </a>
-            <a href="https://4linux.com.br/" class="sponsor-image-link" target="_blank">
+            <!-- <a href="https://4linux.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="4 Linux" class="sponsor-image-rectangular" src="@/assets/4linux.png" />
-            </a>
-            <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
+            </a> -->
+            <!-- <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
               <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/m3-oculos.png" />
-            </a>
-            <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
+            </a> -->
+            <!-- <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
               <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg" />
-            </a>
-            <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
+            </a> -->
+            <!-- <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.png" />
             </a> -->
           </div>
         </div>
-        <!-- <div class="sponsor-class">
+        <div class="sponsor-class">
           <h2 class="section-title">Ouro</h2>
           <div class="sponsors-images">
-            <a href="https://www.instagram.com/medeirosgourmetbuffet/" class="sponsor-image-link" target="_blank">
+            <!-- <a href="https://www.instagram.com/medeirosgourmetbuffet/" class="sponsor-image-link" target="_blank">
               <img alt="Buffet" class="sponsor-image" src="@/assets/buffet.png" />
+            </a> -->
+            <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
+              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
             </a>
           </div>
         </div>
-        <div class="sponsor-class">
+        <!-- <div class="sponsor-class">
           <h2 class="section-title">Prata</h2>
           <div class="sponsors-images">
             <a href="https://linuxtips.io/" class="sponsor-image-link" target="_blank">
@@ -345,15 +348,15 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             </a>
           </div>
         </div> -->
-        <!-- <div class="sponsor-class">
+        <div class="sponsor-class">
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
-            <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
+            <!-- <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/jetbrains.svg" />
-            </a>
-            <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
+            </a> -->
+            <!-- <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/elastic.svg" />
-            </a>
+            </a> -->
             <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
               <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
             </a>
@@ -361,7 +364,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
               <img alt="Capivara Tech" class="sponsor-image" src="@/assets/capivara-tech.svg" />
             </a>
           </div>
-        </div> -->
+        </div>
       </section>
     </div>
     <footer>
