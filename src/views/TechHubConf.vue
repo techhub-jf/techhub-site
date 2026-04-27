@@ -357,8 +357,8 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             <!-- <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/elastic.svg" />
             </a> -->
-            <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
-              <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
+            <a href="https://www.instagram.com/bytesbrejas/" class="sponsor-image-link" target="_blank">
+              <img alt="Bytes e Brejas" class="sponsor-image" src="@/assets/bytes-brejas.png" />
             </a>
             <a href="https://www.linkedin.com/company/capivara-tech-jf/" class="sponsor-image-link" target="_blank">
               <img alt="Capivara Tech" class="sponsor-image" src="@/assets/capivara-tech.svg" />
