@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'NeueHaasUnicaW1G-Bold';
-  src: url('~@/assets/fonts/NeueHaasUnicaW1G-Bold.ttf') format('truetype');
+  src: url('./fonts/NeueHaasUnicaW1G-Bold.ttf') format('truetype');
 }
 
 html {

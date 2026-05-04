@@ -22,7 +22,7 @@
     margin-bottom: 20px;
     max-width: 180px;
     display: block;
-    border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+    border-radius: 0.9rem;
     overflow: hidden;
     padding: 0;
     transition: auto;
@@ -37,7 +37,7 @@
 
 .speaker-card:hover {
     .speaker-img {
-        width: 150%;
+        transform: scale(1.15);
     }
 }
 
@@ -51,12 +51,14 @@
 }
 
 .speaker-img {
-    transition: width 0.2s ease-in-out;
-    width: 130%;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
 }
 
 .speaker-about {
