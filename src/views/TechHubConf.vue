@@ -340,14 +340,14 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             </a>
           </div>
         </div>
-        <!-- <div class="sponsor-class">
+        <div class="sponsor-class">
           <h2 class="section-title">Prata</h2>
           <div class="sponsors-images">
-            <a href="https://linuxtips.io/" class="sponsor-image-link" target="_blank">
-              <img alt="Linux Tips" class="sponsor-image-rectangular" src="@/assets/linuxtips.png" />
+            <a href="https://inupcontabil.com.br/" class="sponsor-image-link" target="_blank">
+              <img alt="InUp Contabilidade" class="sponsor-image" src="@/assets/inup.svg" />
             </a>
           </div>
-        </div> -->
+        </div>
         <div class="sponsor-class">
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
