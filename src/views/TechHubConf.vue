@@ -357,6 +357,9 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             <!-- <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/elastic.svg" />
             </a> -->
+            <a href="https://developers.google.com/community/experts?hl=pt-br" class="sponsor-image-link" target="_blank">
+              <img alt="Google Developer Experts" class="sponsor-image-aspect" src="@/assets/gde-logo.png" />
+            </a>
             <a href="https://www.instagram.com/bytesbrejas/" class="sponsor-image-link" target="_blank">
               <img alt="Bytes e Brejas" class="sponsor-image" src="@/assets/bytes-brejas.png" />
             </a>
@@ -747,6 +750,13 @@ nav {
 
 .sponsor-image-vertical {
   width: 17vh;
+}
+
+.sponsor-image-aspect {
+  height: 25vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .sponsor-image-link {
