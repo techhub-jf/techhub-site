@@ -348,7 +348,7 @@
       </section>
     </div>
     <footer>
-      <p>© 2025 Tech Hub JF</p>
+      <p>© 2026 Tech Hub JF</p>
     </footer>
   </div>
 </template>
