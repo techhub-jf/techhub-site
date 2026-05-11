@@ -158,7 +158,9 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
 
 .schedule-speaker-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .schedule-speaker-about {

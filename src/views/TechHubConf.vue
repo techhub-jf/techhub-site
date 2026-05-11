@@ -5,8 +5,8 @@
       <nav>
         <a href="#home" class="buttonHeader">HOME</a>
         <a href="#about" class="buttonHeader">SOBRE</a>
-        <!-- <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a>
-        <a href="#speakers" class="buttonHeader">PALESTRANTES</a> -->
+        <a href="#schedule" class="buttonHeader">PROGRAMAÇÃO</a>
+        <a href="#speakers" class="buttonHeader">PALESTRANTES</a>
         <a href="#location" class="buttonHeader">LOCAL</a>
         <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
         <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" class="buttonHeader">INSCREVA-SE</a>
@@ -82,195 +82,172 @@
           </div>
         </div>
       </section>
-      <!-- <section id="schedule" class="infoSections">
+      <section id="schedule" class="infoSections">
         <h1 class="section-title">Programação</h1>
         <div class="schedule-main">
           <ScheduleTile time="8:00 - 8:30" title="Credenciamento" location="Entrada"/>
+          <ScheduleTile time="8:30 - 9:00" title="Abertura" location="Auditório: Teste em Produção"/>
 
-          <ScheduleTile time="8:30 - 9:10" title="Abertura" location="Auditório: Teste em Produção"/>
-          
-            <Schedule :speakers="[{img: SpeakerCibelle, name: 'Cibelle Castro', role: 'Senior SQL Server Database Administrator', company: 'Itaú Unibanco'}]"
-              :types="[{id: 'devops', name: 'DevOps'}]" time="9:10 - 10:00" location="Sala: Delete sem Where"
-              title="Monitorando PostgreSQL com Terraform, Docker e Power BI: Da Infraestrutura à Visualização"
-              description="Nesta palestra, abordaremos como automatizar o monitoramento do PostgreSQL utilizando Terraform, Docker e Power BI. Inicialmente, veremos a infraestrutura como código para criar um ambiente PostgreSQL com Terraform e Docker. Em seguida, exploraremos extensões como pg_stat_statements para coletar métricas de desempenho. Depois, discutiremos a extração e armazenamento desses dados para análise. Por fim, aprenderemos a visualizar essas métricas no Power BI, criando dashboards interativos para otimizar a performance do banco de dados." />
-            
-            <Schedule :speakers="[{img: SpeakerRenato, name: 'Renato Bonario', role: 'Sênior Product Manager', company: 'Capivara Tech'}]"
-              :types="[{id: 'product', name: 'Produto'}]" time="9:10 - 10:00"
-              title="Aplicando Jobs To Be Done para Criar Produtos de Alto Impacto" location="Auditório: Teste em Produção" 
-              description="Descubra como o framework Jobs To Be Done pode transformar a criação de produtos! Veja como estruturar processos, otimizar discovery e alinhar soluções às reais necessidades dos usuários. Uma abordagem prática para product managers, empreendedores e devs de diversos níveis de senioridades." />
-            
-            <Schedule :speakers="[{img: SpeakerJoaoSouza, name: 'João Souza', role: 'Full-stack Developer', company: 'CAEd / UFJF'}]"
-              :types="[{id: 'ai', name: 'AI'}]" time="9:10 - 10:00"
-              title="Desmistificando IAs: Podemos fazer o nosso próprio ChatGPT?" location="Sala: Deploy da Sexta" 
-              description="Desde a pandemia, as Inteligências Artificiais tem ganhado muito destaque, e vem impressionando muita gente com a capacidade em realizar certas tarefas. Embora muitas pessoas já tenham tido algum contato, a grande maioria desconhece o que tem por trás desse tipo de ferramenta. Aqui, o objetivo é explicar sobre a área de IA, mostrar como os modelos como ChatGPT, DeepSeek e Llama funcionam, e como podemos implementá-los." />
+          <Schedule :speakers="[{img: SpeakerSamuel, name: 'Samuel Rocha Amaral', role: 'Especialista em DevOps/SRE', company: 'Smart NX'}]"
+            :types="[{id: 'devops', name: 'DevOps'}]" time="9:00 - 10:00" location="Sala: Delete sem Where"
+            title="Aprendizados na Jornada DevOps: o que os 'ops' me ensinaram"
+            description="Nem todo deploy dá certo. Nem toda decisão escala. Compartilho uma coleção real de momentos 'ops…' ao longo da minha jornada — erros em pipelines, Docker, AWS e Terraform, até falhas culturais que impediram times de evoluir. Cada caso traz contexto, impacto, causa raiz e o aprendizado aplicado na prática." />
 
-            <ScheduleTile time="10:00 - 10:15" title="Espaço Patrocinadores" location="Auditório: Teste em Produção" />
+          <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho de Almeida', role: 'Engenheiro de Software Backend', company: 'Mercado Livre'}]"
+            :types="[{id: 'career', name: 'Carreira'}]" time="9:00 - 10:00" location="Auditório: Teste em Produção"
+            title="Da Primeira Vaga ao Mercado Internacional como DEV"
+            description="O que realmente ajuda um desenvolvedor a sair do zero e construir uma carreira sólida até alcançar oportunidades internacionais? Falaremos sobre caminhos técnicos, stacks mais usadas, como encarar processos seletivos e as soft skills que mais pesam no mercado — desde a primeira vaga até o tão sonhado salário em dólar." />
 
-            <ScheduleTile time="10:15 - 10:45" title="Coffee Break" />
-              
-            <Schedule :speakers="[{img: SpeakerLeandro, name: 'Leandro dos Santos', role: 'Professor de Inglês'}]"
-              :types="[{id: 'career', name: 'Carreira'}]" time="10:45 - 11:15" location="Sala: Delete sem Where"
-              title="O Inglês Como Skill Essencial para Profissionais de TI"
-              description="No universo da tecnologia, o inglês leva você além. Grandes oportunidades estão em empresas internacionais, e sem fluência, você pode estar limitando seu crescimento. O inglês não é mais um diferencial – é uma necessidade para quem deseja se destacar globalmente. Vamos explorar mais esse assunto?" />
+          <Schedule :speakers="[{img: SpeakerThiagoMiranda, name: 'Thiago Miranda de Paula', role: 'Analista de Segurança Ofensiva', company: 'Grupo Energisa'}]"
+            :types="[{id: 'security', name: 'Segurança'}]" time="9:00 - 10:00" location="Sala: Deploy da Sexta"
+            title="Segurança Ofensiva: Uma alavanca de qualidade no desenvolvimento"
+            description="Você já se perguntou como um invasor enxerga o seu código? Vamos inverter os papéis e mergulhar no universo da Segurança Ofensiva. Entenda por que o Pentest não deve ser o 'fim da linha', mas sim um parceiro estratégico no processo de desenvolvimento." />
 
-            <Schedule :speakers="[{img: SpeakerGabriela, name: 'Gabriela Cunha', role: 'Fundadora', company: 'Steps'}, {img: SpeakerCamillaPicoli, name: 'Camilla Picoli', role: 'Psicóloga', company: 'Steps'}]"
-              :types="[{id: 'career', name: 'Carreira'}]" time="10:45 - 11:15" location="Auditório: Teste em Produção"
-              title="Um Olhar sobre Carreira e Saúde Mental de Profissionais de Tecnologia"
-              description="A área de tecnologia é marcada por ritmo acelerado, alta competitividade e pressão por inovação constante. Esse cenário pode gerar impactos significativos na saúde mental dos profissionais. Como psicóloga, trago uma perspectiva embasada na ciência para compreender os desafios emocionais do setor." />
-          
-            <Schedule :speakers="[{img: SpeakerIngrid, name: 'Ingrid Coutinho', role: 'Product Manager', company: 'FIAP'}]"
-              :types="[{id: 'ai', name: 'AI'}, {id: 'workshop', name: 'Workshop'}]" time="10:45 - 12:35" location="Sala: Deploy da Sexta"
-              class="schedule-three-rows"
-              title="Como construir produtos com IA Code"
-              description="A inteligência artificial está transformando a forma como produtos são criados e entregues. Neste workshop prático, você aprenderá a integrar IA no desenvolvimento de produtos, desde a concepção até a implementação. Vamos explorar casos reais, ferramentas essenciais e boas práticas para utilizar IA de forma estratégica. Se você quer entender como a IA pode gerar valor para seu produto e impulsionar a inovação, este workshop é para você!" />
+          <ScheduleTile time="10:00 - 10:30" title="Coffee Break"/>
+          <ScheduleTile time="10:30 - 10:45" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
 
-            <Schedule :speakers="[{img: SpeakerJoao, name: 'João Medina', role: 'Backend Engineering Specialist', company: 'iFood'}]"
-              company="iFood" :types="[{id: 'data', name: 'Dados'}]" time="11:15 - 12:05" location="Sala: Delete sem Where"
-              title="Elasticserch? Que trem é esse?"
-              description="O Elasticsearch é uma das ferramentas mais poderosas para busca e análise de dados em grande escala, mas entender seu funcionamento e aplicabilidade pode ser um desafio. Nesta talk, vamos explorar os conceitos fundamentais do Elasticsearch, desde sua estrutura interna até casos de uso em projetos reais.
+          <Schedule :speakers="[{img: SpeakerWendel, name: 'Wendel Moreira Mendes da Silveira', role: 'CTO', company: 'Chico Rei'}]"
+            :types="[{id: 'ai', name: 'IA'}]" time="10:45 - 11:15" location="Sala: Delete sem Where"
+            title="Débito Técnico 2.0: Como a IA está ajudando (ou atrapalhando) a limpar o código legado"
+            description="O pesadelo do código legado mudou de cara em 2026. A IA prometeu ser a bala de prata para refatoração, mas a realidade nas trincheiras mostra um cenário mais complexo: como agentes autônomos de refatoração e o uso indiscriminado de Copilots pode estar gerando o Débito Técnico Sintético." />
 
-Abordaremos como ele opera, como indexa e busca informações de forma eficiente, e quais estratégias podem ser utilizadas para integrá-lo a diferentes cenários. Além disso, traremos um olhar sobre como grandes empresas utilizam a ferramenta, destacando tanto os casos de sucesso quanto os desafios e falhas enfrentados ao longo do caminho.
+          <Schedule :speakers="[{img: SpeakerBrendo, name: 'Brendo Freitas de Sousa', role: 'Desenvolvedor de Software', company: 'Icatu Seguros'}]"
+            :types="[{id: 'devops', name: 'DevOps'}]" time="10:45 - 11:15" location="Auditório: Teste em Produção"
+            title="Você realmente sabe o que sua aplicação está fazendo?"
+            description="Sua aplicação está em produção e algo deu errado. Você realmente sabe o que está acontecendo dentro dela? Vamos explorar, na prática, como utilizar observabilidade real — conectando logs, métricas e tracing distribuído para acompanhar uma requisição ponta a ponta e identificar gargalos." />
 
-Se você quer entender como o Elasticsearch pode transformar a maneira como lidamos com dados, otimizar buscas e trazer mais eficiência para aplicações escaláveis, essa talk é para você!" />
+          <Schedule :speakers="[{img: SpeakerMarcoJunior, name: 'Marco Júnior Lopes de Melo', role: 'Desenvolvedor Web', company: ''}]"
+            :types="[{id: 'security', name: 'Segurança'}]" time="10:45 - 11:15" location="Sala: Deploy da Sexta"
+            title="Web 3.0: Blockchain, DREX e o futuro da segurança na internet"
+            description="O Brasil se destacou no sistema financeiro com o Pix e agora caminha para a digitalização da moeda com o DREX. Como uma blockchain realmente funciona? Vamos explorar conceitos técnicos como nonce, hash e mineração, o que construímos até agora e as oportunidades de carreira no mercado Web 3.0." />
 
-            <Schedule :speakers="[{img: SpeakerGuilherme, name: 'Guilherme Vianna', role: 'Software Engineering Manager', company: 'iFood'}]"
-              :types="[{id: 'backend', name: 'Backend'}]" time="11:15 - 12:05" location="Auditório: Teste em Produção"
-              title="Aplicações Resilientes - do caos aos fallbacks"
-              description="Sua aplicação está pronta para falhar? Do caos às soluções práticas, descubra como construir sistemas resilientes que sobrevivem a falhas e se recuperam com eficiência. Aprenda padrões, estratégias e técnicas essenciais para evitar desastres e garantir alta disponibilidade.Resiliência não é opcional" />
-
-            <Schedule :speakers="[{img: SpeakerDanilo, name: 'Danilo Oliveira', role: 'Professor', company: 'Ensine'}]"
-              :types="[{id: 'data', name: 'Dados'}]" time="12:05 - 12:35" location="Sala: Delete sem Where"
-              title="Microsoft Fabric: Costurando Soluções Inteligentes"
-              description="Descubra como o Microsoft Fabric está revolucionando a tecnologia com soluções inteligentes e eficientes. Junte-se a nós para explorar suas funcionalidades, casos de uso e dicas práticas em uma palestra dinâmica e envolvente!" />
-
-            <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho', role: 'Desenvolvedor Backend', company: 'Mercado Livre'}]"
-              :types="[{id: 'career', name: 'Carreira'}]" time="12:05 - 12:35" location="Auditório: Teste em Produção"
-              title="Como se preparar para processos seletivos de Big Techs em 2025"
-              description="Hoje o objetivo ou sonho de alguns Devs, independente do nível de senioridade, é fazer parte de uma grande empresa com forte potencial tecnológico.
-Nesta talk, falaremos sobre processos e fases mais comuns de algumas dessas principais empresas do ramo, e como se preparar para essas oportunidades." />
-
-            <ScheduleTile time="12:35 - 13:30" title="Almoço" />
-
-            <ScheduleTile time="13:30 - 14:00" title="Ignite Talks" location="Auditório: Teste em Produção" />
-
-            <ScheduleTile time="14:00 - 14:15" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
-
-            <Schedule :speakers="[{img: SpeakerAldemon, name: 'Aldemon Bonifácio', role: 'Coordenador de Tecnologia', company: 'Afya'}]"
-              :types="[{id: 'menagement', name: 'Gestão'}]" time="14:15 - 14:45" location="Sala: Delete sem Where"
-              title="Do Código à Liderança - Como unir tecnologia e gestão de pessoas"
-              description="Descubra como líderes técnicos e de pessoas se complementam. Nesta palestra, troque ideias e aprenda ferramentas para equilibrar tecnologia e gestão, liderando com mais eficiência e impacto. Participe!" />
-
-            <Schedule :speakers="[{img: SpeakerFabricio2, name: 'Fabricio Lima', role: 'Analytics Engineer', company: 'Nubank'}]"
-              :types="[{id: 'data', name: 'Dados'}]" time="14:15 - 14:45" location="Auditório: Teste em Produção"
-              title="Não existe só cientista! Uma conversa sobre os caminhos da área de dados"
-              description="Que tal conversarmos sobre as diversas carreiras que existem na área de dados? 
-Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunidade de Data Science do Brasil, falaremos desde o papel de cada cargo, até a média salarial por senioridade!"  />
-            
-            <Schedule :speakers="[{img: SpeakerHenrique, name: 'Henrique Cabral', role: 'Security Engineer', company: 'Aikido Security'}]"
-              :types="[{id: 'security', name: 'Segurança'}, {id: 'workshop', name: 'Workshop'}]" time="14:15 - 15:15" location="Sala: Deploy da Sexta"
-              class="schedule-two-rows"
-              title="Secure Coding Training"
-              description="Reconfigurando os famosos Capture the Flag(CTF) da segurança ofensiva para atender exclusivamente desenvolvedores, este treinamento visa colocar cara-a-cara vulnerabilidades e desenvolvedores com o objetivo de ensinar as boas práticas do desenvolvimento seguro na prática."  />
-
-          <Schedule :speakers="[{img: SpeakerDanton, name: 'Danton Rafael', role: 'Senior Devops Engineer', company: 'Zallpy Digital'}]"
-            :types="[{id: 'data', name: 'Dados'}]" time="14:45 - 15:15"  location="Sala: Delete sem Where"
-            title="Vector Databases: O Que São e Como Funcionam?"
-            description="Com o aumento do uso de aplicações de IA, principalmente aquelas que tem como base LLMs, bancos de dados tradicionais já não conseguem nos servir de forma eficiente para alguns casos de uso. Nessa palestra pretendo abordar alguns conceitos sobre Vector Databases e Use Cases para poder exemplificar." />
-          
-          <Schedule :speakers="[{img: SpeakerLaurene2, name: 'Laurene Alves', role: 'CEO/Fundadora', company: 'Gleba Arquitetura e Engenharia'}]"
-            :types="[{id: 'vr', name: 'Realidade Virtual'}]" time="14:45 - 15:15"  location="Auditório: Teste em Produção"
-            title="Realidade Virtual na Arquitetura: O Futuro das Obras Sem Surpresas"
-            description="Imagine prever cada detalhe de sua obra antes mesmo de começar! Com realidade imersiva , eliminamos erros, reduzimos desperdícios e garantimos decisões mais inteligentes. Descubra como RV/A está transformando a construção civil e levando projetos a um novo nível de eficiência e sustentabilidade!" />
-          
-          <Schedule :speakers="[{img: SpeakerRafael, name: 'Rafael Kneip', role: 'Engenheiro Mecânico', company: 'UFJF'}]"
-            :types="[{id: 'opensource', name: 'Open Source'}]" time="15:15 - 15:45" location="Sala: Delete sem Where"
-            title="RocketPy: a revolução open source"
-            description="O que é necessário para criar um projeto open source de sucesso? Quais são os desafios para mantê-los? Como engajar sua comunidade? As respostas para essas perguntas tornam o software brasileiro de trajetória e dinâmica de voo de foguetes RocketPy referência mundial no setor. Criado em 2017 por estudantes da Universidade de São Paulo, o RocketPy é utilizado em todo o mundo por estudantes e amantes do foguetemodelismo, com destaque para sua atuação na competição acadêmica European Rocketry Challenge, na qual é o software oficial de simulação para apoio às equipes e controle de segurança. Nesta palestra, a equipe do RocketPy busca compartilhar seus conhecimentos, inspirando uma nova geração de projetos open source." />
-          
-          <Schedule :speakers="[{img: SpeakerTiago, name: 'Tiago Calado', role: 'Desenvolvedor Backend', company: 'Monkey'}]"
-            :types="[{id: 'qa', name: 'QA'}]" time="15:15 - 15:45" location="Auditório: Teste em Produção"
-            title="Importância de Testes de Software na Entrega de Produtos"
-            description="Redução de bugs, melhor ciclo de entregas e maior confiabilidade de marca: nesta talk irei mostrar porque os testes de software devem ser vistos como um recurso estratégico para a sua empresa e como realizá-los." />
-            
-          <Schedule :speakers="[{img: SpeakerJade, name: 'Jade Fonseca', role: 'Advogada', company: 'A.J Soluções Tecnológicas'}]"
-            :types="[{id: 'ai', name: 'AI'}]" time="15:15 - 15:45" location="Sala: Deploy de Sexta"
-            title="Desenvolvimento seguro e LGPD: protegendo dados e impulsionando sua carreira em TI"
-            description="A LGPD não é só um requisito legal - é um diferencial competitivo para desenvolvedores. Dominar Privacy by Design, anonimização e gestão de consentimento torna seus projetos mais seguros e valoriza sua carreira. Aprenda a se comunicar com titulares de dados e equipes para garantir conformidade." />
-
-          <ScheduleTile time="15:45 - 16:15" title="Coffe Break"/>
-          
-          <Schedule :speakers="[{img: SpeakerAntonio, name: 'Antonio Brito', role: 'Especialista de Inovação Empresarial', company: 'Firjan'}]"
-              :types="[{id: 'management', name: 'Gestão'}]" location="Sala: Delete Sem Where" time="16:15 - 17:05"
-              title="Da Cultura à Prática: Como Diagnosticar, Estruturar e Comunicar a Inovação nas Organizações"
-              description="Empresas falham em inovar não por falta de ideias, mas por barreiras culturais e comunicação ineficaz. Nesta palestra, você verá como diagnosticar desafios, criar processos e estruturar estratégias de comunicação que transformam inovação em prática real." />
-          
-          <ScheduleTile time="16:15 - 17:55" title="Mesa Redonda - Carreira Tech" location="Auditório: Teste em Produção" class="schedule-two-rows"/>
-
-          <Schedule :speakers="[{img: SpeakerAna, name: 'Ana Carolina Ovídio', role: 'Data Engineer II', company: 'iFood'}]"
-            :types="[{id: 'data', name: 'Dados'}, {id: 'workshop', name: 'Workshop'}]" time="16:15 - 17:55" location="Sala: Deploy da Sexta"
+          <Schedule :speakers="[{img: SpeakerLucasWilman, name: 'Lucas Wilman da Silva Crispim', role: 'Professor / Desenvolvedor', company: 'UFJF'}]"
+            :types="[{id: 'ai', name: 'IA'}]" time="11:15 - 12:15" location="Sala: Delete sem Where"
             class="schedule-two-rows"
-            title="Como a estatística e a computação auxiliam nas tomadas de decisões por meio de plataformas de experimentação"
-            description="A experimentação antecipa impactos e reduz riscos antes de qualquer mudança efetiva em seu produto. Através de testes automátizados, é possível aplicar a mudança em uma amostra de clientes e analisar estatisticamente se o teste reflete a realidade e, aumentará as margens de lucro da empresa." />
+            title="O canto da sereia da inteligência artificial nas apostas esportivas: um caso de estudo do campeonato brasileiro 2012-2025"
+            description="Uma investigação quantitativa sobre os limites da previsibilidade no mercado de apostas 1X2 do Campeonato Brasileiro (2012-2025). O foco: machine learning como motor para construção de estratégias robustas e uma visão crítica sobre o uso de IA — o que são oportunidades reais e o que são apenas ruídos estatísticos." />
 
-          <Schedule :speakers="[{img: SpeakerCamilla, name: 'Camilla Schettino', role: 'Team Tech Lead', company: 'Levty'}]"
-            :types="[{id: 'ai', name: 'AI'}]" time="17:05 - 17:55" location="Sala: Delete sem Where"
-            title="Entendendo Negócios, Criando Soluções: IA e Low-Code no Desenvolvimento"
-            description="Na palestra 'Entendendo Negócios, Criando Soluções: IA e Low-Code no Desenvolvimento', exploraremos como a inteligência artificial pode transformar o processo de desenvolvimento de software. Com a IA, podemos focar mais na compreensão e na solução de problemas de negócios, em vez de nos aprofundarmos em linguagens de programação específicas, porém isso tudo sem diminuir a importância de um código bem escrito e a compreensão da base ad engenharia de software. Além disso, abordarei como as plataformas low-code estão revolucionando a forma de criar soluções, permitindo que profissionais de diferentes áreas contribuam para o desenvolvimento de software de maneira mais ágil e eficiente. A palestra trará insights sobre como essas tecnologias estão moldando o futuro do desenvolvimento e proporcionando novas oportunidades para empresas e profissionais."/>
-          
-          <ScheduleTile time="18:00 - 18:30" title="Encerramento e Sorteios" location="Auditório: Teste em Produção"/>
+          <Schedule :speakers="[{img: SpeakerDanilo, name: 'Danilo Oliveira Santos', role: 'Engenheiro de Dados / Professor', company: 'Faculdade Ensine'}]"
+            :types="[{id: 'data', name: 'Dados'}]" time="11:15 - 12:15" location="Auditório: Teste em Produção"
+            class="schedule-two-rows"
+            title="Dados Instagramáveis: Construindo um Pipeline End-to-End no Microsoft Fabric"
+            description="Como transformar curtidas e métricas do Instagram em decisões estratégicas de negócio? Vamos construir um ecossistema de dados completo no Microsoft Fabric — da ingestão bruta via API à Arquitetura Medalhão, evoluindo dados da camada Bronze até a Gold com poderosas tabelas de Fato e Dimensão." />
 
-          <ScheduleTile time="18:30 - ∞" title="Happy Hour" location="Experimental Bar: Av. Barão do Rio Branco, 3162" link="https://maps.app.goo.gl/omNZMw2uMBuMXQD88"/>
+          <Schedule :speakers="[{img: SpeakerAnaCarolina, name: 'Ana Carolina Da Costa Marinho', role: 'Analista de Cyber Threat Intelligence', company: 'Grupo Energisa'}]"
+            :types="[{id: 'security', name: 'Segurança'}]" time="11:15 - 12:15" location="Sala: Deploy da Sexta"
+            class="schedule-two-rows"
+            title="Inteligência de Ameaças Cibernéticas (CTI): Como CTI se conecta com Desenvolvimento"
+            description="Veremos fundamentos da segurança cibernética e conceitos avançados de CTI, conectando teoria com prática: como usar Cyber Threat Intelligence para priorizar correções de vulnerabilidades, incorporar proteções desde o design de uma API e como acelerar dramaticamente a resposta a incidentes." />
+
+          <ScheduleTile time="12:15 - 13:30" title="Almoço"/>
+          <ScheduleTile time="13:30 - 14:00" title="Ignite Talks" location="Auditório: Teste em Produção"/>
+
+          <Schedule :speakers="[{img: SpeakerMarcus, name: 'Marcus Antonio de Jesus', role: 'Product Manager', company: 'Asaas'}]"
+            :types="[{id: 'product', name: 'Produto'}]" time="14:00 - 14:30" location="Sala: Delete sem Where"
+            title="Produto vs Engenharia: por que esse conflito ainda existe (e como sair dele)"
+            description="Em muitas empresas, existe uma divisão entre produto e engenharia. 'O negócio quer tudo pra ontem' vs. 'isso não faz sentido técnico'. Vamos explorar onde essa relação quebra de verdade e como criar contexto compartilhado para times que discordam sem travar a evolução do produto." />
+
+          <Schedule :speakers="[{img: SpeakerLeandro, name: 'Leandro Simões da Silva', role: 'Engenheiro de Software', company: 'TheGuarantors'}]"
+            :types="[{id: 'devops', name: 'DevOps'}]" time="14:00 - 14:30" location="Auditório: Teste em Produção"
+            title="Observabilidade para programadores"
+            description="Saber como uma aplicação se comporta é essencial para detectar e resolver falhas com o mínimo impacto no negócio. Esta palestra apresenta os primeiros passos para tornar uma aplicação observável por meio do OpenTelemetry, com foco prático para programadores." />
+
+          <Schedule :speakers="[{img: SpeakerBarbara, name: 'Bárbara Rezende Neri', role: 'Estudante de Ciência da Computação', company: 'UFSJ'}]"
+            :types="[{id: 'career', name: 'Carreira'}]" time="14:00 - 14:30" location="Sala: Deploy da Sexta"
+            title="O poder do espelho: por que mulheres ficam ou saem da tecnologia"
+            description="Por que ainda somos tão poucas na tecnologia, e por que tantas mulheres que entram acabam saindo? Não é falta de capacidade, é falta de referência. Diversidade é estratégia — a questão não é como incluir mais mulheres, mas que tipo de ambiente estamos construindo para que elas fiquem." />
+
+          <Schedule :speakers="[{img: SpeakerRenato, name: 'Renato Bonario', role: 'Product Owner', company: 'Heineken'}]"
+            :types="[{id: 'product', name: 'Produto'}]" time="14:30 - 15:30" location="Sala: Delete sem Where"
+            class="schedule-two-rows"
+            title="Status sem contexto gera ruído: como comunicar decisões de verdade"
+            description="Todo mundo já participou de uma reunião onde muita coisa foi atualizada, mas pouca coisa ficou realmente clara. O status foi dado, os números apareceram, mas a decisão e os trade-offs continuaram nebulosos. Como transformar comunicação de rotina em comunicação que gera entendimento, alinhamento e ação?" />
+
+          <Schedule :speakers="[{img: SpeakerAldemon, name: 'Aldemon Lage Bonifácio', role: 'Líder Técnico', company: 'Afya'}]"
+            :types="[{id: 'career', name: 'Carreira'}]" time="14:30 - 15:30" location="Auditório: Teste em Produção"
+            class="schedule-two-rows"
+            title="Legado vs. Modinha - Como não se tornar obsoleto em tecnologia"
+            description="Em 25 anos trabalhando com tecnologia vi tecnologias surgirem como revolução e desaparecerem poucos anos depois. O que sustenta uma carreira sólida ao longo do tempo? A resposta está nos fundamentos — que no início parecem básicos, mas são o verdadeiro diferencial de quem se mantém relevante." />
+
+          <Schedule :speakers="[{img: SpeakerKevin, name: 'Kevin Azevedo de Souza', role: 'Engenheiro de Segurança', company: 'PagBank'}]"
+            :types="[{id: 'security', name: 'Segurança'}]" time="14:30 - 15:30" location="Sala: Deploy da Sexta"
+            class="schedule-two-rows"
+            title="Mentalidade ofensiva: como proteger suas aplicações pensando como um atacante"
+            description="Vamos explorar a segurança de aplicações sob a perspectiva do atacante. Em vez de focar apenas em boas práticas, propomos uma mudança de mentalidade: entender como sistemas são analisados, explorados e comprometidos, e como a mentalidade ofensiva permite identificar vulnerabilidades antes que sejam exploradas." />
+
+          <ScheduleTile time="15:30 - 16:00" title="Coffee Break"/>
+          <ScheduleTile time="16:00 - 16:15" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
+
+          <Schedule :speakers="[{img: SpeakerRomulo, name: 'Rômulo Murucci Oliveira', role: 'Data Product Owner', company: 'MRS Logística'}]"
+            :types="[{id: 'ai', name: 'IA'}]" time="16:15 - 17:15" location="Sala: Delete sem Where"
+            title="A Próxima Onda da Automação: Potencializando o Ciclo de IA com AutoML e GenAI"
+            description="Vamos desmistificar o AutoML Integral com dois cases de alto impacto desenvolvidos localmente em Juiz de Fora — da academia (UFJF) à indústria ferroviária. E para fechar: como a integração sinérgica entre AutoML e IA Generativa está transformando o papel do profissional de dados." />
+
+          <ScheduleTile time="16:15 - 18:00" title="Mesa Redonda" location="Auditório: Teste em Produção" class="schedule-two-rows"/>
+
+          <Schedule :speakers="[{img: SpeakerThiagoCantarino, name: 'Thiago Cantarino da Cruz', role: 'Especialista em Cybersecurity OT/ICS', company: 'NTT DATA'}]"
+            :types="[{id: 'ai', name: 'IA'}]" time="16:15 - 17:15" location="Sala: Deploy da Sexta"
+            title="Quando Cyber OT vira decisão de milhões: como evitei uma evacuação industrial e US$ 3 milhões em perdas"
+            description="Com a evolução de Cloud, IoT e IA, os incidentes cibernéticos em ambientes industriais passaram a representar riscos concretos à continuidade operacional. Nesta palestra, apresento uma abordagem prática sobre Cyber OT, como estruturar um programa de segurança e um business case real que evitou uma evacuação industrial e US$ 3 milhões em perdas." />
+
+          <Schedule :speakers="[{img: SpeakerLuca, name: 'Luca Garcia Honorio', role: 'Engenheiro de Dados', company: 'CI&T'}]"
+            :types="[{id: 'ai', name: 'IA'}]" time="17:15 - 18:00" location="Sala: Delete sem Where"
+            title="Engenharia de Dados 2.0: Construindo a Infraestrutura que Sustenta a IA Generativa"
+            description="Não existe IA de elite com dados de baixa qualidade. Vamos explorar a 'Engenharia de Dados 2.0': arquiteturas modernas de Lakehouse com Databricks, padrões de RAG para reduzir alucinações de LLMs, e os desafios reais de governança e privacidade em projetos de alta criticidade no setor financeiro." />
+
+          <Schedule :speakers="[{img: SpeakerTiago, name: 'Tiago Reis', role: 'Coordenador de Tecnologia Educacional', company: 'Colégio Stella Matutina'}]"
+            :types="[{id: 'career', name: 'Carreira'}]" time="17:15 - 18:00" location="Sala: Deploy da Sexta"
+            title="Seja Tech & Google Innovator: Transformando instituições através da inovação inclusiva"
+            description="O case do Projeto Seja Tech: uma iniciativa que redefine a tecnologia como linguagem de poder e autonomia para além das equipes técnicas. Como combater a discrepância entre ambientes hiperconectados e seus 'bastidores' desconectados — validado na Academia de Google Innovator em São Paulo." />
+
+          <ScheduleTile time="18:00 - 18:30" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
+          <ScheduleTile time="18:30 - 18:40" title="Sorteios"/>
+          <ScheduleTile time="18:40 - ∞" title="Happy Hour"/>
         </div>
       </section>
       <section id="speakers" class="infoSections">
         <h1 class="section-title">Palestrantes</h1>
         <div class="speakers-main">
-          <Speaker :img="SpeakerHenrique" link="https://www.linkedin.com/in/henrique-cabral-a6b7ba176/"
-            name="Henrique Cabral" role="Security Engineer" company="Aikido Security" />
-          <Speaker :img="SpeakerAna" link="https://www.linkedin.com/in/ana-carolina-ov%C3%ADdio/" name="Ana Carolina Ovídio"
-            role="Data Engineer II" company="iFood" />
-          <Speaker :img="SpeakerLucasCarrilho" link="https://linktr.ee/devmagro" name="Lucas Carrilho"
-            role="Desenvolvedor Backend" company="Mercado Livre" />
-          <Speaker :img="SpeakerCamilla" link="https://www.linkedin.com/in/camillaschettino/" name="Camilla Schettino"
-            role="Team Tech Lead" company="Levty" />
-          <Speaker :img="SpeakerFabricio2" link="https://www.linkedin.com/in/fabriciooml/" name="Fabricio Lima"
-            role="Analytics Engineer" company="Nubank" />
-          <Speaker :img="SpeakerCibelle" link="https://www.linkedin.com/in/cibelle-castro-638bb118/" name="Cibelle Castro"
-            role="Senior SQL Server Database Administrator" company="Itaú Unibanco" />
-          <Speaker :img="SpeakerJoao" link="https://www.linkedin.com/in/joaomedinadev/" name="João Medina"
-            role="Backend Engineering Specialist" company="iFood" />
-          <Speaker :img="SpeakerIngrid" link="https://ingridiz.com/" name="Ingrid Coutinho"
-            role="Product Manager" company="FIAP" />
-          <Speaker :img="SpeakerRenato" link="https://renatobonario.com.br/" name="Renato Bonario"
-            role="Sênior Product Manager" company="Capivara Tech" />
-          <Speaker :img="SpeakerJade" link="https://www.linkedin.com/in/jade-fonseca-vieira-77a70b22b/" name="Jade Fonseca" 
-            role="Advogada" company="A.J Soluções Tecnológicas" />
-          <Speaker :img="SpeakerDanilo" link="https://www.linkedin.com/in/danilo-oliveira-santos/" name="Danilo Oliveira Santos" 
-            role="Professor" company="EnsinE"/>
-          <Speaker :img="SpeakerGabriela" link="https://www.linkedin.com/in/gabrielafpcunha/" name="Gabriela Cunha"
-            role="Fundadora" company="Steps" />
-          <Speaker :img="SpeakerAntonio" link="https://www.linkedin.com/in/antoniobritocjr/" name="Antonio Brito" 
-            role="Especialista de Inovação Empresarial" company="Firjan" />
-          <Speaker :img="SpeakerCamillaPicoli" link="https://www.linkedin.com/in/camillapicoli/" name="Camilla Picoli"
-            role="Psicóloga" company="Steps" />
-          <Speaker :img="SpeakerJoaoSouza" link="https://www.linkedin.com/in/souzajbr/" name="João Souza"
-            role="Full-stack Developer" company="CAEd / UFJF" />
-          <Speaker :img="SpeakerLaurene" link="https://www.instagram.com/laurenealves/" name="Laurene Alves"
-            role="CEO/Fudadora" company="Gleba Arquitetura e Engenharia" />
-          <Speaker :img="SpeakerGuilherme" link="https://www.linkedin.com/in/viannaguilherme/" name="Guilherme Vianna"
-            role="Software Engineering Manager" company="iFood" />
+          <Speaker :img="SpeakerThiagoCantarino" link="https://www.linkedin.com/in/eng-thiago-cantarino/"
+            name="Thiago Cantarino da Cruz" role="Especialista em Cybersecurity OT/ICS" company="NTT DATA" />
+          <Speaker :img="SpeakerLucasCarrilho" link="https://www.linkedin.com/in/karilho/"
+            name="Lucas Carrilho de Almeida" role="Engenheiro de Software Backend" company="Mercado Livre" />
+          <Speaker :img="SpeakerThiagoMiranda" link="https://www.linkedin.com/in/dtmp3st/"
+            name="Thiago Miranda de Paula" role="Analista de Segurança Ofensiva" company="Grupo Energisa" />
+          <Speaker :img="SpeakerWendel" link="https://www.linkedin.com/in/wendel-moreira/"
+            name="Wendel Moreira Mendes da Silveira" role="CTO" company="Chico Rei" />
+          <Speaker :img="SpeakerBrendo" link="https://www.linkedin.com/in/brendo-f-00b75416a/"
+            name="Brendo Freitas de Sousa" role="Desenvolvedor de Software" company="Icatu Seguros" />
+          <Speaker :img="SpeakerMarcoJunior" link="https://www.linkedin.com/in/marcojr73/"
+            name="Marco Júnior Lopes de Melo" role="Desenvolvedor Web" company="-" />
+          <Speaker :img="SpeakerLucasWilman" link="https://www.linkedin.com/in/lucascrispim/"
+            name="Lucas Wilman da Silva Crispim" role="Professor / Desenvolvedor" company="UFJF" />
+          <Speaker :img="SpeakerDanilo" link="https://www.linkedin.com/in/danilo-oliveira-santos/"
+            name="Danilo Oliveira Santos" role="Engenheiro de Dados / Professor" company="Faculdade Ensine" />
+          <Speaker :img="SpeakerAnaCarolina" link="https://www.linkedin.com/in/anacarolinamarinho21/"
+            name="Ana Carolina Da Costa Marinho" role="Analista de Cyber Threat Intelligence" company="Grupo Energisa" />
+          <Speaker :img="SpeakerMarcus" link="https://www.linkedin.com/in/marcusajesus/"
+            name="Marcus Antonio de Jesus" role="Product Manager" company="Asaas" />
+          <Speaker :img="SpeakerLeandro" link="https://www.linkedin.com/in/lesimoess/"
+            name="Leandro Simões da Silva" role="Engenheiro de Software" company="TheGuarantors" />
+          <Speaker :img="SpeakerBarbara" link="https://www.linkedin.com/in/b%C3%A1rbara-r-neri-43a0021b2/"
+            name="Bárbara Rezende Neri" role="Estudante de Ciência da Computação" company="UFSJ" />
+          <Speaker :img="SpeakerRenato" link="https://www.linkedin.com/in/renatobonario/"
+            name="Renato Bonario" role="Product Owner" company="Heineken" />
           <Speaker :img="SpeakerAldemon" link="https://www.linkedin.com/in/aldemonbonifacio/"
-            name="Aldemon Bonifácio" role="Coordenador de Tecnologia" company="Afya" />
-          <Speaker :img="SpeakerTiago" link="https://www.linkedin.com/in/calado-tiago/" name="Tiago Calado"
-            role="Desenvolvedor Backend" company="Monkey" />
-          <Speaker :img="SpeakerRafael" link="https://www.linkedin.com/in/rafael-kneip/" name="Rafael Kneip"
-            role="Engenheiro Mecânico" company="UFJF" />
-          <Speaker :img="SpeakerDanton" link="https://www.linkedin.com/in/danton-rafael/" name="Danton Rafael"
-            role="Senior Devops Engineer" company="Zallpy Digital" />
-          <Speaker :img="SpeakerLeandro" link="https://www.linkedin.com/in/leandro-souza-74b3a5175/" name="Leandro dos Santos"
-            role="Professor de Inglês" company="Autônomo" />
+            name="Aldemon Lage Bonifácio" role="Líder Técnico" company="Afya" />
+          <Speaker :img="SpeakerKevin" link="https://www.linkedin.com/in/kevin-azevedo-278526157/"
+            name="Kevin Azevedo de Souza" role="Engenheiro de Segurança" company="PagBank" />
+          <Speaker :img="SpeakerRomulo" link="https://www.linkedin.com/in/romulomurucci/"
+            name="Rômulo Murucci Oliveira" role="Data Product Owner" company="MRS Logística" />
+          <Speaker :img="SpeakerSamuel" link="https://www.linkedin.com/in/samuel-rocha-amaral/"
+            name="Samuel Rocha Amaral" role="Especialista em DevOps/SRE" company="Smart NX" />
+          <Speaker :img="SpeakerLuca" link="https://www.linkedin.com/in/luca-garcia-b359a6168/"
+            name="Luca Garcia Honorio" role="Engenheiro de Dados" company="CI&T" />
+          <Speaker :img="SpeakerTiago" link="https://www.linkedin.com/in/tiagoreisjf/"
+            name="Tiago Reis" role="Coordenador de Tecnologia Educacional" company="Colégio Stella Matutina" />
         </div>
-      </section> -->
+      </section>
       <section id="location" class="infoSections">
         <h1 class="section-title">Local</h1>
         <div class="location-main">
@@ -381,33 +358,28 @@ import InstagramIcon from '../components/icons/IconInstagram.vue'
 import LinkedinIcon from '../components/icons/IconLinkedin.vue'
 import YoutubeIcon from '../components/icons/IconYoutube.vue'
 import MapsIcon from '../components/icons/IconMaps.vue'
-// import Speaker from '../components/Speaker.vue'
-// import Schedule from '../components/Schedule.vue'
-// import ScheduleTile from '../components/ScheduleTile.vue'
-// import SpeakerHenrique from '@/assets/henrique-cabral.jpeg'
-// import SpeakerGuilherme from '@/assets/guilherme-vianna.jpeg'
-// import SpeakerFabricio from '@/assets/fabricio-lima.jpeg'
-// import SpeakerFabricio2 from '@/assets/fabricio-2.jpeg'
-// import SpeakerJoao from '@/assets/joao-medina.jpeg'
-// import SpeakerRenato from '@/assets/renato-bonario.jpeg'
-// import SpeakerAna from '@/assets/ana-ovidio.jpeg'
-// import SpeakerIngrid from '@/assets/ingrid-coutinho.jpeg'
-// import SpeakerAntonio from '@/assets/antonio-brito.jpeg'
-// import SpeakerJade from '@/assets/jade-fonseca.jpeg'
-// import SpeakerDanilo from '@/assets/danilo-oliveira.jpeg'
-// import SpeakerJoaoSouza from '@/assets/joao-souza.jpeg'
-// import SpeakerAldemon from '@/assets/aldemon-bonifacio.jpeg'
-// import SpeakerCibelle from '@/assets/cibelle-castro.jpeg'
-// import SpeakerCamilla from '@/assets/camilla-schettino.jpeg'
-// import SpeakerTiago from '@/assets/tiago-calado.jpeg'
-// import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.jpeg'
-// import SpeakerRafael from '@/assets/rafael-kneip.png'
-// import SpeakerGabriela from '@/assets/gabriela-cunha.jpeg'
-// import SpeakerCamillaPicoli from '@/assets/camilla-picoli.jpeg'
-// import SpeakerDanton from '@/assets/danton-rafael.jpeg'
-// import SpeakerLaurene from '@/assets/laurene-alves.jpeg'
-// import SpeakerLaurene2 from '@/assets/laurene-alves-2.jpeg'
-// import SpeakerLeandro from '@/assets/leandro.jpeg'
+import Speaker from '../components/Speaker.vue'
+import Schedule from '../components/Schedule.vue'
+import ScheduleTile from '../components/ScheduleTile.vue'
+import SpeakerThiagoCantarino from '@/assets/thiago-cantarino.jpeg'
+import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.jpeg'
+import SpeakerThiagoMiranda from '@/assets/thiago-miranda.jpeg'
+import SpeakerWendel from '@/assets/wendel-silveira.jpeg'
+import SpeakerBrendo from '@/assets/brendo-freitas.jpeg'
+import SpeakerMarcoJunior from '@/assets/marco-junior.jpeg'
+import SpeakerLucasWilman from '@/assets/lucas-wilman.jpeg'
+import SpeakerDanilo from '@/assets/danilo-santos.jpeg'
+import SpeakerAnaCarolina from '@/assets/ana-carolina.jpeg'
+import SpeakerMarcus from '@/assets/marcus-jesus.jpeg'
+import SpeakerLeandro from '@/assets/leandro-simoes.jpeg'
+import SpeakerBarbara from '@/assets/barbara-neri.jpeg'
+import SpeakerRenato from '@/assets/renato-bonario.jpeg'
+import SpeakerAldemon from '@/assets/aldemon-bonifacio.jpeg'
+import SpeakerKevin from '@/assets/kevin-azevedo.jpeg'
+import SpeakerRomulo from '@/assets/romulo-murucci.jpeg'
+import SpeakerSamuel from '@/assets/samuel-amaral.jpeg'
+import SpeakerLuca from '@/assets/luca-garcia.jpeg'
+import SpeakerTiago from '@/assets/tiago-reis.jpeg'
 </script>
 
 <style scoped>
@@ -805,6 +777,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .schedule-main {
@@ -987,6 +960,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .schedule-two-col {
