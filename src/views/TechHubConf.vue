@@ -88,12 +88,12 @@
           <ScheduleTile time="8:00 - 8:30" title="Credenciamento" location="Entrada"/>
           <ScheduleTile time="8:30 - 9:00" title="Abertura" location="Auditório: Teste em Produção"/>
 
-          <Schedule :speakers="[{img: SpeakerThiagoCantarino, name: 'Thiago Cantarino da Cruz', role: 'Especialista em Cybersecurity OT/ICS', company: 'NTT DATA'}]"
-            :types="[{id: 'ai', name: 'IA'}]" time="9:00 - 10:00" location="Sala: Delete sem Where"
-            title="Quando Cyber OT vira decisão de milhões: como evitei uma evacuação industrial e US$ 3 milhões em perdas"
-            description="Com a evolução de Cloud, IoT e IA, os incidentes cibernéticos em ambientes industriais passaram a representar riscos concretos à continuidade operacional. Nesta palestra, apresento uma abordagem prática sobre Cyber OT, como estruturar um programa de segurança e um business case real que evitou uma evacuação industrial e US$ 3 milhões em perdas." />
+          <Schedule :speakers="[{img: SpeakerSamuel, name: 'Samuel Rocha Amaral', role: 'Especialista em DevOps/SRE', company: 'Smart NX'}]"
+            :types="[{id: 'devops', name: 'DevOps'}]" time="9:00 - 10:00" location="Sala: Delete sem Where"
+            title="Aprendizados na Jornada DevOps: o que os 'ops' me ensinaram"
+            description="Nem todo deploy dá certo. Nem toda decisão escala. Compartilho uma coleção real de momentos 'ops…' ao longo da minha jornada — erros em pipelines, Docker, AWS e Terraform, até falhas culturais que impediram times de evoluir. Cada caso traz contexto, impacto, causa raiz e o aprendizado aplicado na prática." />
 
-          <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho de Almeida', role: 'Engenheiro de Software Backend', company: ''}]"
+          <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho de Almeida', role: 'Engenheiro de Software Backend', company: 'Mercado Livre'}]"
             :types="[{id: 'career', name: 'Carreira'}]" time="9:00 - 10:00" location="Auditório: Teste em Produção"
             title="Da Primeira Vaga ao Mercado Internacional como DEV"
             description="O que realmente ajuda um desenvolvedor a sair do zero e construir uma carreira sólida até alcançar oportunidades internacionais? Falaremos sobre caminhos técnicos, stacks mais usadas, como encarar processos seletivos e as soft skills que mais pesam no mercado — desde a primeira vaga até o tão sonhado salário em dólar." />
@@ -133,7 +133,7 @@
             title="Dados Instagramáveis: Construindo um Pipeline End-to-End no Microsoft Fabric"
             description="Como transformar curtidas e métricas do Instagram em decisões estratégicas de negócio? Vamos construir um ecossistema de dados completo no Microsoft Fabric — da ingestão bruta via API à Arquitetura Medalhão, evoluindo dados da camada Bronze até a Gold com poderosas tabelas de Fato e Dimensão." />
 
-          <Schedule :speakers="[{img: SpeakerAnaCarolina, name: 'Ana Carolina Da Costa Marinho', role: 'Analista de Cyber Threat Intelligence', company: ''}]"
+          <Schedule :speakers="[{img: SpeakerAnaCarolina, name: 'Ana Carolina Da Costa Marinho', role: 'Analista de Cyber Threat Intelligence', company: 'Grupo Energisa'}]"
             :types="[{id: 'security', name: 'Segurança'}]" time="11:15 - 12:15" location="Sala: Deploy da Sexta"
             class="schedule-two-rows"
             title="Inteligência de Ameaças Cibernéticas (CTI): Como CTI se conecta com Desenvolvimento"
@@ -147,7 +147,7 @@
             title="Produto vs Engenharia: por que esse conflito ainda existe (e como sair dele)"
             description="Em muitas empresas, existe uma divisão entre produto e engenharia. 'O negócio quer tudo pra ontem' vs. 'isso não faz sentido técnico'. Vamos explorar onde essa relação quebra de verdade e como criar contexto compartilhado para times que discordam sem travar a evolução do produto." />
 
-          <Schedule :speakers="[{img: SpeakerLeandro, name: 'Leandro Simões da Silva', role: 'Engenheiro de Software', company: ''}]"
+          <Schedule :speakers="[{img: SpeakerLeandro, name: 'Leandro Simões da Silva', role: 'Engenheiro de Software', company: 'TheGuarantors'}]"
             :types="[{id: 'devops', name: 'DevOps'}]" time="14:00 - 14:30" location="Auditório: Teste em Produção"
             title="Observabilidade para programadores"
             description="Saber como uma aplicação se comporta é essencial para detectar e resolver falhas com o mínimo impacto no negócio. Esta palestra apresenta os primeiros passos para tornar uma aplicação observável por meio do OpenTelemetry, com foco prático para programadores." />
@@ -169,7 +169,7 @@
             title="Legado vs. Modinha - Como não se tornar obsoleto em tecnologia"
             description="Em 25 anos trabalhando com tecnologia vi tecnologias surgirem como revolução e desaparecerem poucos anos depois. O que sustenta uma carreira sólida ao longo do tempo? A resposta está nos fundamentos — que no início parecem básicos, mas são o verdadeiro diferencial de quem se mantém relevante." />
 
-          <Schedule :speakers="[{img: SpeakerKevin, name: 'Kevin Azevedo de Souza', role: 'Engenheiro de Segurança', company: ''}]"
+          <Schedule :speakers="[{img: SpeakerKevin, name: 'Kevin Azevedo de Souza', role: 'Engenheiro de Segurança', company: 'PagBank'}]"
             :types="[{id: 'security', name: 'Segurança'}]" time="14:30 - 15:30" location="Sala: Deploy da Sexta"
             class="schedule-two-rows"
             title="Mentalidade ofensiva: como proteger suas aplicações pensando como um atacante"
@@ -185,10 +185,10 @@
 
           <ScheduleTile time="16:15 - 18:00" title="Mesa Redonda" location="Auditório: Teste em Produção" class="schedule-two-rows"/>
 
-          <Schedule :speakers="[{img: SpeakerSamuel, name: 'Samuel Rocha Amaral', role: 'Especialista em DevOps/SRE', company: ''}]"
-            :types="[{id: 'devops', name: 'DevOps'}]" time="16:15 - 17:15" location="Sala: Deploy da Sexta"
-            title="Aprendizados na Jornada DevOps: o que os 'ops' me ensinaram"
-            description="Nem todo deploy dá certo. Nem toda decisão escala. Compartilho uma coleção real de momentos 'ops…' ao longo da minha jornada — erros em pipelines, Docker, AWS e Terraform, até falhas culturais que impediram times de evoluir. Cada caso traz contexto, impacto, causa raiz e o aprendizado aplicado na prática." />
+          <Schedule :speakers="[{img: SpeakerThiagoCantarino, name: 'Thiago Cantarino da Cruz', role: 'Especialista em Cybersecurity OT/ICS', company: 'NTT DATA'}]"
+            :types="[{id: 'ai', name: 'IA'}]" time="16:15 - 17:15" location="Sala: Deploy da Sexta"
+            title="Quando Cyber OT vira decisão de milhões: como evitei uma evacuação industrial e US$ 3 milhões em perdas"
+            description="Com a evolução de Cloud, IoT e IA, os incidentes cibernéticos em ambientes industriais passaram a representar riscos concretos à continuidade operacional. Nesta palestra, apresento uma abordagem prática sobre Cyber OT, como estruturar um programa de segurança e um business case real que evitou uma evacuação industrial e US$ 3 milhões em perdas." />
 
           <Schedule :speakers="[{img: SpeakerLuca, name: 'Luca Garcia Honorio', role: 'Engenheiro de Dados', company: 'CI&T'}]"
             :types="[{id: 'ai', name: 'IA'}]" time="17:15 - 18:00" location="Sala: Delete sem Where"
