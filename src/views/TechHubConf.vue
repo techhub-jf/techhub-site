@@ -820,21 +820,21 @@ footer {
 }
 
 .schedule-gde::before {
-  content: 'GOOGLE DEVELOPER EXPERT';
+  content: '';
   display: block;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  color: white;
-  padding: 7px 0;
+  height: 70px;
   margin: 0 -20px 12px;
-  background-image: linear-gradient(90deg,
+  background-color: white;
+  background-image: url('@/assets/gde.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 90%;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg,
     #4285F4 0% 25%,
     #EA4335 25% 50%,
-    #34A853 50% 75%,
-    #FBBC04 75% 100%);
+    #FBBC04 50% 75%,
+    #34A853 75% 100%) 1;
 }
 
 .schedule-two-rows {
