@@ -49,7 +49,7 @@
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
         <div class="about-image">
-          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.jpg" />
+          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.webp" loading="lazy" decoding="async" />
         </div>
         <div class="about-sub-section">
           <div class="about-text">
@@ -276,7 +276,7 @@
             </div>
           </div>
           <div class="location-sub-section">
-            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.jpg" />
+            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.webp" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -308,7 +308,7 @@
               <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg" />
             </a> -->
             <!-- <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.png" />
+              <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.webp" loading="lazy" decoding="async" />
             </a> -->
           </div>
         </div>
@@ -368,26 +368,26 @@ import MapsIcon from '../components/icons/IconMaps.vue'
 import Speaker from '../components/Speaker.vue'
 import Schedule from '../components/Schedule.vue'
 import ScheduleTile from '../components/ScheduleTile.vue'
-import SpeakerThiagoCantarino from '@/assets/thiago-cantarino.jpeg'
-import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.jpeg'
-import SpeakerThiagoMiranda from '@/assets/thiago-miranda.jpeg'
-import SpeakerWendel from '@/assets/wendel-silveira.jpeg'
-import SpeakerBrendo from '@/assets/brendo-freitas.jpeg'
-import SpeakerMarcoJunior from '@/assets/marco-junior.jpeg'
-import SpeakerLucasWilman from '@/assets/lucas-wilman.jpeg'
-import SpeakerDanilo from '@/assets/danilo-santos.jpeg'
-import SpeakerAnaCarolina from '@/assets/ana-carolina.jpeg'
-import SpeakerMarcus from '@/assets/marcus-jesus.jpeg'
-import SpeakerLeandro from '@/assets/leandro-simoes.jpeg'
-import SpeakerBarbara from '@/assets/barbara-neri.jpeg'
-import SpeakerRenato from '@/assets/renato-bonario.jpeg'
-import SpeakerAldemon from '@/assets/aldemon-bonifacio.jpeg'
-import SpeakerKevin from '@/assets/kevin-azevedo.jpeg'
-import SpeakerRomulo from '@/assets/romulo-murucci.jpeg'
-import SpeakerSamuel from '@/assets/samuel-amaral.jpeg'
-import SpeakerLuca from '@/assets/luca-garcia.jpeg'
-import SpeakerTiago from '@/assets/tiago-reis.jpeg'
-import SpeakerMariaLuize from '@/assets/maria-luize.png'
+import SpeakerThiagoCantarino from '@/assets/thiago-cantarino.webp'
+import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
+import SpeakerThiagoMiranda from '@/assets/thiago-miranda.webp'
+import SpeakerWendel from '@/assets/wendel-silveira.webp'
+import SpeakerBrendo from '@/assets/brendo-freitas.webp'
+import SpeakerMarcoJunior from '@/assets/marco-junior.webp'
+import SpeakerLucasWilman from '@/assets/lucas-wilman.webp'
+import SpeakerDanilo from '@/assets/danilo-santos.webp'
+import SpeakerAnaCarolina from '@/assets/ana-carolina.webp'
+import SpeakerMarcus from '@/assets/marcus-jesus.webp'
+import SpeakerLeandro from '@/assets/leandro-simoes.webp'
+import SpeakerBarbara from '@/assets/barbara-neri.webp'
+import SpeakerRenato from '@/assets/renato-bonario.webp'
+import SpeakerAldemon from '@/assets/aldemon-bonifacio.webp'
+import SpeakerKevin from '@/assets/kevin-azevedo.webp'
+import SpeakerRomulo from '@/assets/romulo-murucci.webp'
+import SpeakerSamuel from '@/assets/samuel-amaral.webp'
+import SpeakerLuca from '@/assets/luca-garcia.webp'
+import SpeakerTiago from '@/assets/tiago-reis.webp'
+import SpeakerMariaLuize from '@/assets/maria-luize.webp'
 </script>
 
 <style scoped>
@@ -402,7 +402,7 @@ import SpeakerMariaLuize from '@/assets/maria-luize.png'
 }
 
 #home {
-  background-image: url('@/assets/moinho.png');
+  background-image: url('@/assets/moinho.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -704,7 +704,7 @@ nav {
 
 .tech-hub-conf-photo {
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   border-radius: 30px;
 }
 
@@ -899,7 +899,7 @@ footer {
 
   .tech-hub-conf-photo {
     object-fit: cover;
-    max-width: 100%;
+    width: 100%;
     height: 300px;
     border-radius: 10px;
   }

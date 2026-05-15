@@ -36,7 +36,7 @@
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
         <div class="about-image">
-          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.jpg" />
+          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.webp" loading="lazy" decoding="async" />
         </div>
         <div class="about-sub-section">
           <div class="about-text">
@@ -415,7 +415,7 @@
             </div>
           </div>
           <div class="location-sub-section">
-            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.jpg" />
+            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.webp" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -444,7 +444,7 @@
               <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
             </a>
             <a href="https://jackexperts.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jack Experts" class="sponsor-image" src="@/assets/jack.png" />
+              <img alt="Jack Experts" class="sponsor-image" src="@/assets/jack.webp" loading="lazy" decoding="async" />
             </a>
             <a href="https://reportei.com/" class="sponsor-image-link" target="_blank">
               <img alt="Jack Experts" class="sponsor-image-rectangular" src="@/assets/reportei.svg" />
@@ -483,7 +483,7 @@
               <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
             </a>
             <a href="https://www.instagram.com/microraptorufjf/" class="sponsor-image-link" target="_blank">
-              <img alt="Microraptor" class="sponsor-image-vertical" src="@/assets/microraptor.png" />
+              <img alt="Microraptor" class="sponsor-image-vertical" src="@/assets/microraptor.webp" loading="lazy" decoding="async" />
             </a>
           </div>
         </div>
@@ -502,24 +502,24 @@ import MapsIcon from '../components/icons/IconMaps.vue'
 import Speaker from '../components/Speaker.vue'
 import Schedule from '../components/Schedule.vue'
 import ScheduleTile from '../components/ScheduleTile.vue'
-import SpeakerHenrique from '@/assets/henrique-cabral.jpeg'
-import SpeakerCintia from '@/assets/cintia-esteves.jpeg'
-import SpeakerBrendo from '@/assets/brendo-freitas.jpeg'
-import SpeakerEmerson from '@/assets/emerson-pombo.jpeg'
-import SpeakerFabricio from '@/assets/fabricio-lima.jpeg'
-import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.jpeg'
-import SpeakerLucasLopes from '@/assets/lucas-lopes.jpeg'
-import SpeakerLuiza from '@/assets/luiza-bartels.jpeg'
-import SpeakerNatalia from '@/assets/natalia-granato.png'
-import SpeakerRanieri from '@/assets/ranieri-imperatori.jpeg'
-import SpeakerJoao from '@/assets/joao-medina.jpeg'
-import SpeakerLais from '@/assets/lais-bomtempo.jpeg'
-import SpeakerCarlos from '@/assets/carlos-alexandre.png'
-import SpeakerAna from '@/assets/ana-carius.png'
-import SpeakerDanilo from '@/assets/danilo-oliveira.jpeg'
-import SpeakerFran from '@/assets/fran-weidt.jpeg'
-import SpeakerRuan from '@/assets/ruan-carlos.jpeg'
-import SpeakerCamilla from '@/assets/camilla-martins.jpg'
+import SpeakerHenrique from '@/assets/henrique-cabral.webp'
+import SpeakerCintia from '@/assets/cintia-esteves.webp'
+import SpeakerBrendo from '@/assets/brendo-freitas.webp'
+import SpeakerEmerson from '@/assets/emerson-pombo.webp'
+import SpeakerFabricio from '@/assets/fabricio-lima.webp'
+import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
+import SpeakerLucasLopes from '@/assets/lucas-lopes.webp'
+import SpeakerLuiza from '@/assets/luiza-bartels.webp'
+import SpeakerNatalia from '@/assets/natalia-granato.webp'
+import SpeakerRanieri from '@/assets/ranieri-imperatori.webp'
+import SpeakerJoao from '@/assets/joao-medina.webp'
+import SpeakerLais from '@/assets/lais-bomtempo.webp'
+import SpeakerCarlos from '@/assets/carlos-alexandre.webp'
+import SpeakerAna from '@/assets/ana-carius.webp'
+import SpeakerDanilo from '@/assets/danilo-oliveira.webp'
+import SpeakerFran from '@/assets/fran-weidt.webp'
+import SpeakerRuan from '@/assets/ruan-carlos.webp'
+import SpeakerCamilla from '@/assets/camilla-martins.webp'
 </script>
 
 <style scoped>
@@ -534,7 +534,7 @@ import SpeakerCamilla from '@/assets/camilla-martins.jpg'
 }
 
 #home {
-  background-image: url('@/assets/moinho.png');
+  background-image: url('@/assets/moinho.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

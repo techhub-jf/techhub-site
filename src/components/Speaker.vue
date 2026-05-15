@@ -1,7 +1,7 @@
 <template>
     <a :href="link" target="_blank" class="speaker-card">
         <div class="speaker-image">
-            <img :alt="name" class="speaker-img" :src="img" />
+            <img :alt="name" class="speaker-img" :src="img" loading="lazy" decoding="async" />
         </div>
         <div class="speaker-about">
             <p class="speaker-text bold-text">{{ name }}</p>

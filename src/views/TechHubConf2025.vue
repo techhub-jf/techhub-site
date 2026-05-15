@@ -48,7 +48,7 @@
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
         <div class="about-image">
-          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.jpg" />
+          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.webp" loading="lazy" decoding="async" />
         </div>
         <div class="about-sub-section">
           <div class="about-text">
@@ -292,7 +292,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             </div>
           </div>
           <div class="location-sub-section">
-            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.jpg" />
+            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.webp" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -324,7 +324,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
               <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg" />
             </a>
             <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.png" />
+              <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.webp" loading="lazy" decoding="async" />
             </a>
           </div>
         </div>
@@ -377,30 +377,30 @@ import MapsIcon from '../components/icons/IconMaps.vue'
 import Speaker from '../components/Speaker.vue'
 import Schedule from '../components/Schedule.vue'
 import ScheduleTile from '../components/ScheduleTile.vue'
-import SpeakerHenrique from '@/assets/henrique-cabral.jpeg'
-import SpeakerGuilherme from '@/assets/guilherme-vianna.jpeg'
-import SpeakerFabricio from '@/assets/fabricio-lima.jpeg'
-import SpeakerFabricio2 from '@/assets/fabricio-2.jpeg'
-import SpeakerJoao from '@/assets/joao-medina.jpeg'
-import SpeakerRenato from '@/assets/renato-bonario.jpeg'
-import SpeakerAna from '@/assets/ana-ovidio.jpeg'
-import SpeakerIngrid from '@/assets/ingrid-coutinho.jpeg'
-import SpeakerAntonio from '@/assets/antonio-brito.jpeg'
-import SpeakerJade from '@/assets/jade-fonseca.jpeg'
-import SpeakerDanilo from '@/assets/danilo-oliveira.jpeg'
-import SpeakerJoaoSouza from '@/assets/joao-souza.jpeg'
-import SpeakerAldemon from '@/assets/aldemon-bonifacio.jpeg'
-import SpeakerCibelle from '@/assets/cibelle-castro.jpeg'
-import SpeakerCamilla from '@/assets/camilla-schettino.jpeg'
-import SpeakerTiago from '@/assets/tiago-calado.jpeg'
-import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.jpeg'
-import SpeakerRafael from '@/assets/rafael-kneip.png'
-import SpeakerGabriela from '@/assets/gabriela-cunha.jpeg'
-import SpeakerCamillaPicoli from '@/assets/camilla-picoli.jpeg'
-import SpeakerDanton from '@/assets/danton-rafael.jpeg'
-import SpeakerLaurene from '@/assets/laurene-alves.jpeg'
-import SpeakerLaurene2 from '@/assets/laurene-alves-2.jpeg'
-import SpeakerLeandro from '@/assets/leandro.jpeg'
+import SpeakerHenrique from '@/assets/henrique-cabral.webp'
+import SpeakerGuilherme from '@/assets/guilherme-vianna.webp'
+import SpeakerFabricio from '@/assets/fabricio-lima.webp'
+import SpeakerFabricio2 from '@/assets/fabricio-2.webp'
+import SpeakerJoao from '@/assets/joao-medina.webp'
+import SpeakerRenato from '@/assets/renato-bonario.webp'
+import SpeakerAna from '@/assets/ana-ovidio.webp'
+import SpeakerIngrid from '@/assets/ingrid-coutinho.webp'
+import SpeakerAntonio from '@/assets/antonio-brito.webp'
+import SpeakerJade from '@/assets/jade-fonseca.webp'
+import SpeakerDanilo from '@/assets/danilo-oliveira.webp'
+import SpeakerJoaoSouza from '@/assets/joao-souza.webp'
+import SpeakerAldemon from '@/assets/aldemon-bonifacio.webp'
+import SpeakerCibelle from '@/assets/cibelle-castro.webp'
+import SpeakerCamilla from '@/assets/camilla-schettino.webp'
+import SpeakerTiago from '@/assets/tiago-calado.webp'
+import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
+import SpeakerRafael from '@/assets/rafael-kneip.webp'
+import SpeakerGabriela from '@/assets/gabriela-cunha.webp'
+import SpeakerCamillaPicoli from '@/assets/camilla-picoli.webp'
+import SpeakerDanton from '@/assets/danton-rafael.webp'
+import SpeakerLaurene from '@/assets/laurene-alves.webp'
+import SpeakerLaurene2 from '@/assets/laurene-alves-2.webp'
+import SpeakerLeandro from '@/assets/leandro.webp'
 </script>
 
 <style scoped>
@@ -415,7 +415,7 @@ import SpeakerLeandro from '@/assets/leandro.jpeg'
 }
 
 #home {
-  background-image: url('@/assets/moinho.png');
+  background-image: url('@/assets/moinho.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

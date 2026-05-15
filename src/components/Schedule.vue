@@ -23,7 +23,7 @@
     <div class="schedule-speakers">
       <div class="schedule-speaker" v-for="speaker in speakers" :key="speaker.id">
         <div class="schedule-speaker-image">
-          <img alt="Speaker 1" class="schedule-speaker-img" :src="speaker.img" />
+          <img :alt="speaker.name" class="schedule-speaker-img" :src="speaker.img" loading="lazy" decoding="async" />
         </div>
         <div class="schedule-speaker-about">
           <p class="schedule-speaker-text bold-text">{{ speaker.name }}</p>
