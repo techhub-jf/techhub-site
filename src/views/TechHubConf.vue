@@ -10,7 +10,7 @@
         <a href="#location" class="buttonHeader">LOCAL</a>
         <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
         <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" class="buttonHeader">INSCREVA-SE</a>
-        <a href="https://forms.gle/64jwQb4AKkdc2cFu9" class="buttonHeader">SUBMETA SUA PALESTRA</a>
+        <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" class="buttonHeader">SUBMETA SUA PALESTRA</a> -->
         <a href="/conf/2025" class="buttonHeader" target="_blank">EDIÇÃO 2025</a>
         <a href="/conf/2024" class="buttonHeader" target="_blank">EDIÇÃO 2024</a>
         <div class="social-icons">
@@ -42,8 +42,8 @@
         <div class="homeButtons">
           <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" target="_blank"
             class="homeButton">INSCREVA-SE</a>
-          <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
-            class="homeButton">SUBMETA SUA PALESTRA</a>
+          <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
+            class="homeButton">SUBMETA SUA PALESTRA</a> -->
         </div>
       </section>
       <section id="about" class="infoSections">
@@ -183,7 +183,10 @@
             title="A Próxima Onda da Automação: Potencializando o Ciclo de IA com AutoML e GenAI"
             description="Vamos desmistificar o AutoML Integral com dois cases de alto impacto desenvolvidos localmente em Juiz de Fora — da academia (UFJF) à indústria ferroviária. E para fechar: como a integração sinérgica entre AutoML e IA Generativa está transformando o papel do profissional de dados." />
 
-          <ScheduleTile time="16:15 - 18:00" title="Mesa Redonda" location="Auditório: Teste em Produção" class="schedule-two-rows"/>
+          <Schedule :speakers="[{img: SpeakerMariaLuize, name: 'Maria Luize Pinheiro', role: 'Engenheira de Deep Learning', company: 'Solved'}]"
+            :types="[{id: 'ai', name: 'IA'}, {id: 'gde', name: 'GDE'}]" time="16:15 - 17:15" location="Auditório: Teste em Produção"
+            title="Do Notebook à Nuvem: Primeiros Passos para Rodar Modelos Keras de Monitoramento de Satélite no Google Cloud"
+            description="Cansado de ver seu computador travar ao processar imagens pesadas de satélite? Vamos mostrar como dar os primeiros passos para tirar seus modelos de IA do ambiente local e levá-los para o Google Cloud — organizando dados no Cloud Storage, empacotando código com Docker e escolhendo a máquina ideal (GPUs NVIDIA L4) sem gastar uma fortuna com Spot VMs. Um guia para sair do notebook e automatizar o monitoramento ambiental de forma profissional e econômica." />
 
           <Schedule :speakers="[{img: SpeakerThiagoCantarino, name: 'Thiago Cantarino da Cruz', role: 'Especialista em Cybersecurity OT/ICS', company: 'NTT DATA'}]"
             :types="[{id: 'ai', name: 'IA'}]" time="16:15 - 17:15" location="Sala: Deploy da Sexta"
@@ -191,18 +194,19 @@
             description="Com a evolução de Cloud, IoT e IA, os incidentes cibernéticos em ambientes industriais passaram a representar riscos concretos à continuidade operacional. Nesta palestra, apresento uma abordagem prática sobre Cyber OT, como estruturar um programa de segurança e um business case real que evitou uma evacuação industrial e US$ 3 milhões em perdas." />
 
           <Schedule :speakers="[{img: SpeakerLuca, name: 'Luca Garcia Honorio', role: 'Engenheiro de Dados', company: 'CI&T'}]"
-            :types="[{id: 'ai', name: 'IA'}]" time="17:15 - 18:00" location="Sala: Delete sem Where"
+            :types="[{id: 'ai', name: 'IA'}]" time="17:15 - 17:45" location="Sala: Delete sem Where"
             title="Engenharia de Dados 2.0: Construindo a Infraestrutura que Sustenta a IA Generativa"
             description="Não existe IA de elite com dados de baixa qualidade. Vamos explorar a 'Engenharia de Dados 2.0': arquiteturas modernas de Lakehouse com Databricks, padrões de RAG para reduzir alucinações de LLMs, e os desafios reais de governança e privacidade em projetos de alta criticidade no setor financeiro." />
 
+          <ScheduleTile time="17:15 - 18:00" title="Mesa Redonda" location="Auditório: Teste em Produção" class="schedule-one-row"/>
+
           <Schedule :speakers="[{img: SpeakerTiago, name: 'Tiago Reis', role: 'Coordenador de Tecnologia Educacional', company: 'Colégio Stella Matutina'}]"
-            :types="[{id: 'career', name: 'Carreira'}]" time="17:15 - 18:00" location="Sala: Deploy da Sexta"
+            :types="[{id: 'career', name: 'Carreira'}]" time="17:15 - 17:45" location="Sala: Deploy da Sexta"
             title="Seja Tech & Google Innovator: Transformando instituições através da inovação inclusiva"
             description="O case do Projeto Seja Tech: uma iniciativa que redefine a tecnologia como linguagem de poder e autonomia para além das equipes técnicas. Como combater a discrepância entre ambientes hiperconectados e seus 'bastidores' desconectados — validado na Academia de Google Innovator em São Paulo." />
 
-          <ScheduleTile time="18:00 - 18:30" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
-          <ScheduleTile time="18:30 - 18:40" title="Sorteios"/>
-          <ScheduleTile time="18:40 - ∞" title="Happy Hour"/>
+          <ScheduleTile time="18:00 - 18:30" title="Sorteios"/>
+          <ScheduleTile time="18:30 - ∞" title="Happy Hour"/>
         </div>
       </section>
       <section id="speakers" class="infoSections">
@@ -246,6 +250,8 @@
             name="Luca Garcia Honorio" role="Engenheiro de Dados" company="CI&T" />
           <Speaker :img="SpeakerTiago" link="https://www.linkedin.com/in/tiagoreisjf/"
             name="Tiago Reis" role="Coordenador de Tecnologia Educacional" company="Colégio Stella Matutina" />
+          <Speaker :img="SpeakerMariaLuize" link="https://www.linkedin.com/in/marialuize/"
+            name="Maria Luize Pinheiro" role="Engenheira de Deep Learning" company="Solved" />
         </div>
       </section>
       <section id="location" class="infoSections">
@@ -315,16 +321,17 @@
             <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
             </a>
-          </div>
-        </div>
-        <div class="sponsor-class">
-          <h2 class="section-title">Prata</h2>
-          <div class="sponsors-images">
             <a href="https://inupcontabil.com.br/" class="sponsor-image-link" target="_blank">
               <img alt="InUp Contabilidade" class="sponsor-image" src="@/assets/inup.svg" />
             </a>
           </div>
         </div>
+        <!-- <div class="sponsor-class">
+          <h2 class="section-title">Prata</h2>
+          <div class="sponsors-images">
+
+          </div>
+        </div> -->
         <div class="sponsor-class">
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
@@ -380,6 +387,7 @@ import SpeakerRomulo from '@/assets/romulo-murucci.jpeg'
 import SpeakerSamuel from '@/assets/samuel-amaral.jpeg'
 import SpeakerLuca from '@/assets/luca-garcia.jpeg'
 import SpeakerTiago from '@/assets/tiago-reis.jpeg'
+import SpeakerMariaLuize from '@/assets/maria-luize.png'
 </script>
 
 <style scoped>
@@ -788,6 +796,11 @@ footer {
   padding-left: 0;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.schedule-one-row {
+  grid-row: span 1;
+  grid-column: span 1;
 }
 
 .schedule-two-rows {
