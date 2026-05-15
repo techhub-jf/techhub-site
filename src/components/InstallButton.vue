@@ -32,41 +32,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed } from 'vue'
+import { deferredPrompt, isInstalled, isIOSSafari } from '../composables/pwaInstall'
 
-interface BeforeInstallPromptEvent extends Event {
-  prompt: () => Promise<void>
-  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>
-}
-
-const deferredPrompt = ref<BeforeInstallPromptEvent | null>(null)
-const isInstalled = ref(false)
-const isIOS = ref(false)
 const showIOSHelp = ref(false)
 
 const showButton = computed(
-  () => !isInstalled.value && (deferredPrompt.value !== null || isIOS.value),
+  () => !isInstalled.value && (deferredPrompt.value !== null || isIOSSafari.value),
 )
 
 const ariaLabel = computed(() =>
-  isIOS.value && !deferredPrompt.value
+  isIOSSafari.value && !deferredPrompt.value
     ? 'Ver instruções para instalar o app no iPhone'
     : 'Instalar o app na tela inicial',
 )
 
-function onBeforeInstallPrompt(e: Event) {
-  e.preventDefault()
-  deferredPrompt.value = e as BeforeInstallPromptEvent
-}
-
-function onAppInstalled() {
-  isInstalled.value = true
-  deferredPrompt.value = null
-  showIOSHelp.value = false
-}
-
 async function install() {
-  if (isIOS.value && !deferredPrompt.value) {
+  if (isIOSSafari.value && !deferredPrompt.value) {
     showIOSHelp.value = true
     return
   }
@@ -75,29 +57,6 @@ async function install() {
   const { outcome } = await deferredPrompt.value.userChoice
   if (outcome === 'accepted') deferredPrompt.value = null
 }
-
-onMounted(() => {
-  const standalone =
-    window.matchMedia('(display-mode: standalone)').matches ||
-    (window.navigator as Navigator & { standalone?: boolean }).standalone === true
-  if (standalone) {
-    isInstalled.value = true
-    return
-  }
-
-  const ua = window.navigator.userAgent
-  const isIOSDevice = /iPad|iPhone|iPod/.test(ua) && !(window as Window & { MSStream?: unknown }).MSStream
-  const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS/.test(ua)
-  isIOS.value = isIOSDevice && isSafari
-
-  window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt)
-  window.addEventListener('appinstalled', onAppInstalled)
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt)
-  window.removeEventListener('appinstalled', onAppInstalled)
-})
 </script>
 
 <style scoped>

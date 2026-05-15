@@ -1,4 +1,5 @@
 import './assets/main.css'
+import './composables/pwaInstall'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
