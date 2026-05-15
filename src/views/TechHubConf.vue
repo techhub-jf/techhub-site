@@ -42,6 +42,7 @@
         <div class="homeButtons">
           <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" target="_blank"
             class="homeButton">INSCREVA-SE</a>
+          <InstallButton />
           <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
             class="homeButton">SUBMETA SUA PALESTRA</a> -->
         </div>
@@ -368,6 +369,7 @@ import MapsIcon from '../components/icons/IconMaps.vue'
 import Speaker from '../components/Speaker.vue'
 import Schedule from '../components/Schedule.vue'
 import ScheduleTile from '../components/ScheduleTile.vue'
+import InstallButton from '../components/InstallButton.vue'
 import SpeakerThiagoCantarino from '@/assets/thiago-cantarino.webp'
 import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
 import SpeakerThiagoMiranda from '@/assets/thiago-miranda.webp'
