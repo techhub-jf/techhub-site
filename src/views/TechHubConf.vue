@@ -177,32 +177,31 @@
             description="Vamos explorar a segurança de aplicações sob a perspectiva do atacante. Em vez de focar apenas em boas práticas, propomos uma mudança de mentalidade: entender como sistemas são analisados, explorados e comprometidos, e como a mentalidade ofensiva permite identificar vulnerabilidades antes que sejam exploradas." />
 
           <ScheduleTile time="15:30 - 16:00" title="Coffee Break"/>
-          <ScheduleTile time="16:00 - 16:15" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
 
           <Schedule :speakers="[{img: SpeakerRomulo, name: 'Rômulo Murucci Oliveira', role: 'Data Product Owner', company: 'MRS Logística'}]"
-            :types="[{id: 'ai', name: 'IA'}]" time="16:15 - 17:15" location="Sala: Delete sem Where"
+            :types="[{id: 'ai', name: 'IA'}]" time="16:00 - 17:15" location="Sala: Delete sem Where"
             title="A Próxima Onda da Automação: Potencializando o Ciclo de IA com AutoML e GenAI"
             description="Vamos desmistificar o AutoML Integral com dois cases de alto impacto desenvolvidos localmente em Juiz de Fora — da academia (UFJF) à indústria ferroviária. E para fechar: como a integração sinérgica entre AutoML e IA Generativa está transformando o papel do profissional de dados." />
 
           <Schedule :speakers="[{img: SpeakerMariaLuize, name: 'Maria Luize Pinheiro', role: 'Engenheira de Deep Learning', company: 'Solved'}]"
-            :types="[{id: 'ai', name: 'IA'}, {id: 'gde', name: 'GDE'}]" time="16:15 - 17:15" location="Auditório: Teste em Produção"
+            :types="[{id: 'ai', name: 'IA'}, {id: 'gde', name: 'GDE'}]" time="16:00 - 17:00" location="Auditório: Teste em Produção"
             title="Do Notebook à Nuvem: Primeiros Passos para Rodar Modelos Keras de Monitoramento de Satélite no Google Cloud"
             description="Cansado de ver seu computador travar ao processar imagens pesadas de satélite? Vamos mostrar como dar os primeiros passos para tirar seus modelos de IA do ambiente local e levá-los para o Google Cloud — organizando dados no Cloud Storage, empacotando código com Docker e escolhendo a máquina ideal (GPUs NVIDIA L4) sem gastar uma fortuna com Spot VMs. Um guia para sair do notebook e automatizar o monitoramento ambiental de forma profissional e econômica." />
 
           <Schedule :speakers="[{img: SpeakerThiagoCantarino, name: 'Thiago Cantarino da Cruz', role: 'Especialista em Cybersecurity OT/ICS', company: 'NTT DATA'}]"
-            :types="[{id: 'ai', name: 'IA'}]" time="16:15 - 17:15" location="Sala: Deploy da Sexta"
+            :types="[{id: 'ai', name: 'IA'}]" time="16:00 - 17:00" location="Sala: Deploy da Sexta"
             title="Quando Cyber OT vira decisão de milhões: como evitei uma evacuação industrial e US$ 3 milhões em perdas"
             description="Com a evolução de Cloud, IoT e IA, os incidentes cibernéticos em ambientes industriais passaram a representar riscos concretos à continuidade operacional. Nesta palestra, apresento uma abordagem prática sobre Cyber OT, como estruturar um programa de segurança e um business case real que evitou uma evacuação industrial e US$ 3 milhões em perdas." />
 
           <Schedule :speakers="[{img: SpeakerLuca, name: 'Luca Garcia Honorio', role: 'Engenheiro de Dados', company: 'CI&T'}]"
-            :types="[{id: 'ai', name: 'IA'}]" time="17:15 - 17:45" location="Sala: Delete sem Where"
+            :types="[{id: 'ai', name: 'IA'}]" time="17:00 - 17:30" location="Sala: Delete sem Where"
             title="Engenharia de Dados 2.0: Construindo a Infraestrutura que Sustenta a IA Generativa"
             description="Não existe IA de elite com dados de baixa qualidade. Vamos explorar a 'Engenharia de Dados 2.0': arquiteturas modernas de Lakehouse com Databricks, padrões de RAG para reduzir alucinações de LLMs, e os desafios reais de governança e privacidade em projetos de alta criticidade no setor financeiro." />
 
-          <ScheduleTile time="17:15 - 18:00" title="Mesa Redonda" location="Auditório: Teste em Produção" class="schedule-one-row"/>
+          <ScheduleTile time="17:00 - 18:00" title="Mesa Redonda" location="Auditório: Teste em Produção" class="schedule-one-row"/>
 
           <Schedule :speakers="[{img: SpeakerTiago, name: 'Tiago Reis', role: 'Coordenador de Tecnologia Educacional', company: 'Colégio Stella Matutina'}]"
-            :types="[{id: 'career', name: 'Carreira'}]" time="17:15 - 17:45" location="Sala: Deploy da Sexta"
+            :types="[{id: 'career', name: 'Carreira'}]" time="17:00 - 17:30" location="Sala: Deploy da Sexta"
             title="Seja Tech & Google Innovator: Transformando instituições através da inovação inclusiva"
             description="O case do Projeto Seja Tech: uma iniciativa que redefine a tecnologia como linguagem de poder e autonomia para além das equipes técnicas. Como combater a discrepância entre ambientes hiperconectados e seus 'bastidores' desconectados — validado na Academia de Google Innovator em São Paulo." />
 
