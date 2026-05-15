@@ -94,7 +94,7 @@
             title="Aprendizados na Jornada DevOps: o que os 'ops' me ensinaram"
             description="Nem todo deploy dá certo. Nem toda decisão escala. Compartilho uma coleção real de momentos 'ops…' ao longo da minha jornada — erros em pipelines, Docker, AWS e Terraform, até falhas culturais que impediram times de evoluir. Cada caso traz contexto, impacto, causa raiz e o aprendizado aplicado na prática." />
 
-          <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho de Almeida', role: 'Engenheiro de Software Backend', company: 'Mercado Livre'}]"
+          <Schedule :speakers="[{img: SpeakerLucasCarrilho, name: 'Lucas Carrilho de Almeida', role: 'Engenheiro de Software Backend', company: 'Luxoft'}]"
             :types="[{id: 'career', name: 'Carreira'}]" time="9:00 - 10:00" location="Auditório: Teste em Produção"
             title="Da Primeira Vaga ao Mercado Internacional como DEV"
             description="O que realmente ajuda um desenvolvedor a sair do zero e construir uma carreira sólida até alcançar oportunidades internacionais? Falaremos sobre caminhos técnicos, stacks mais usadas, como encarar processos seletivos e as soft skills que mais pesam no mercado — desde a primeira vaga até o tão sonhado salário em dólar." />
@@ -216,7 +216,7 @@
           <Speaker :img="SpeakerThiagoCantarino" link="https://www.linkedin.com/in/eng-thiago-cantarino/"
             name="Thiago Cantarino da Cruz" role="Especialista em Cybersecurity OT/ICS" company="NTT DATA" />
           <Speaker :img="SpeakerLucasCarrilho" link="https://www.linkedin.com/in/karilho/"
-            name="Lucas Carrilho de Almeida" role="Engenheiro de Software Backend" company="Mercado Livre" />
+            name="Lucas Carrilho de Almeida" role="Engenheiro de Software Backend" company="Luxoft" />
           <Speaker :img="SpeakerThiagoMiranda" link="https://www.linkedin.com/in/dtmp3st/"
             name="Thiago Miranda de Paula" role="Analista de Segurança Ofensiva" company="Grupo Energisa" />
           <Speaker :img="SpeakerWendel" link="https://www.linkedin.com/in/wendel-moreira/"
