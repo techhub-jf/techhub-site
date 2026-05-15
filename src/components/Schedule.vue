@@ -274,6 +274,17 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
   background-color: #cc1d92;
 }
 
+.type-gde {
+  background-image: linear-gradient(90deg,
+    #4285F4 0% 25%,
+    #EA4335 25% 50%,
+    #FBBC04 50% 75%,
+    #34A853 75% 100%);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

@@ -184,7 +184,8 @@
             description="Vamos desmistificar o AutoML Integral com dois cases de alto impacto desenvolvidos localmente em Juiz de Fora — da academia (UFJF) à indústria ferroviária. E para fechar: como a integração sinérgica entre AutoML e IA Generativa está transformando o papel do profissional de dados." />
 
           <Schedule :speakers="[{img: SpeakerMariaLuize, name: 'Maria Luize Pinheiro', role: 'Engenheira de Deep Learning', company: 'Solved'}]"
-            :types="[{id: 'ai', name: 'IA'}, {id: 'gde', name: 'GDE'}]" time="16:00 - 17:00" location="Auditório: Teste em Produção"
+            :types="[{id: 'ai', name: 'IA'}]" time="16:00 - 17:00" location="Auditório: Teste em Produção"
+            class="schedule-gde"
             title="Do Notebook à Nuvem: Primeiros Passos para Rodar Modelos Keras de Monitoramento de Satélite no Google Cloud"
             description="Cansado de ver seu computador travar ao processar imagens pesadas de satélite? Vamos mostrar como dar os primeiros passos para tirar seus modelos de IA do ambiente local e levá-los para o Google Cloud — organizando dados no Cloud Storage, empacotando código com Docker e escolhendo a máquina ideal (GPUs NVIDIA L4) sem gastar uma fortuna com Spot VMs. Um guia para sair do notebook e automatizar o monitoramento ambiental de forma profissional e econômica." />
 
@@ -802,6 +803,38 @@ footer {
 .schedule-one-row {
   grid-row: span 1;
   grid-column: span 1;
+}
+
+.schedule-gde {
+  background-image:
+    linear-gradient(white, white),
+    linear-gradient(135deg,
+      #4285F4 0%, #4285F4 25%,
+      #EA4335 25%, #EA4335 50%,
+      #FBBC04 50%, #FBBC04 75%,
+      #34A853 75%, #34A853 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-color: transparent !important;
+  box-shadow: 0 4px 18px rgba(66, 133, 244, 0.15);
+}
+
+.schedule-gde::before {
+  content: 'GOOGLE DEVELOPER EXPERT';
+  display: block;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  padding: 7px 0;
+  margin: 0 -20px 12px;
+  background-image: linear-gradient(90deg,
+    #4285F4 0% 25%,
+    #EA4335 25% 50%,
+    #34A853 50% 75%,
+    #FBBC04 75% 100%);
 }
 
 .schedule-two-rows {
