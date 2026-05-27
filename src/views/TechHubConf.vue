@@ -179,7 +179,7 @@
           <ScheduleTile time="15:30 - 16:00" title="Coffee Break"/>
 
           <Schedule :speakers="[{img: SpeakerRomulo, name: 'Rômulo Murucci Oliveira', role: 'Data Product Owner', company: 'MRS Logística'}]"
-            :types="[{id: 'ai', name: 'IA'}]" time="16:00 - 17:15" location="Sala: Delete sem Where"
+            :types="[{id: 'ai', name: 'IA'}]" time="16:00 - 17:00" location="Sala: Delete sem Where"
             title="A Próxima Onda da Automação: Potencializando o Ciclo de IA com AutoML e GenAI"
             description="Vamos desmistificar o AutoML Integral com dois cases de alto impacto desenvolvidos localmente em Juiz de Fora — da academia (UFJF) à indústria ferroviária. E para fechar: como a integração sinérgica entre AutoML e IA Generativa está transformando o papel do profissional de dados." />
 
