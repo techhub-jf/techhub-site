@@ -44,6 +44,9 @@
             class="homeButton">INSCREVA-SE</a> -->
           <a href="#schedule"
             class="homeButton">PROGRAMAÇÃO</a>
+          <button v-if="eventLive" class="now-jump-button" @click="scrollToNow">
+            <span class="now-jump-dot"></span>ACONTECENDO AGORA
+          </button>
           <InstallButton />
           <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
             class="homeButton">SUBMETA SUA PALESTRA</a> -->
@@ -365,6 +368,7 @@
 </template>
 
 <script setup lang="ts">
+import { useEventLive } from '../composables/useHappeningNow'
 import InstagramIcon from '../components/icons/IconInstagram.vue'
 import LinkedinIcon from '../components/icons/IconLinkedin.vue'
 import YoutubeIcon from '../components/icons/IconYoutube.vue'
@@ -393,6 +397,18 @@ import SpeakerSamuel from '@/assets/samuel-amaral.webp'
 import SpeakerLuca from '@/assets/luca-garcia.webp'
 import SpeakerTiago from '@/assets/tiago-reis.webp'
 import SpeakerMariaLuize from '@/assets/maria-luize.webp'
+
+const eventLive = useEventLive()
+
+// Rola até a primeira sessão destacada como "acontecendo agora".
+function scrollToNow() {
+  const target = document.querySelector('.schedule-card.is-now')
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  } else {
+    document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script>
 
 <style scoped>
@@ -566,6 +582,42 @@ nav {
   font-weight: bold;
   color: #031D42;
   margin-bottom: 50px;
+}
+
+.now-jump-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto 30px;
+  background-color: #e03535;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 24px rgba(224, 53, 53, 0.4);
+}
+
+.now-jump-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(224, 53, 53, 0.55);
+}
+
+.now-jump-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  animation: now-jump-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes now-jump-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.6); }
 }
 
 .section-text {

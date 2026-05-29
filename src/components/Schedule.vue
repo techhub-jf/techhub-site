@@ -1,5 +1,5 @@
 <template>
-  <div class="schedule-card">
+  <div class="schedule-card" :class="{ 'is-now': isNow }">
     <div>
       <div class="schedule-card-header">
         <div class="schedule-types">
@@ -7,9 +7,14 @@
             <p class="schedule-type-text">{{ type.name }}</p>
           </div>
         </div>
-        <div class="schedule-time">
-          <ClockIcon class="schedule-time-icon"/>
-          <p class="schedule-type-text">{{ time }}</p>
+        <div class="schedule-time-col">
+          <div v-if="isNow" class="schedule-now-badge">
+            <span class="schedule-now-dot"></span>Agora
+          </div>
+          <div class="schedule-time">
+            <ClockIcon class="schedule-time-icon"/>
+            <p class="schedule-type-text">{{ time }}</p>
+          </div>
         </div>
       </div>
       <div v-if="location" class="schedule-location">
@@ -41,8 +46,11 @@
 <script setup lang="ts">
 import ClockIcon from '../components/icons/IconClock.vue'
 import LocationIcon from '../components/icons/IconLocation.vue'
+import { useHappeningNow } from '../composables/useHappeningNow'
 
-defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'location'])
+const props = defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'location'])
+
+const isNow = useHappeningNow(() => props.time)
 </script>
 
 <style scoped>
@@ -67,6 +75,58 @@ defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'de
 
 .bold-text {
   font-weight: bold;
+}
+
+/* Destaque da sessão acontecendo agora (apenas no dia do evento). */
+.schedule-card.is-now {
+  border-color: #e03535;
+  box-shadow: 0 0 0 1px #e03535, 0 10px 34px rgba(224, 53, 53, 0.32);
+  animation: now-glow 2.2s ease-in-out infinite;
+}
+
+@keyframes now-glow {
+  0%, 100% { box-shadow: 0 0 0 1px #e03535, 0 10px 34px rgba(224, 53, 53, 0.28); }
+  50% { box-shadow: 0 0 0 1px #e03535, 0 12px 42px rgba(224, 53, 53, 0.55); }
+}
+
+.schedule-time-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.schedule-now-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #e03535;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 0.9rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.schedule-now-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  animation: now-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes now-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.7); }
+}
+
+/* Quando o badge "Agora" aparece, ele já traz a margem superior; remove a do horário. */
+.schedule-now-badge + .schedule-time {
+  margin-top: 6px;
 }
 
 .schedule-card-header {

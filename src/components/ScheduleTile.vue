@@ -1,7 +1,10 @@
 <template>
   <!-- <div class="schedule-card"> -->
-  <component :is="wrapperTag" :href="wrapperHref" :style="wrapperStyle" class="schedule-card" target="_blank">
+  <component :is="wrapperTag" :href="wrapperHref" :style="wrapperStyle" class="schedule-card" :class="{ 'is-now': isNow }" target="_blank">
     <div class="schedule-card-header">
+      <div v-if="isNow" class="schedule-now-badge">
+        <span class="schedule-now-dot"></span>Agora
+      </div>
       <div class="schedule-time">
         <ClockIcon class="schedule-time-icon"/>
         <p class="schedule-type-text">{{ time }}</p>
@@ -22,8 +25,11 @@
 import { computed } from 'vue'
 import ClockIcon from '../components/icons/IconClock.vue'
 import LocationIcon from '../components/icons/IconLocation.vue'
+import { useHappeningNow } from '../composables/useHappeningNow'
 
 const props = defineProps(['title', 'time', 'location', 'link'])
+
+const isNow = useHappeningNow(() => props.time)
 
 // Define computed properties directly using the props object
 const wrapperTag = computed(() => {
@@ -68,6 +74,51 @@ const divStyle = computed(() => {
 
 .bold-text {
   font-weight: bold;
+}
+
+/* Destaque do bloco acontecendo agora (apenas no dia do evento). */
+.schedule-card.is-now {
+  border-color: #e03535;
+  box-shadow: 0 0 0 1px #e03535, 0 10px 34px rgba(224, 53, 53, 0.32);
+  animation: now-glow 2.2s ease-in-out infinite;
+}
+
+@keyframes now-glow {
+  0%, 100% { box-shadow: 0 0 0 1px #e03535, 0 10px 34px rgba(224, 53, 53, 0.28); }
+  50% { box-shadow: 0 0 0 1px #e03535, 0 12px 42px rgba(224, 53, 53, 0.55); }
+}
+
+.schedule-now-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  background-color: #e03535;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 0.9rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.schedule-now-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  animation: now-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes now-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.7); }
+}
+
+/* Com o badge "Agora" presente, reduz a margem superior do horário. */
+.schedule-now-badge + .schedule-time {
+  margin-top: 6px;
 }
 
 .schedule-card-header {
