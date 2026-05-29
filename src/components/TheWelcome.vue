@@ -24,6 +24,15 @@ import GroupIcon from './icons/IconGroup.vue'
     Encontro quinzenal gratuito para bater um papo sobre tech!
   </WelcomeItem>
 
+  <WelcomeItem link="https://loja.techhubjf.org/">
+    <template #icon>
+      <EcosystemIcon />
+    </template>
+    <template #heading>Loja</template>
+
+    Vista a camisa do Tech Hub JF! Confira nossa loja oficial.
+  </WelcomeItem>
+
   <WelcomeItem link="https://linktr.ee/techhubjf">
     <template #icon>
       <EcosystemIcon />
