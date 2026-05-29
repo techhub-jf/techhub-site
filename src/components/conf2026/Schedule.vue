@@ -57,7 +57,12 @@ const isNow = useHappeningNow(() => props.time)
 const visible = computed(() => matchesFilter(props.location, props.types))
 const expanded = ref(false)
 
-const unregister = registerSession({ time: props.time, title: props.title, location: props.location })
+const unregister = registerSession({
+  time: props.time,
+  title: props.title,
+  location: props.location,
+  speaker: props.speakers?.map((s: { name: string }) => s.name).join(', '),
+})
 onUnmounted(unregister)
 </script>
 

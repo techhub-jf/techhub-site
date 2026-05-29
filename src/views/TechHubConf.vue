@@ -82,11 +82,10 @@
         <div class="homeButtons">
           <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" target="_blank"
             class="homeButton">INSCREVA-SE</a> -->
-          <a href="#schedule"
-            class="homeButton">PROGRAMAÇÃO</a>
-          <button v-if="eventLive" class="now-jump-button" @click="scrollToNow">
+          <button v-if="eventLive" class="now-jump-button" @click="goToSchedule">
             <span class="now-jump-dot"></span>ACONTECENDO AGORA
           </button>
+          <a href="#schedule" class="homeButton" @click.prevent="goToProgramacao">PROGRAMAÇÃO</a>
           <InstallButton />
           <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
             class="homeButton">SUBMETA SUA PALESTRA</a> -->
@@ -450,14 +449,15 @@ const eventLive = useEventLive()
 const { theme, toggle } = useTheme()
 const menuOpen = ref(false)
 
-// Rola até a primeira sessão destacada como "acontecendo agora".
-function scrollToNow() {
-  const target = document.querySelector('.schedule-card.is-now')
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth', block: 'center' })
-  } else {
-    document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })
-  }
+// "ACONTECENDO AGORA" → topo da programação (bloco Agora / A seguir).
+function goToSchedule() {
+  document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })
+}
+
+// "PROGRAMAÇÃO" → primeiro item da grade (Abertura).
+function goToProgramacao() {
+  const el = document.querySelector('.schedule-card[data-title="Abertura"]')
+  ;(el ?? document.getElementById('schedule'))?.scrollIntoView({ behavior: 'smooth', block: 'center' })
 }
 </script>
 

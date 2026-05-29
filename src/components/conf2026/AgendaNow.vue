@@ -9,6 +9,7 @@
           <span class="agenda-time">{{ e.time }}</span>
           <span class="agenda-info">
             <span class="agenda-title">{{ e.title }}</span>
+            <span v-if="e.speaker" class="agenda-speaker">{{ e.speaker }}</span>
             <span v-if="e.location" class="agenda-loc">{{ e.location }}</span>
           </span>
         </li>
@@ -23,6 +24,7 @@
           <span class="agenda-time">{{ e.time }}</span>
           <span class="agenda-info">
             <span class="agenda-title">{{ e.title }}</span>
+            <span v-if="e.speaker" class="agenda-speaker">{{ e.speaker }}</span>
             <span v-if="e.location" class="agenda-loc">{{ e.location }}</span>
           </span>
         </li>
@@ -147,6 +149,13 @@ function goTo(e: AgendaEntry) {
   line-height: 1.3;
 }
 
+.agenda-speaker {
+  color: var(--thc-text);
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
 .agenda-loc {
   color: var(--thc-text-dim);
   font-size: 12px;
@@ -164,7 +173,8 @@ function goTo(e: AgendaEntry) {
   .agenda {
     grid-template-columns: 1fr;
     gap: 12px;
-    margin-bottom: 28px;
+    /* mesma margem lateral dos cards da programação no mobile */
+    margin: 0 10px 28px;
   }
 }
 </style>

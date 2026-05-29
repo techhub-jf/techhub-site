@@ -109,7 +109,8 @@ import { scheduleFilter as filter, ROOMS, TRACKS } from '../../composables/useHa
 
 @media screen and (max-width: 768px) {
   .filters {
-    margin-bottom: 24px;
+    /* mesma margem lateral dos cards da programação no mobile */
+    margin: 0 10px 24px;
   }
 
   /* Chips roláveis horizontalmente no mobile pra não quebrar muitas linhas. */

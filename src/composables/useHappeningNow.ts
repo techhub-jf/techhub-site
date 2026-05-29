@@ -109,13 +109,19 @@ export interface AgendaEntry {
   time: string
   title: string
   location?: string
+  speaker?: string
 }
 
 const entries = reactive<AgendaEntry[]>([])
 let nextId = 0
 
 /** Registra uma sessão e devolve uma função para remover o registro. */
-export function registerSession(info: { time: string; title: string; location?: string }) {
+export function registerSession(info: {
+  time: string
+  title: string
+  location?: string
+  speaker?: string
+}) {
   const range = parseRange(info.time)
   if (!range) return () => {}
   const entry: AgendaEntry = { id: nextId++, ...range, ...info }
