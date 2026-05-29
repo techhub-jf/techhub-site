@@ -1,0 +1,118 @@
+<template>
+    <a :href="link" target="_blank" class="speaker-card">
+        <div class="speaker-image">
+            <img :alt="name" class="speaker-img" :src="img" loading="lazy" decoding="async" />
+        </div>
+        <div class="speaker-about">
+            <p class="speaker-text bold-text">{{ name }}</p>
+            <p class="speaker-text">{{ role }}</p>
+            <p class="speaker-text">{{ company }}</p>
+        </div>
+    </a>
+</template>
+
+<script setup lang="ts">
+  defineProps(['img', 'name', 'role', 'company', 'link'])
+</script>
+
+<style scoped>
+.speaker-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 180px;
+    display: block;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    padding: 0;
+    transition: auto;
+
+    --border-size: 0.2rem;
+    border: var(--border-size) solid transparent;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.speaker-card:hover {
+    .speaker-img {
+        transform: scale(1.15);
+    }
+}
+
+.speaker-image {
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+    height: 230px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.speaker-img {
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.speaker-about {
+    width: 100%;
+    background-color: var(--thc-bg-elev);
+    box-shadow: inset 0 0 0 1px var(--thc-line);
+    padding: 12px;
+}
+
+.speaker-text {
+    font-size: 13px;
+    color: var(--thc-text-dim);
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.speaker-text.bold-text {
+    color: var(--thc-text);
+}
+
+.speaker-text-subject {
+    background-color: rgb(51, 51, 51);
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@supports (background: paint(houdini)) {
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    .speaker-card:hover {
+        border: var(--border-size) solid transparent;
+        background-image: linear-gradient(var(--thc-bg-elev), var(--thc-bg-elev)),
+            conic-gradient(from var(--angle),
+                #00e0c6 0deg 90deg,
+                #0052F5 90deg 270deg,
+                #00e0c6 270deg 360deg);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        animation: rotate 4s linear infinite;
+    }
+}
+</style>

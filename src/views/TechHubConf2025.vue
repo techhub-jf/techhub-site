@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <header>
-      <img alt="Tech Hub Logo" class="logoHeader" src="@/assets/logo-dark.png" />
+      <img alt="Tech Hub Logo" class="logoHeader" src="@/assets/conf2025/logo-dark.png" />
       <nav>
         <a href="#home" class="buttonHeader">HOME</a>
         <a href="#about" class="buttonHeader">SOBRE</a>
@@ -27,7 +27,7 @@
     </header>
     <div class="main">
       <section id="home">
-        <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/logo-dark.png" />
+        <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/conf2025/logo-dark.png" />
         <div class="homeText">
           <h2 class="homeTextFieldDate">31 de Maio</h2>
           <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
@@ -48,7 +48,7 @@
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
         <div class="about-image">
-          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.webp" loading="lazy" decoding="async" />
+          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/conf2025/tech-hub-conf.webp" loading="lazy" decoding="async" />
         </div>
         <div class="about-sub-section">
           <div class="about-text">
@@ -59,7 +59,7 @@
               de encontro para profissionais de TI.</p>
             <br>
             <p class="section-text">Teremos um dia cheio de palestras e workshops.</p>
-            <img alt="Tech Hub Logo" class="logo-jf" src="@/assets/tech-hub-jf.png" />
+            <img alt="Tech Hub Logo" class="logo-jf" src="@/assets/conf2025/tech-hub-jf.png" />
           </div>
           <div class="about-text-2">
             <p class="section-text">Entre os assuntos abordados:</p>
@@ -292,7 +292,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
             </div>
           </div>
           <div class="location-sub-section">
-            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.webp" loading="lazy" decoding="async" />
+            <img alt="Moinho" class="location-img" src="@/assets/conf2025/moinho-location.webp" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -306,25 +306,25 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
           <h2 class="section-title">Platina</h2>
           <div class="sponsors-images">
             <a href="https://www.nossomoinho.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Moinho" class="sponsor-image" src="@/assets/logo-moinho.png" />
+              <img alt="Moinho" class="sponsor-image" src="@/assets/conf2025/logo-moinho.png" />
             </a>
             <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
+              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/conf2025/rubeus.png" />
             </a>
             <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
-              <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
+              <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/conf2025/levty.svg" />
             </a>
             <a href="https://4linux.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="4 Linux" class="sponsor-image-rectangular" src="@/assets/4linux.png" />
+              <img alt="4 Linux" class="sponsor-image-rectangular" src="@/assets/conf2025/4linux.png" />
             </a>
             <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
-              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/m3-oculos.png" />
+              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/conf2025/m3-oculos.png" />
             </a>
             <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
-              <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg" />
+              <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/conf2025/ensine.svg" />
             </a>
             <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.webp" loading="lazy" decoding="async" />
+              <img alt="U&M" class="sponsor-image" src="@/assets/conf2025/uem-50.webp" loading="lazy" decoding="async" />
             </a>
           </div>
         </div>
@@ -332,7 +332,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
           <h2 class="section-title">Ouro</h2>
           <div class="sponsors-images">
             <a href="https://www.instagram.com/medeirosgourmetbuffet/" class="sponsor-image-link" target="_blank">
-              <img alt="Buffet" class="sponsor-image" src="@/assets/buffet.png" />
+              <img alt="Buffet" class="sponsor-image" src="@/assets/conf2025/buffet.png" />
             </a>
           </div>
         </div>
@@ -340,7 +340,7 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
           <h2 class="section-title">Prata</h2>
           <div class="sponsors-images">
             <a href="https://linuxtips.io/" class="sponsor-image-link" target="_blank">
-              <img alt="Linux Tips" class="sponsor-image-rectangular" src="@/assets/linuxtips.png" />
+              <img alt="Linux Tips" class="sponsor-image-rectangular" src="@/assets/conf2025/linuxtips.png" />
             </a>
           </div>
         </div>
@@ -348,16 +348,16 @@ Utilizando como base a pesquisa feita em 2024 pelo Data Hackers, a maior comunid
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
             <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/jetbrains.svg" />
+              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/conf2025/jetbrains.svg" />
             </a>
             <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/elastic.svg" />
+              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/conf2025/elastic.svg" />
             </a>
             <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
-              <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
+              <img alt="Café das Minas" class="sponsor-image" src="@/assets/conf2025/cafe-das-minas.png" />
             </a>
             <a href="https://www.linkedin.com/company/capivara-tech-jf/" class="sponsor-image-link" target="_blank">
-              <img alt="Capivara Tech" class="sponsor-image" src="@/assets/capivara-tech.svg" />
+              <img alt="Capivara Tech" class="sponsor-image" src="@/assets/conf2025/capivara-tech.svg" />
             </a>
           </div>
         </div>
@@ -374,33 +374,33 @@ import InstagramIcon from '../components/icons/IconInstagram.vue'
 import LinkedinIcon from '../components/icons/IconLinkedin.vue'
 import YoutubeIcon from '../components/icons/IconYoutube.vue'
 import MapsIcon from '../components/icons/IconMaps.vue'
-import Speaker from '../components/Speaker.vue'
-import Schedule from '../components/Schedule.vue'
-import ScheduleTile from '../components/ScheduleTile.vue'
-import SpeakerHenrique from '@/assets/henrique-cabral.webp'
-import SpeakerGuilherme from '@/assets/guilherme-vianna.webp'
-import SpeakerFabricio from '@/assets/fabricio-lima.webp'
-import SpeakerFabricio2 from '@/assets/fabricio-2.webp'
-import SpeakerJoao from '@/assets/joao-medina.webp'
-import SpeakerRenato from '@/assets/renato-bonario.webp'
-import SpeakerAna from '@/assets/ana-ovidio.webp'
-import SpeakerIngrid from '@/assets/ingrid-coutinho.webp'
-import SpeakerAntonio from '@/assets/antonio-brito.webp'
-import SpeakerJade from '@/assets/jade-fonseca.webp'
-import SpeakerDanilo from '@/assets/danilo-oliveira.webp'
-import SpeakerJoaoSouza from '@/assets/joao-souza.webp'
-import SpeakerAldemon from '@/assets/aldemon-bonifacio.webp'
-import SpeakerCibelle from '@/assets/cibelle-castro.webp'
-import SpeakerCamilla from '@/assets/camilla-schettino.webp'
-import SpeakerTiago from '@/assets/tiago-calado.webp'
-import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
-import SpeakerRafael from '@/assets/rafael-kneip.webp'
-import SpeakerGabriela from '@/assets/gabriela-cunha.webp'
-import SpeakerCamillaPicoli from '@/assets/camilla-picoli.webp'
-import SpeakerDanton from '@/assets/danton-rafael.webp'
-import SpeakerLaurene from '@/assets/laurene-alves.webp'
-import SpeakerLaurene2 from '@/assets/laurene-alves-2.webp'
-import SpeakerLeandro from '@/assets/leandro.webp'
+import Speaker from '../components/conf2025/Speaker.vue'
+import Schedule from '../components/conf2025/Schedule.vue'
+import ScheduleTile from '../components/conf2025/ScheduleTile.vue'
+import SpeakerHenrique from '@/assets/conf2025/henrique-cabral.webp'
+import SpeakerGuilherme from '@/assets/conf2025/guilherme-vianna.webp'
+import SpeakerFabricio from '@/assets/conf2025/fabricio-lima.webp'
+import SpeakerFabricio2 from '@/assets/conf2025/fabricio-2.webp'
+import SpeakerJoao from '@/assets/conf2025/joao-medina.webp'
+import SpeakerRenato from '@/assets/conf2025/renato-bonario.webp'
+import SpeakerAna from '@/assets/conf2025/ana-ovidio.webp'
+import SpeakerIngrid from '@/assets/conf2025/ingrid-coutinho.webp'
+import SpeakerAntonio from '@/assets/conf2025/antonio-brito.webp'
+import SpeakerJade from '@/assets/conf2025/jade-fonseca.webp'
+import SpeakerDanilo from '@/assets/conf2025/danilo-oliveira.webp'
+import SpeakerJoaoSouza from '@/assets/conf2025/joao-souza.webp'
+import SpeakerAldemon from '@/assets/conf2025/aldemon-bonifacio.webp'
+import SpeakerCibelle from '@/assets/conf2025/cibelle-castro.webp'
+import SpeakerCamilla from '@/assets/conf2025/camilla-schettino.webp'
+import SpeakerTiago from '@/assets/conf2025/tiago-calado.webp'
+import SpeakerLucasCarrilho from '@/assets/conf2025/lucas-carrilho.webp'
+import SpeakerRafael from '@/assets/conf2025/rafael-kneip.webp'
+import SpeakerGabriela from '@/assets/conf2025/gabriela-cunha.webp'
+import SpeakerCamillaPicoli from '@/assets/conf2025/camilla-picoli.webp'
+import SpeakerDanton from '@/assets/conf2025/danton-rafael.webp'
+import SpeakerLaurene from '@/assets/conf2025/laurene-alves.webp'
+import SpeakerLaurene2 from '@/assets/conf2025/laurene-alves-2.webp'
+import SpeakerLeandro from '@/assets/conf2025/leandro.webp'
 </script>
 
 <style scoped>
@@ -415,7 +415,7 @@ import SpeakerLeandro from '@/assets/leandro.webp'
 }
 
 #home {
-  background-image: url('@/assets/moinho.webp');
+  background-image: url('@/assets/conf2025/moinho.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

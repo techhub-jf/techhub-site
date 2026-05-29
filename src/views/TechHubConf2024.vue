@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <header>
-      <img alt="Tech Hub Logo" class="logoHeader" src="@/assets/logo-dark.png" />
+      <img alt="Tech Hub Logo" class="logoHeader" src="@/assets/conf2024/logo-dark.png" />
       <nav>
         <a href="#home" class="buttonHeader">HOME</a>
         <a href="#about" class="buttonHeader">SOBRE</a>
@@ -21,7 +21,7 @@
     </header>
     <div class="main">
       <section id="home">
-        <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/logo-dark.png" />
+        <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/conf2024/logo-dark.png" />
         <div class="homeText">
           <h2 class="homeTextFieldDate">27 de Abril</h2>
           <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
@@ -36,7 +36,7 @@
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
         <div class="about-image">
-          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.webp" loading="lazy" decoding="async" />
+          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/conf2024/tech-hub-conf.webp" loading="lazy" decoding="async" />
         </div>
         <div class="about-sub-section">
           <div class="about-text">
@@ -47,7 +47,7 @@
               de encontro para profissionais de TI.</p>
             <br>
             <p class="section-text">Teremos um dia cheio de palestras e workshops.</p>
-            <img alt="Tech Hub Logo" class="logo-jf" src="@/assets/tech-hub-jf.png" />
+            <img alt="Tech Hub Logo" class="logo-jf" src="@/assets/conf2024/tech-hub-jf.png" />
           </div>
           <div class="about-text-2">
             <p class="section-text">Entre os assuntos abordados:</p>
@@ -415,7 +415,7 @@
             </div>
           </div>
           <div class="location-sub-section">
-            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.webp" loading="lazy" decoding="async" />
+            <img alt="Moinho" class="location-img" src="@/assets/conf2024/moinho-location.webp" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -429,25 +429,25 @@
           <h2 class="section-title">Platina</h2>
           <div class="sponsors-images">
             <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="U&M" class="sponsor-image-rectangular" src="@/assets/uem.svg" />
+              <img alt="U&M" class="sponsor-image-rectangular" src="@/assets/conf2024/uem.svg" />
             </a>
             <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
-              <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg" />
+              <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/conf2024/ensine.svg" />
             </a>
             <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
+              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/conf2024/rubeus.png" />
             </a>
             <a href="https://maislaudo.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="Mais Laudo" class="sponsor-image-vertical" src="@/assets/mais-laudo.png" />
+              <img alt="Mais Laudo" class="sponsor-image-vertical" src="@/assets/conf2024/mais-laudo.png" />
             </a>
             <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
-              <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
+              <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/conf2024/levty.svg" />
             </a>
             <a href="https://jackexperts.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jack Experts" class="sponsor-image" src="@/assets/jack.webp" loading="lazy" decoding="async" />
+              <img alt="Jack Experts" class="sponsor-image" src="@/assets/conf2024/jack.webp" loading="lazy" decoding="async" />
             </a>
             <a href="https://reportei.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jack Experts" class="sponsor-image-rectangular" src="@/assets/reportei.svg" />
+              <img alt="Jack Experts" class="sponsor-image-rectangular" src="@/assets/conf2024/reportei.svg" />
             </a>
           </div>
         </div>
@@ -455,10 +455,10 @@
           <h2 class="section-title">Ouro</h2>
           <div class="sponsors-images">
             <a href="https://www.alura.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="Alura" class="sponsor-image-rectangular" src="@/assets/alura.svg" />
+              <img alt="Alura" class="sponsor-image-rectangular" src="@/assets/conf2024/alura.svg" />
             </a>
             <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
-              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/m3-oculos.png" />
+              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/conf2024/m3-oculos.png" />
             </a>
           </div>
         </div>
@@ -466,7 +466,7 @@
           <h2 class="section-title">Bronze</h2>
           <div class="sponsors-images">
             <a href="https://www.instagram.com/cervejariabuonacerva/" class="sponsor-image-link" target="_blank">
-              <img alt="Buona Cerva" class="sponsor-image" src="@/assets/buona-cerva.png" />
+              <img alt="Buona Cerva" class="sponsor-image" src="@/assets/conf2024/buona-cerva.png" />
             </a>
           </div>
         </div>
@@ -474,16 +474,16 @@
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
             <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jet Brains" class="sponsor-image" src="@/assets/jb_beam.svg" />
+              <img alt="Jet Brains" class="sponsor-image" src="@/assets/conf2024/jb_beam.svg" />
             </a>
             <a href="https://www.nossomoinho.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Moinho" class="sponsor-image" src="@/assets/logo-moinho.png" />
+              <img alt="Moinho" class="sponsor-image" src="@/assets/conf2024/logo-moinho.png" />
             </a>
             <a href="https://www.instagram.com/cafe_das_minas/" class="sponsor-image-link" target="_blank">
-              <img alt="Café das Minas" class="sponsor-image" src="@/assets/cafe-das-minas.png" />
+              <img alt="Café das Minas" class="sponsor-image" src="@/assets/conf2024/cafe-das-minas.png" />
             </a>
             <a href="https://www.instagram.com/microraptorufjf/" class="sponsor-image-link" target="_blank">
-              <img alt="Microraptor" class="sponsor-image-vertical" src="@/assets/microraptor.webp" loading="lazy" decoding="async" />
+              <img alt="Microraptor" class="sponsor-image-vertical" src="@/assets/conf2024/microraptor.webp" loading="lazy" decoding="async" />
             </a>
           </div>
         </div>
@@ -499,27 +499,27 @@
 import InstagramIcon from '../components/icons/IconInstagram.vue'
 import LinkedinIcon from '../components/icons/IconLinkedin.vue'
 import MapsIcon from '../components/icons/IconMaps.vue'
-import Speaker from '../components/Speaker.vue'
-import Schedule from '../components/Schedule.vue'
-import ScheduleTile from '../components/ScheduleTile.vue'
-import SpeakerHenrique from '@/assets/henrique-cabral.webp'
-import SpeakerCintia from '@/assets/cintia-esteves.webp'
-import SpeakerBrendo from '@/assets/brendo-freitas.webp'
-import SpeakerEmerson from '@/assets/emerson-pombo.webp'
-import SpeakerFabricio from '@/assets/fabricio-lima.webp'
-import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
-import SpeakerLucasLopes from '@/assets/lucas-lopes.webp'
-import SpeakerLuiza from '@/assets/luiza-bartels.webp'
-import SpeakerNatalia from '@/assets/natalia-granato.webp'
-import SpeakerRanieri from '@/assets/ranieri-imperatori.webp'
-import SpeakerJoao from '@/assets/joao-medina.webp'
-import SpeakerLais from '@/assets/lais-bomtempo.webp'
-import SpeakerCarlos from '@/assets/carlos-alexandre.webp'
-import SpeakerAna from '@/assets/ana-carius.webp'
-import SpeakerDanilo from '@/assets/danilo-oliveira.webp'
-import SpeakerFran from '@/assets/fran-weidt.webp'
-import SpeakerRuan from '@/assets/ruan-carlos.webp'
-import SpeakerCamilla from '@/assets/camilla-martins.webp'
+import Speaker from '../components/conf2024/Speaker.vue'
+import Schedule from '../components/conf2024/Schedule.vue'
+import ScheduleTile from '../components/conf2024/ScheduleTile.vue'
+import SpeakerHenrique from '@/assets/conf2024/henrique-cabral.webp'
+import SpeakerCintia from '@/assets/conf2024/cintia-esteves.webp'
+import SpeakerBrendo from '@/assets/conf2024/brendo-freitas.webp'
+import SpeakerEmerson from '@/assets/conf2024/emerson-pombo.webp'
+import SpeakerFabricio from '@/assets/conf2024/fabricio-lima.webp'
+import SpeakerLucasCarrilho from '@/assets/conf2024/lucas-carrilho.webp'
+import SpeakerLucasLopes from '@/assets/conf2024/lucas-lopes.webp'
+import SpeakerLuiza from '@/assets/conf2024/luiza-bartels.webp'
+import SpeakerNatalia from '@/assets/conf2024/natalia-granato.webp'
+import SpeakerRanieri from '@/assets/conf2024/ranieri-imperatori.webp'
+import SpeakerJoao from '@/assets/conf2024/joao-medina.webp'
+import SpeakerLais from '@/assets/conf2024/lais-bomtempo.webp'
+import SpeakerCarlos from '@/assets/conf2024/carlos-alexandre.webp'
+import SpeakerAna from '@/assets/conf2024/ana-carius.webp'
+import SpeakerDanilo from '@/assets/conf2024/danilo-oliveira.webp'
+import SpeakerFran from '@/assets/conf2024/fran-weidt.webp'
+import SpeakerRuan from '@/assets/conf2024/ruan-carlos.webp'
+import SpeakerCamilla from '@/assets/conf2024/camilla-martins.webp'
 </script>
 
 <style scoped>
@@ -534,7 +534,7 @@ import SpeakerCamilla from '@/assets/camilla-martins.webp'
 }
 
 #home {
-  background-image: url('@/assets/moinho.webp');
+  background-image: url('@/assets/conf2024/moinho.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

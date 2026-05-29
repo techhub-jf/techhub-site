@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <header>
-      <img alt="Tech Hub Logo" class="logoHeader" src="@/assets/logo-dark.png" />
+      <img alt="Tech Hub Logo" class="logoHeader" src="@/assets/conf2026/logo-dark.png" />
       <nav>
         <a href="#home" class="buttonHeader">HOME</a>
         <a href="#about" class="buttonHeader">SOBRE</a>
@@ -13,6 +13,15 @@
         <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" class="buttonHeader">SUBMETA SUA PALESTRA</a> -->
         <a href="/conf/2025" class="buttonHeader" target="_blank">EDIÇÃO 2025</a>
         <a href="/conf/2024" class="buttonHeader" target="_blank">EDIÇÃO 2024</a>
+        <button class="theme-toggle" @click="toggle" :aria-label="theme === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'">
+          <svg v-if="theme === 'dark'" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+          <svg v-else viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
         <div class="social-icons">
           <a href="https://www.instagram.com/techhubconf" target="_blank" class="social-icon">
             <InstagramIcon />
@@ -58,10 +67,11 @@
     </transition>
     <div class="main">
       <section id="home">
-        <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/logo-dark.png" />
+        <span class="hero-kicker">O maior evento tech de Juiz de Fora e região</span>
+        <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/conf2026/logo-dark.png" />
         <div class="homeText">
           <h2 class="homeTextFieldDate">30 de Maio</h2>
-          <h2 class="homeTextFieldLocation">Moinho - Juiz de Fora</h2>
+          <h2 class="homeTextFieldLocation">Moinho — Juiz de Fora</h2>
         </div>
         <!-- <div class="homeButtons">
           <a href="https://drive.google.com/drive/folders/1hzQdZs_rLQp4XIngGSPgq6zo5IlmhqkR?usp=sharing" target="_blank"
@@ -85,7 +95,7 @@
       <section id="about" class="infoSections">
         <h1 class="section-title">Sobre</h1>
         <div class="about-image">
-          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/tech-hub-conf.webp" loading="lazy" decoding="async" />
+          <img alt="Tech Hub Conf" class="tech-hub-conf-photo" src="@/assets/conf2026/tech-hub-conf.webp" loading="lazy" decoding="async" />
         </div>
         <div class="about-sub-section">
           <div class="about-text">
@@ -96,7 +106,7 @@
               de encontro para profissionais de TI.</p>
             <br>
             <p class="section-text">Teremos um dia cheio de palestras e workshops.</p>
-            <img alt="Tech Hub Logo" class="logo-jf" src="@/assets/tech-hub-jf.png" />
+            <img alt="Tech Hub Logo" class="logo-jf" :src="theme === 'dark' ? jfLogoDark : jfLogoLight" />
           </div>
           <div class="about-text-2">
             <p class="section-text">Entre os assuntos abordados:</p>
@@ -315,7 +325,7 @@
             </div>
           </div>
           <div class="location-sub-section">
-            <img alt="Moinho" class="location-img" src="@/assets/moinho-location.webp" loading="lazy" decoding="async" />
+            <img alt="Moinho" class="location-img" src="@/assets/conf2026/moinho-location.webp" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -329,25 +339,25 @@
           <h2 class="section-title">Platina</h2>
           <div class="sponsors-images">
             <a href="https://www.nossomoinho.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Moinho" class="sponsor-image" src="@/assets/logo-moinho.png" />
+              <img alt="Moinho" class="sponsor-image" src="@/assets/conf2026/logo-moinho.png" />
             </a>
             <!-- <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
+              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/conf2026/rubeus.png" />
             </a> -->
             <a href="https://www.levty.com/br" class="sponsor-image-link" target="_blank">
-              <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/levty.svg" />
+              <img alt="Levty" class="sponsor-image-rectangular" src="@/assets/conf2026/levty.svg" />
             </a>
             <!-- <a href="https://4linux.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="4 Linux" class="sponsor-image-rectangular" src="@/assets/4linux.png" />
+              <img alt="4 Linux" class="sponsor-image-rectangular" src="@/assets/conf2026/4linux.png" />
             </a> -->
             <!-- <a href="https://www.instagram.com/oticam3oculos/" class="sponsor-image-link" target="_blank">
-              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/m3-oculos.png" />
+              <img alt="M3 Óculos" class="sponsor-image-rectangular" src="@/assets/conf2026/m3-oculos.png" />
             </a> -->
             <!-- <a href="https://ensin-e.edu.br/" class="sponsor-image-link" target="_blank">
-              <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/ensine.svg" />
+              <img alt="EnsinE" class="sponsor-image-rectangular" src="@/assets/conf2026/ensine.svg" />
             </a> -->
             <!-- <a href="https://www.uem.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="U&M" class="sponsor-image" src="@/assets/uem-50.webp" loading="lazy" decoding="async" />
+              <img alt="U&M" class="sponsor-image" src="@/assets/conf2026/uem-50.webp" loading="lazy" decoding="async" />
             </a> -->
           </div>
         </div>
@@ -355,13 +365,13 @@
           <h2 class="section-title">Ouro</h2>
           <div class="sponsors-images">
             <!-- <a href="https://www.instagram.com/medeirosgourmetbuffet/" class="sponsor-image-link" target="_blank">
-              <img alt="Buffet" class="sponsor-image" src="@/assets/buffet.png" />
+              <img alt="Buffet" class="sponsor-image" src="@/assets/conf2026/buffet.png" />
             </a> -->
             <a href="https://rubeus.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/rubeus.png" />
+              <img alt="Rubeus" class="sponsor-image-rectangular" src="@/assets/conf2026/rubeus.png" />
             </a>
             <a href="https://inupcontabil.com.br/" class="sponsor-image-link" target="_blank">
-              <img alt="InUp Contabilidade" class="sponsor-image" src="@/assets/inup.svg" />
+              <img alt="InUp Contabilidade" class="sponsor-image" src="@/assets/conf2026/inup.svg" />
             </a>
           </div>
         </div>
@@ -375,19 +385,19 @@
           <h2 class="section-title">Apoiadores</h2>
           <div class="sponsors-images">
             <!-- <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/jetbrains.svg" />
+              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/conf2026/jetbrains.svg" />
             </a> -->
             <!-- <a href="https://www.jetbrains.com/" class="sponsor-image-link" target="_blank">
-              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/elastic.svg" />
+              <img alt="Jet Brains" class="sponsor-image-rectangular" src="@/assets/conf2026/elastic.svg" />
             </a> -->
             <a href="https://developers.google.com/community/experts?hl=pt-br" class="sponsor-image-link" target="_blank">
-              <img alt="Google Developer Experts" class="sponsor-image-aspect" src="@/assets/gde-logo.png" />
+              <img alt="Google Developer Experts" class="sponsor-image-aspect" src="@/assets/conf2026/gde-logo.png" />
             </a>
             <a href="https://www.instagram.com/bytesbrejas/" class="sponsor-image-link" target="_blank">
-              <img alt="Bytes e Brejas" class="sponsor-image" src="@/assets/bytes-brejas.png" />
+              <img alt="Bytes e Brejas" class="sponsor-image" src="@/assets/conf2026/bytes-brejas.png" />
             </a>
             <a href="https://www.linkedin.com/company/capivara-tech-jf/" class="sponsor-image-link" target="_blank">
-              <img alt="Capivara Tech" class="sponsor-image" src="@/assets/capivara-tech.svg" />
+              <img alt="Capivara Tech" class="sponsor-image" src="@/assets/conf2026/capivara-tech.svg" />
             </a>
           </div>
         </div>
@@ -401,39 +411,43 @@
 
 <script setup lang="ts">
 import { useEventLive } from '../composables/useHappeningNow'
+import { useTheme } from '../composables/useTheme'
 import InstagramIcon from '../components/icons/IconInstagram.vue'
 import LinkedinIcon from '../components/icons/IconLinkedin.vue'
 import YoutubeIcon from '../components/icons/IconYoutube.vue'
 import MapsIcon from '../components/icons/IconMaps.vue'
-import Speaker from '../components/Speaker.vue'
-import Schedule from '../components/Schedule.vue'
-import ScheduleTile from '../components/ScheduleTile.vue'
-import AgendaNow from '../components/AgendaNow.vue'
-import ScheduleFilters from '../components/ScheduleFilters.vue'
+import Speaker from '../components/conf2026/Speaker.vue'
+import Schedule from '../components/conf2026/Schedule.vue'
+import ScheduleTile from '../components/conf2026/ScheduleTile.vue'
+import AgendaNow from '../components/conf2026/AgendaNow.vue'
+import ScheduleFilters from '../components/conf2026/ScheduleFilters.vue'
 import InstallButton from '../components/InstallButton.vue'
 import { ref } from 'vue'
-import SpeakerThiagoCantarino from '@/assets/thiago-cantarino.webp'
-import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
-import SpeakerThiagoMiranda from '@/assets/thiago-miranda.webp'
-import SpeakerWendel from '@/assets/wendel-silveira.webp'
-import SpeakerBrendo from '@/assets/brendo-freitas.webp'
-import SpeakerMarcoJunior from '@/assets/marco-junior.webp'
-import SpeakerLucasWilman from '@/assets/lucas-wilman.webp'
-import SpeakerDanilo from '@/assets/danilo-santos.webp'
-import SpeakerAnaCarolina from '@/assets/ana-carolina.webp'
-import SpeakerMarcus from '@/assets/marcus-jesus.webp'
-import SpeakerLeandro from '@/assets/leandro-simoes.webp'
-import SpeakerBarbara from '@/assets/barbara-neri.webp'
-import SpeakerRenato from '@/assets/renato-bonario.webp'
-import SpeakerAldemon from '@/assets/aldemon-bonifacio.webp'
-import SpeakerKevin from '@/assets/kevin-azevedo.webp'
-import SpeakerRomulo from '@/assets/romulo-murucci.webp'
-import SpeakerSamuel from '@/assets/samuel-amaral.webp'
-import SpeakerLuca from '@/assets/luca-garcia.webp'
-import SpeakerTiago from '@/assets/tiago-reis.webp'
-import SpeakerMariaLuize from '@/assets/maria-luize.webp'
+import SpeakerThiagoCantarino from '@/assets/conf2026/thiago-cantarino.webp'
+import SpeakerLucasCarrilho from '@/assets/conf2026/lucas-carrilho.webp'
+import SpeakerThiagoMiranda from '@/assets/conf2026/thiago-miranda.webp'
+import SpeakerWendel from '@/assets/conf2026/wendel-silveira.webp'
+import SpeakerBrendo from '@/assets/conf2026/brendo-freitas.webp'
+import SpeakerMarcoJunior from '@/assets/conf2026/marco-junior.webp'
+import SpeakerLucasWilman from '@/assets/conf2026/lucas-wilman.webp'
+import SpeakerDanilo from '@/assets/conf2026/danilo-santos.webp'
+import SpeakerAnaCarolina from '@/assets/conf2026/ana-carolina.webp'
+import SpeakerMarcus from '@/assets/conf2026/marcus-jesus.webp'
+import SpeakerLeandro from '@/assets/conf2026/leandro-simoes.webp'
+import SpeakerBarbara from '@/assets/conf2026/barbara-neri.webp'
+import SpeakerRenato from '@/assets/conf2026/renato-bonario.webp'
+import SpeakerAldemon from '@/assets/conf2026/aldemon-bonifacio.webp'
+import SpeakerKevin from '@/assets/conf2026/kevin-azevedo.webp'
+import SpeakerRomulo from '@/assets/conf2026/romulo-murucci.webp'
+import SpeakerSamuel from '@/assets/conf2026/samuel-amaral.webp'
+import SpeakerLuca from '@/assets/conf2026/luca-garcia.webp'
+import SpeakerTiago from '@/assets/conf2026/tiago-reis.webp'
+import SpeakerMariaLuize from '@/assets/conf2026/maria-luize.webp'
+import jfLogoLight from '@/assets/conf2026/tech-hub-jf.webp'
+import jfLogoDark from '@/assets/conf2026/tech-hub-jf-dark.webp'
 
 const eventLive = useEventLive()
+const { theme, toggle } = useTheme()
 const menuOpen = ref(false)
 
 // Rola até a primeira sessão destacada como "acontecendo agora".
@@ -455,16 +469,90 @@ function scrollToNow() {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  background-color: white;
+  position: relative;
+  background-color: var(--thc-bg);
+  color: var(--thc-text);
+  font-family: var(--thc-display);
+  overflow-x: clip;
+}
+
+/* Grade técnica sutil de fundo + brilho radial, cobrindo a página toda. */
+.app::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(900px 600px at 80% -5%, rgba(0, 82, 245, 0.22), transparent 60%),
+    radial-gradient(700px 500px at 0% 30%, rgba(0, 224, 198, 0.08), transparent 60%),
+    linear-gradient(var(--thc-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--thc-line) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 54px 54px, 54px 54px;
+  opacity: var(--thc-grid-opacity);
+}
+
+.app > * {
+  position: relative;
+  z-index: 1;
 }
 
 #home {
-  background-image: url('@/assets/moinho.webp');
+  position: relative;
+  background-image:
+    var(--thc-hero-overlay),
+    url('@/assets/conf2026/moinho.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  height: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+}
+
+/* Brilho azul atrás do logo do hero. */
+#home::after {
+  content: '';
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 70vw;
+  max-width: 900px;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0, 82, 245, 0.35), transparent 62%);
+  filter: blur(20px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#home > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-kicker {
+  font-family: var(--thc-mono);
+  font-size: clamp(12px, 1.4vw, 15px);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #2fe0cf;
+  margin-bottom: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-kicker::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: #2fe0cf;
 }
 
 .logo-jf {
@@ -491,21 +579,22 @@ function scrollToNow() {
 }
 
 header {
-  background-color: #031D42;
+  background-color: #070e20;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: fixed;
   top: 0;
   z-index: 100;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 30px;
   padding-right: 50px;
-  min-height: 10vh;
+  min-height: 64px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
   align-items: center;
-  box-shadow: 0 4px 24px rgba(3, 29, 66, 0.22);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
 .logoHeader {
@@ -513,16 +602,59 @@ header {
 }
 
 .buttonHeader {
-  color: white;
-  border-radius: 5px;
-  margin-left: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-family: var(--thc-mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: rgba(232, 238, 252, 0.62);
+  border-radius: 6px;
+  margin-left: 22px;
+  padding: 6px 4px;
+  position: relative;
+  transition: color 0.18s ease;
+}
+
+.buttonHeader::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 0;
+  height: 2px;
+  background: #00e0c6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
 }
 
 .buttonHeader:hover {
-  background-color: white;
-  color: #0052F5;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* Botão de alternância de tema (header sempre escuro). */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  color: #cdd8f0;
+  cursor: pointer;
+  transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.theme-toggle:hover {
+  color: #00e0c6;
+  border-color: #00e0c6;
+  background: rgba(0, 224, 198, 0.08);
+}
+
+.buttonHeader:hover::after {
+  transform: scaleX(1);
 }
 
 .social-icons {
@@ -546,33 +678,39 @@ header {
 }
 
 .logoBanner {
-  margin-top: 22vh;
-  width: 800px;
-  margin-bottom: 100px;
+  width: min(680px, 82vw);
+  margin: 0 0 36px;
+  filter: drop-shadow(0 8px 40px rgba(0, 82, 245, 0.45));
+}
+
+.homeText {
+  margin-bottom: 44px;
+  gap: 14px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.homeTextFieldDate,
+.homeTextFieldLocation {
+  font-family: var(--thc-mono);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(6px);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 8px 18px;
 }
 
 .homeTextFieldDate {
-  color: black;
-  mix-blend-mode: screen;
-  background-color: white;
-  font-size: 25px;
-  font-weight: bold;
-  width: fit-content;
-  border-radius: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-}
-
-.homeTextFieldLocation {
-  color: black;
-  mix-blend-mode: screen;
-  background-color: white;
-  font-size: 20px;
-  width: fit-content;
-  border-radius: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
+  color: #06121f;
+  background-color: #00e0c6;
+  border-color: transparent;
+  font-weight: 800;
 }
 
 .homeButtons {
@@ -618,12 +756,27 @@ nav {
 }
 
 .section-title {
-  font-family: 'Sora', system-ui, -apple-system, sans-serif;
-  font-size: clamp(30px, 4vw, 44px);
+  font-family: var(--thc-display);
+  font-size: clamp(34px, 5vw, 56px);
   font-weight: 800;
-  letter-spacing: -0.02em;
-  color: #031D42;
+  letter-spacing: -0.03em;
+  color: var(--thc-text);
   margin-bottom: 50px;
+  position: relative;
+  padding-top: 22px;
+}
+
+/* Barra de acento acima de cada título de seção. */
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--thc-brand), var(--thc-accent));
 }
 
 .now-jump-button {
@@ -664,10 +817,16 @@ nav {
 
 .section-text {
   font-size: 20px;
-  color: black;
+  color: var(--thc-text-dim);
+  line-height: 1.7;
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.section-text.bold-text {
+  color: var(--thc-text);
+  font-size: 24px;
 }
 
 .section-list-container {
@@ -682,22 +841,28 @@ nav {
 }
 
 .section-list-text {
-  font-size: 20px;
-  color: black;
+  font-size: 18px;
+  color: var(--thc-text-dim);
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 8px;
   text-align: left;
 }
 
+.section-list-text::marker {
+  color: var(--thc-accent);
+}
+
 .section-text-location-title {
+  font-family: var(--thc-display);
   font-size: 30px;
-  font-weight: bold;
-  color: black;
+  font-weight: 800;
+  color: var(--thc-text);
 }
 
 .section-text-location {
-  font-size: 20px;
-  color: black;
+  font-size: 18px;
+  color: var(--thc-text-dim);
 }
 
 .sponsor-class {
@@ -705,7 +870,8 @@ nav {
 }
 
 .section-text a {
-  color: #0052F5;
+  color: var(--thc-brand-bright);
+  font-weight: 600;
 }
 
 .location-main {
@@ -718,7 +884,7 @@ nav {
 }
 
 #location {
-  background-color: rgb(241, 241, 241);
+  background-color: var(--thc-bg-soft);
 }
 
 .location-sub-section {
@@ -738,7 +904,8 @@ nav {
 .locationText {
   height: 30vh;
   margin-right: 50px;
-  background-color: white;
+  background-color: var(--thc-bg-elev);
+  border: 1px solid var(--thc-line);
   border-radius: 20px;
   padding-left: 50px;
   padding-right: 50px;
@@ -754,7 +921,8 @@ nav {
 .google-map {
   height: 30vh;
   width: 100%;
-  background-color: white;
+  background-color: var(--thc-bg-elev);
+  border: 1px solid var(--thc-line);
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 5px;
@@ -763,8 +931,8 @@ nav {
 }
 
 .maps-icon {
-  color: #0052F5;
-  background-color: rgb(241, 241, 241);
+  color: var(--thc-accent);
+  background-color: rgba(0, 224, 198, 0.12);
   border-radius: 50px;
   max-width: fit-content;
   height: 50px;
@@ -784,15 +952,16 @@ nav {
 }
 
 .infoSections {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  background-color: rgb(244, 246, 249);
-  border-radius: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: var(--thc-bg-soft);
+  border: 1px solid var(--thc-line);
+  border-radius: 28px;
   margin-top: 6vh;
   margin-left: 200px;
   margin-right: 200px;
   scroll-margin-top: 15vh;
-  box-shadow: 0 18px 50px rgba(3, 29, 66, 0.08);
+  box-shadow: var(--thc-shadow-lg);
 }
 
 .about-image {
@@ -844,19 +1013,34 @@ nav {
   align-self: center;
   margin-left: 3vh;
   margin-right: 3vh;
-  padding: 10px;
+  padding: 18px 24px;
   margin-top: 10px;
+  background-color: #ffffff;
+  border: 1px solid var(--thc-line);
+  box-shadow: var(--thc-shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sponsor-image-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 46px rgba(0, 82, 245, 0.28);
+  background-color: #ffffff;
 }
 
 footer {
-  margin-top: 50px;
-  background-color: #031D42;
+  margin-top: 80px;
+  background-color: var(--thc-bg-soft);
+  border-top: 1px solid var(--thc-line);
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   padding-left: 30px;
   padding-right: 50px;
   text-align: center;
+  font-family: var(--thc-mono);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--thc-text-dim);
 }
 
 @keyframes border-animation {
@@ -905,7 +1089,7 @@ footer {
 
 .schedule-gde {
   background-image:
-    linear-gradient(white, white),
+    linear-gradient(var(--thc-bg-elev), var(--thc-bg-elev)),
     linear-gradient(135deg,
       #4285F4 0%, #4285F4 25%,
       #EA4335 25%, #EA4335 50%,
@@ -914,7 +1098,7 @@ footer {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   border-color: transparent !important;
-  box-shadow: 0 4px 18px rgba(66, 133, 244, 0.15);
+  box-shadow: 0 10px 30px rgba(66, 133, 244, 0.22);
 }
 
 .schedule-gde::before {
@@ -923,7 +1107,7 @@ footer {
   height: 70px;
   margin: 0 -20px 12px;
   background-color: white;
-  background-image: url('@/assets/gde.svg');
+  background-image: url('@/assets/conf2026/gde.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 90%;
@@ -935,13 +1119,16 @@ footer {
     #34A853 75% 100%) 1;
 }
 
+/* Antes esses cards ocupavam várias linhas (layout masonry), o que deixava
+   cards da mesma linha com alturas diferentes. Agora cada card ocupa uma única
+   linha e estica para a altura da linha — todos da mesma linha ficam iguais. */
 .schedule-two-rows {
-  grid-row: span 2;
+  grid-row: span 1;
   grid-column: span 1;
 }
 
 .schedule-three-rows {
-  grid-row: span 3;
+  grid-row: span 1;
   grid-column: span 1;
 }
 
@@ -1001,29 +1188,49 @@ footer {
 }
 
 .mobile-menu-panel {
-  background-color: #031D42;
+  background-color: #070e20;
   width: min(78vw, 320px);
   height: 100%;
-  padding: 96px 28px 28px;
+  padding: 96px 24px 28px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
 }
 
+/* Mesmo estilo do nav do desktop (.buttonHeader): mono, discreto, underline teal. */
 .mobile-menu-panel a {
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  padding: 14px 12px;
-  border-radius: 10px;
-  transition: background-color 0.18s ease;
+  font-family: var(--thc-mono);
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: rgba(232, 238, 252, 0.62);
+  padding: 14px 6px;
+  width: fit-content;
+  align-self: center;
+  position: relative;
+  transition: color 0.18s ease;
+}
+
+.mobile-menu-panel a::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 8px;
+  height: 2px;
+  background: #00e0c6;
+  transform: scaleX(0);
+  transition: transform 0.22s ease;
 }
 
 .mobile-menu-panel a:hover,
 .mobile-menu-panel a:active {
-  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.mobile-menu-panel a:hover::after,
+.mobile-menu-panel a:active::after {
+  transform: scaleX(1);
 }
 
 .mobile-menu-divider {
@@ -1045,6 +1252,11 @@ footer {
   padding: 8px;
   border-radius: 50%;
   transition: background-color 0.18s ease;
+}
+
+/* Ícones sociais não usam o underline teal dos links de texto. */
+.mobile-menu-social .social-icon::after {
+  display: none;
 }
 
 .mobile-menu-social .social-icon:hover {
@@ -1093,9 +1305,8 @@ footer {
   }
 
   .logoBanner {
-    margin-top: 20vh;
-    width: 40vh;
-    margin-bottom: 100px;
+    width: min(420px, 74vw);
+    margin: 0 0 22px;
   }
 
   #home {
@@ -1103,6 +1314,15 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    /* Alinha o conteúdo ao topo (logo abaixo do header) em vez de centralizar,
+       pra logo + botões ficarem visíveis sem precisar rolar. */
+    justify-content: flex-start;
+    padding-top: 92px;
+    padding-bottom: 48px;
+  }
+
+  .hero-kicker {
+    margin-bottom: 18px;
   }
 
   .about-sub-section {
@@ -1129,6 +1349,11 @@ footer {
 
   .nav-toggle {
     display: flex;
+  }
+
+  /* Ícones sociais saem do header no mobile — ficam só dentro do menu. */
+  .social-icons {
+    display: none;
   }
 
   .infoSections {

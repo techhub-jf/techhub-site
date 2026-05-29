@@ -15,6 +15,95 @@
   font-display: swap;
 }
 
+/* JetBrains Mono: usada em rótulos técnicos (horários, tags, kickers). */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/jetbrains-mono-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ----------------------------------------------------------------------
+   Design tokens do redesign "dev console" (tema escuro, alto contraste).
+   Apenas variáveis — aplicadas nos estilos scoped das views/componentes.
+   ---------------------------------------------------------------------- */
+:root {
+  color-scheme: dark;
+  --thc-bg: #050a17;
+  --thc-bg-soft: #0a1328;
+  --thc-bg-elev: #16244d;
+  --thc-navy: #031D42;
+  --thc-brand: #0052F5;
+  --thc-brand-bright: #3d82ff;
+  --thc-accent: #00e0c6;
+  --thc-now: #ff3b5c;
+  --thc-text: #e8eefc;
+  --thc-text-dim: #93a6cc;
+  --thc-line: rgba(255, 255, 255, 0.09);
+  --thc-line-strong: rgba(255, 255, 255, 0.16);
+  --thc-shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --thc-shadow-lg: 0 30px 70px rgba(0, 0, 0, 0.35);
+  --thc-grid-opacity: 0.6;
+  /* Overlay sobre a foto do hero — escuro (apagado) no tema dark. */
+  --thc-hero-overlay: linear-gradient(180deg, rgba(5, 10, 23, 0.4) 0%, rgba(5, 10, 23, 0.55) 48%, rgba(5, 10, 23, 0.96) 92%, var(--thc-bg) 100%);
+  --thc-display: 'Sora', system-ui, -apple-system, sans-serif;
+  --thc-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+/* Tema claro: sobrescreve só as cores/sombras do conteúdo. Header e hero
+   permanecem escuros (definidos com cores fixas nos estilos da view). */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --thc-bg: #e9edf5;
+  --thc-bg-soft: #f5f7fc;
+  --thc-bg-elev: #ffffff;
+  --thc-brand: #0052F5;
+  --thc-brand-bright: #0a5bff;
+  --thc-accent: #0a9b8c;
+  --thc-now: #e11d48;
+  --thc-text: #0b1733;
+  --thc-text-dim: #51618a;
+  --thc-line: rgba(3, 29, 66, 0.10);
+  --thc-line-strong: rgba(3, 29, 66, 0.18);
+  --thc-shadow-md: 0 10px 30px rgba(3, 29, 66, 0.10);
+  --thc-shadow-lg: 0 24px 60px rgba(3, 29, 66, 0.12);
+  --thc-grid-opacity: 0.45;
+  /* Hero "aceso" no tema claro: foto quase na iluminação original (scrim bem
+     leve só pra logo), sem wash branco; blend pro fundo só numa faixa fina embaixo. */
+  --thc-hero-overlay: linear-gradient(180deg, rgba(5, 10, 23, 0.12) 0%, rgba(5, 10, 23, 0.14) 60%, rgba(5, 10, 23, 0.12) 88%, var(--thc-bg) 100%);
+}
+
+body {
+  background-color: var(--thc-bg);
+}
+
+/* ----------------------------------------------------------------------
+   Transição de tema "acende/apaga" a partir do logo (View Transitions API).
+   Desligamos o cross-fade padrão; o clip-path é animado via JS em useTheme.
+   ---------------------------------------------------------------------- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Acender (light): camada nova por cima, cresce a partir do logo. */
+html[data-vt-dir='in']::view-transition-new(root) {
+  z-index: 2;
+}
+html[data-vt-dir='in']::view-transition-old(root) {
+  z-index: 1;
+}
+
+/* Apagar (dark): camada antiga (clara) por cima, encolhe para o logo. */
+html[data-vt-dir='out']::view-transition-old(root) {
+  z-index: 2;
+}
+html[data-vt-dir='out']::view-transition-new(root) {
+  z-index: 1;
+}
+
 html {
   scroll-behavior: smooth;
   /* Always reserve space for the scrollbar so the fixed header (and its
