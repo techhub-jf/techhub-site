@@ -157,7 +157,7 @@
 
           <Schedule :speakers="[{img: SpeakerBarbara, name: 'Bárbara Rezende Neri', role: 'Estudante de Ciência da Computação', company: 'UFSJ'}]"
             :types="[{id: 'career', name: 'Carreira'}]" time="14:00 - 14:30" location="Sala: Deploy da Sexta"
-            title="O poder do espelho: por que mulheres ficam ou saem da tecnologia"
+            title="Debugando a evasão: por que mulheres saem da tecnologia"
             description="Por que ainda somos tão poucas na tecnologia, e por que tantas mulheres que entram acabam saindo? Não é falta de capacidade, é falta de referência. Diversidade é estratégia — a questão não é como incluir mais mulheres, mas que tipo de ambiente estamos construindo para que elas fiquem." />
 
           <Schedule :speakers="[{img: SpeakerRenato, name: 'Renato Bonario', role: 'Product Owner', company: 'Heineken'}]"
