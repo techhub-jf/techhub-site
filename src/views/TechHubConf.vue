@@ -9,7 +9,7 @@
         <a href="#speakers" class="buttonHeader">PALESTRANTES</a>
         <a href="#location" class="buttonHeader">LOCAL</a>
         <a href="#sponsors" class="buttonHeader">PATROCINADORES</a>
-        <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" class="buttonHeader">INSCREVA-SE</a>
+        <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" class="buttonHeader">INSCREVA-SE</a> -->
         <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" class="buttonHeader">SUBMETA SUA PALESTRA</a> -->
         <a href="/conf/2025" class="buttonHeader" target="_blank">EDIÇÃO 2025</a>
         <a href="/conf/2024" class="buttonHeader" target="_blank">EDIÇÃO 2024</a>
@@ -40,8 +40,8 @@
               class="homeButton">REDES SOCIAIS</a>
         </div> -->
         <div class="homeButtons">
-          <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" target="_blank"
-            class="homeButton">INSCREVA-SE</a>
+          <!-- <a href="https://www.sympla.com.br/evento/tech-hub-conf-2026/3325416" target="_blank"
+            class="homeButton">INSCREVA-SE</a> -->
           <InstallButton />
           <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
             class="homeButton">SUBMETA SUA PALESTRA</a> -->
