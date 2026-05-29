@@ -4,6 +4,7 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import GroupIcon from './icons/IconGroup.vue'
 import StoreIcon from './icons/IconStore.vue'
+import RaffleIcon from './icons/IconRaffle.vue'
 </script>
 
 <template>
@@ -41,5 +42,14 @@ import StoreIcon from './icons/IconStore.vue'
     <template #heading>Redes sociais</template>
 
     Todas as redes estão no nosso linktr.ee
+  </WelcomeItem>
+
+  <WelcomeItem link="/sorteador">
+    <template #icon>
+      <RaffleIcon />
+    </template>
+    <template #heading>Sorteador</template>
+
+    Sorteador para eventos fácil, rápido e 100% client side
   </WelcomeItem>
 </template>

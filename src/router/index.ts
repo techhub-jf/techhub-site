@@ -23,6 +23,11 @@ const router = createRouter({
       path: '/conf',
       name: 'conf',
       component: () => import('../views/TechHubConf.vue')
+    },
+    {
+      path: '/sorteador',
+      name: 'sorteador',
+      component: () => import('../views/SorteadorView.vue')
     }
   ]
 })
