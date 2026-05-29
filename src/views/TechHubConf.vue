@@ -153,7 +153,7 @@
           <Schedule :speakers="[{img: SpeakerLeandro, name: 'Leandro Simões da Silva', role: 'Engenheiro de Software', company: 'TheGuarantors'}]"
             :types="[{id: 'devops', name: 'DevOps'}]" time="14:00 - 14:30" location="Auditório: Teste em Produção"
             title="Observabilidade para programadores"
-            description="Saber como uma aplicação se comporta é essencial para detectar e resolver falhas com o mínimo impacto no negócio. Esta palestra apresenta os primeiros passos para tornar uma aplicação observável por meio do OpenTelemetry, com foco prático para programadores." />
+            description="Observabilidade não é apenas monitorar sistemas, mas entender como eles afetam o negócio. Nesta palestra, veremos como instrumentar aplicações com OpenTelemetry, criar métricas de negócio em tempo real e utilizar IA para extrair valor dos dados de telemetria." />
 
           <Schedule :speakers="[{img: SpeakerBarbara, name: 'Bárbara Rezende Neri', role: 'Estudante de Ciência da Computação', company: 'UFSJ'}]"
             :types="[{id: 'career', name: 'Carreira'}]" time="14:00 - 14:30" location="Sala: Deploy da Sexta"
