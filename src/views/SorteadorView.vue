@@ -498,7 +498,6 @@ onBeforeUnmount(() => { if (cleanup) cleanup() })
     <canvas id="confetti"></canvas>
 
     <button class="mutebtn" id="muteBtn" title="Som"></button>
-    <RouterLink to="/" class="backlink">← voltar</RouterLink>
 
     <div class="stage">
       <header>
