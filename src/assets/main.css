@@ -7,6 +7,10 @@
 
 html {
   scroll-behavior: smooth;
+  /* Always reserve space for the scrollbar so the fixed header (and its
+     right-aligned social icons) don't shift when content makes the page
+     tall enough to need a scrollbar on refresh. */
+  scrollbar-gutter: stable;
 }
 
 #app {

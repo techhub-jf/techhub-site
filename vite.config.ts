@@ -17,7 +17,7 @@ export default defineConfig({
         name: 'Tech Hub Conf',
         short_name: 'Tech Hub',
         description: 'A sua comunidade tech em Juiz de Fora e região',
-        theme_color: '#0052F5',
+        theme_color: '#031D42',
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
