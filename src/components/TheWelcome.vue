@@ -50,6 +50,6 @@ import RaffleIcon from './icons/IconRaffle.vue'
     </template>
     <template #heading>Sorteador</template>
 
-    Sorteador para eventos fácil, rápido e 100% client side
+    Sorteador para eventos. Fácil, rápido e 100% client side
   </WelcomeItem>
 </template>
