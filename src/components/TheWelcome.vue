@@ -3,6 +3,7 @@ import WelcomeItem from './WelcomeItem.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import GroupIcon from './icons/IconGroup.vue'
+import StoreIcon from './icons/IconStore.vue'
 </script>
 
 <template>
@@ -26,7 +27,7 @@ import GroupIcon from './icons/IconGroup.vue'
 
   <WelcomeItem link="https://loja.techhubjf.org/">
     <template #icon>
-      <EcosystemIcon />
+      <StoreIcon />
     </template>
     <template #heading>Loja</template>
 
