@@ -30,7 +30,7 @@ onMounted(() => {
     if (typeof (window as any).DecompressionStream === 'undefined')
       throw new Error('Navegador sem suporte a DecompressionStream. Use Chrome, Edge ou Safari atualizado.')
     const ds = new (window as any).DecompressionStream('deflate-raw')
-    const stream = new Blob([bytes]).stream().pipeThrough(ds)
+    const stream = new Blob([bytes as BlobPart]).stream().pipeThrough(ds)
     return new Uint8Array(await new Response(stream).arrayBuffer())
   }
   function readZip(buf: ArrayBuffer) {
