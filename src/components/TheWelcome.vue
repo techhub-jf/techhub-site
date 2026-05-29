@@ -21,7 +21,7 @@ import GroupIcon from './icons/IconGroup.vue'
     </template>
     <template #heading>Chopp da TI</template>
 
-    Encontro quinzenal gratuito para bater um papo sobre tech!
+    Encontro mensal gratuito para bater um papo sobre tech!
   </WelcomeItem>
 
   <WelcomeItem link="https://loja.techhubjf.org/">
