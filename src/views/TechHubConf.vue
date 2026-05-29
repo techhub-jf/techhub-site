@@ -24,8 +24,38 @@
             <YoutubeIcon />
           </a>
         </div>
+        <button class="nav-toggle" :class="{ open: menuOpen }" @click="menuOpen = !menuOpen"
+          aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
       </nav>
     </header>
+    <transition name="drawer">
+      <div v-if="menuOpen" class="mobile-menu" @click.self="menuOpen = false">
+        <nav class="mobile-menu-panel">
+          <a href="#home" @click="menuOpen = false">HOME</a>
+          <a href="#about" @click="menuOpen = false">SOBRE</a>
+          <a href="#schedule" @click="menuOpen = false">PROGRAMAÇÃO</a>
+          <a href="#speakers" @click="menuOpen = false">PALESTRANTES</a>
+          <a href="#location" @click="menuOpen = false">LOCAL</a>
+          <a href="#sponsors" @click="menuOpen = false">PATROCINADORES</a>
+          <span class="mobile-menu-divider"></span>
+          <a href="/conf/2025" target="_blank" @click="menuOpen = false">EDIÇÃO 2025</a>
+          <a href="/conf/2024" target="_blank" @click="menuOpen = false">EDIÇÃO 2024</a>
+          <div class="mobile-menu-social">
+            <a href="https://www.instagram.com/techhubconf" target="_blank" class="social-icon" aria-label="Instagram">
+              <InstagramIcon />
+            </a>
+            <a href="https://www.linkedin.com/company/tech-hub-conf" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <LinkedinIcon />
+            </a>
+            <a href="https://www.youtube.com/@techhubjf" target="_blank" class="social-icon" aria-label="YouTube">
+              <YoutubeIcon />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </transition>
     <div class="main">
       <section id="home">
         <img alt="Tech Hub Logo" class="logoBanner" src="@/assets/logo-dark.png" />
@@ -90,6 +120,8 @@
       </section>
       <section id="schedule" class="infoSections">
         <h1 class="section-title">Programação</h1>
+        <AgendaNow />
+        <ScheduleFilters />
         <div class="schedule-main">
           <ScheduleTile time="8:00 - 8:30" title="Credenciamento" location="Entrada"/>
           <ScheduleTile time="8:30 - 9:00" title="Abertura" location="Auditório: Teste em Produção"/>
@@ -376,7 +408,10 @@ import MapsIcon from '../components/icons/IconMaps.vue'
 import Speaker from '../components/Speaker.vue'
 import Schedule from '../components/Schedule.vue'
 import ScheduleTile from '../components/ScheduleTile.vue'
+import AgendaNow from '../components/AgendaNow.vue'
+import ScheduleFilters from '../components/ScheduleFilters.vue'
 import InstallButton from '../components/InstallButton.vue'
+import { ref } from 'vue'
 import SpeakerThiagoCantarino from '@/assets/thiago-cantarino.webp'
 import SpeakerLucasCarrilho from '@/assets/lucas-carrilho.webp'
 import SpeakerThiagoMiranda from '@/assets/thiago-miranda.webp'
@@ -399,6 +434,7 @@ import SpeakerTiago from '@/assets/tiago-reis.webp'
 import SpeakerMariaLuize from '@/assets/maria-luize.webp'
 
 const eventLive = useEventLive()
+const menuOpen = ref(false)
 
 // Rola até a primeira sessão destacada como "acontecendo agora".
 function scrollToNow() {
@@ -469,6 +505,7 @@ header {
   justify-content: space-between;
   flex-flow: row nowrap;
   align-items: center;
+  box-shadow: 0 4px 24px rgba(3, 29, 66, 0.22);
 }
 
 .logoHeader {
@@ -548,18 +585,21 @@ header {
 .homeButton {
   background-color: #0052F5;
   color: white;
-  border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  margin-bottom: 30px;
+  border-radius: 14px;
+  padding: 14px 34px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 28px rgba(0, 82, 245, 0.4);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
 .homeButton:hover {
-  background-color: white;
-  color: #0052F5;
+  background-color: #0a5bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 82, 245, 0.55);
 }
 
 nav {
@@ -578,8 +618,10 @@ nav {
 }
 
 .section-title {
-  font-size: 40px;
-  font-weight: bold;
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: #031D42;
   margin-bottom: 50px;
 }
@@ -742,14 +784,15 @@ nav {
 }
 
 .infoSections {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: rgb(241, 241, 241);
-  border-radius: 50px;
-  margin-top: 5vh;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: rgb(244, 246, 249);
+  border-radius: 32px;
+  margin-top: 6vh;
   margin-left: 200px;
   margin-right: 200px;
   scroll-margin-top: 15vh;
+  box-shadow: 0 18px 50px rgba(3, 29, 66, 0.08);
 }
 
 .about-image {
@@ -909,6 +952,125 @@ footer {
   gap: 20px;
 }
 
+/* Botão hambúrguer — escondido no desktop, exibido no mobile. */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  margin-left: 18px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 120;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 3px;
+  width: 26px;
+  border-radius: 3px;
+  background-color: white;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Drawer mobile */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 110;
+  background: rgba(3, 29, 66, 0.55);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu-panel {
+  background-color: #031D42;
+  width: min(78vw, 320px);
+  height: 100%;
+  padding: 96px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.mobile-menu-panel a {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 14px 12px;
+  border-radius: 10px;
+  transition: background-color 0.18s ease;
+}
+
+.mobile-menu-panel a:hover,
+.mobile-menu-panel a:active {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.mobile-menu-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 10px 12px;
+}
+
+.mobile-menu-social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 22px;
+  color: white;
+}
+
+.mobile-menu-social .social-icon {
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.18s ease;
+}
+
+.mobile-menu-social .social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.drawer-enter-active,
+.drawer-leave-active {
+  transition: opacity 0.22s ease;
+}
+
+.drawer-enter-active .mobile-menu-panel,
+.drawer-leave-active .mobile-menu-panel {
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.drawer-enter-from,
+.drawer-leave-to {
+  opacity: 0;
+}
+
+.drawer-enter-from .mobile-menu-panel,
+.drawer-leave-to .mobile-menu-panel {
+  transform: translateX(100%);
+}
+
 @media screen and (max-width: 1280px) {
   .schedule-main {
     margin-left: 10px;
@@ -965,9 +1127,14 @@ footer {
     display: none;
   }
 
+  .nav-toggle {
+    display: flex;
+  }
+
   .infoSections {
     margin-left: 2vh;
     margin-right: 2vh;
+    border-radius: 22px;
   }
 
   .section-text {

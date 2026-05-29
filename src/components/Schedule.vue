@@ -1,5 +1,6 @@
 <template>
-  <div class="schedule-card" :class="{ 'is-now': isNow }">
+  <div v-show="visible" class="schedule-card" :class="{ 'is-now': isNow, 'is-expanded': expanded }"
+    :data-title="title" @click="expanded = !expanded">
     <div>
       <div class="schedule-card-header">
         <div class="schedule-types">
@@ -37,6 +38,7 @@
         </div>
       </div>
     </div>
+    <p class="schedule-details-hint">Toque para ver detalhes</p>
     <div class="schedule-description">
       <p class="schedule-description-text">{{ description }}</p>
     </div>
@@ -44,13 +46,19 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed, onUnmounted } from 'vue'
 import ClockIcon from '../components/icons/IconClock.vue'
 import LocationIcon from '../components/icons/IconLocation.vue'
-import { useHappeningNow } from '../composables/useHappeningNow'
+import { useHappeningNow, registerSession, matchesFilter } from '../composables/useHappeningNow'
 
 const props = defineProps(['speakers', 'img', 'name', 'role', 'company', 'types', 'title', 'description', 'time', 'location'])
 
 const isNow = useHappeningNow(() => props.time)
+const visible = computed(() => matchesFilter(props.location, props.types))
+const expanded = ref(false)
+
+const unregister = registerSession({ time: props.time, title: props.title, location: props.location })
+onUnmounted(unregister)
 </script>
 
 <style scoped>
@@ -68,9 +76,18 @@ const isNow = useHappeningNow(() => props.time)
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+  box-shadow: 0 6px 22px rgba(3, 29, 66, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   --border-size: 0.2rem;
   border: var(--border-size) solid transparent;
+}
+
+@media (hover: hover) {
+  .schedule-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 38px rgba(3, 29, 66, 0.14);
+  }
 }
 
 .bold-text {
@@ -190,10 +207,14 @@ const isNow = useHappeningNow(() => props.time)
 }
 
 .schedule-subject-text {
-  font-size: 20px;
-  margin-top: 10px;
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin-top: 12px;
   margin-bottom: 10px;
-  color: black;
+  color: #031D42;
   text-align: start;
 }
 
@@ -271,10 +292,36 @@ const isNow = useHappeningNow(() => props.time)
   white-space: pre-line
 }
 
-.schedule-card:hover {
-  .schedule-description {
+/* Hover só em dispositivos que realmente têm hover (desktop). */
+@media (hover: hover) {
+  .schedule-card:hover .schedule-description {
     height: 101%;
     transform: translateY(-100%);
+  }
+}
+
+/* No toque (mobile), a descrição abre ao tocar no card. */
+.schedule-card.is-expanded .schedule-description {
+  height: 101%;
+  transform: translateY(-100%);
+}
+
+.schedule-card {
+  cursor: pointer;
+}
+
+/* Dica de toque: aparece só em telas sem hover (touch). */
+.schedule-details-hint {
+  display: none;
+  font-size: 12px;
+  color: #0052F5;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+@media (hover: none) {
+  .schedule-details-hint {
+    display: block;
   }
 }
 
@@ -332,6 +379,10 @@ const isNow = useHappeningNow(() => props.time)
 
 .type-data{
   background-color: #cc1d92;
+}
+
+.type-product {
+  background-color: #5030c5;
 }
 
 .type-gde {

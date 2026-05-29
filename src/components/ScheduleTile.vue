@@ -1,6 +1,6 @@
 <template>
   <!-- <div class="schedule-card"> -->
-  <component :is="wrapperTag" :href="wrapperHref" :style="wrapperStyle" class="schedule-card" :class="{ 'is-now': isNow }" target="_blank">
+  <component :is="wrapperTag" v-show="visible" :href="wrapperHref" :style="wrapperStyle" class="schedule-card" :class="{ 'is-now': isNow }" :data-title="title" target="_blank">
     <div class="schedule-card-header">
       <div v-if="isNow" class="schedule-now-badge">
         <span class="schedule-now-dot"></span>Agora
@@ -22,14 +22,18 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onUnmounted } from 'vue'
 import ClockIcon from '../components/icons/IconClock.vue'
 import LocationIcon from '../components/icons/IconLocation.vue'
-import { useHappeningNow } from '../composables/useHappeningNow'
+import { useHappeningNow, registerSession, matchesFilter } from '../composables/useHappeningNow'
 
 const props = defineProps(['title', 'time', 'location', 'link'])
 
 const isNow = useHappeningNow(() => props.time)
+const visible = computed(() => matchesFilter(props.location, undefined))
+
+const unregister = registerSession({ time: props.time, title: props.title, location: props.location })
+onUnmounted(unregister)
 
 // Define computed properties directly using the props object
 const wrapperTag = computed(() => {
@@ -67,6 +71,7 @@ const divStyle = computed(() => {
   position: relative;
   place-content: center;
   justify-content: space-between;
+  box-shadow: 0 6px 22px rgba(3, 29, 66, 0.07);
 
   --border-size: 0.2rem;
   border: var(--border-size) solid transparent;
@@ -164,10 +169,13 @@ const divStyle = computed(() => {
 }
 
 .schedule-subject-text {
-  font-size: 20px;
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: black;
+  color: #031D42;
   text-align: start;
 }
 
