@@ -99,10 +99,12 @@
             title="Da Primeira Vaga ao Mercado Internacional como DEV"
             description="O que realmente ajuda um desenvolvedor a sair do zero e construir uma carreira sólida até alcançar oportunidades internacionais? Falaremos sobre caminhos técnicos, stacks mais usadas, como encarar processos seletivos e as soft skills que mais pesam no mercado — desde a primeira vaga até o tão sonhado salário em dólar." />
 
-          <Schedule :speakers="[{img: SpeakerThiagoMiranda, name: 'Thiago Miranda de Paula', role: 'Analista de Segurança Ofensiva', company: 'Grupo Energisa'}]"
+          <Schedule :speakers="[{img: SpeakerKevin, name: 'Kevin Azevedo de Souza', role: 'Engenheiro de Segurança', company: 'PagBank'}]"
             :types="[{id: 'security', name: 'Segurança'}]" time="9:00 - 10:00" location="Sala: Deploy da Sexta"
-            title="Segurança Ofensiva: Uma alavanca de qualidade no desenvolvimento"
-            description="Você já se perguntou como um invasor enxerga o seu código? Vamos inverter os papéis e mergulhar no universo da Segurança Ofensiva. Entenda por que o Pentest não deve ser o 'fim da linha', mas sim um parceiro estratégico no processo de desenvolvimento." />
+            class="schedule-two-rows"
+            title="Mentalidade ofensiva: como proteger suas aplicações pensando como um atacante"
+            description="Vamos explorar a segurança de aplicações sob a perspectiva do atacante. Em vez de focar apenas em boas práticas, propomos uma mudança de mentalidade: entender como sistemas são analisados, explorados e comprometidos, e como a mentalidade ofensiva permite identificar vulnerabilidades antes que sejam exploradas." />
+
 
           <ScheduleTile time="10:00 - 10:30" title="Coffee Break"/>
           <ScheduleTile time="10:30 - 10:45" title="Espaço Patrocinadores" location="Auditório: Teste em Produção"/>
@@ -170,11 +172,10 @@
             title="Legado vs. Modinha - Como não se tornar obsoleto em tecnologia"
             description="Em 25 anos trabalhando com tecnologia vi tecnologias surgirem como revolução e desaparecerem poucos anos depois. O que sustenta uma carreira sólida ao longo do tempo? A resposta está nos fundamentos — que no início parecem básicos, mas são o verdadeiro diferencial de quem se mantém relevante." />
 
-          <Schedule :speakers="[{img: SpeakerKevin, name: 'Kevin Azevedo de Souza', role: 'Engenheiro de Segurança', company: 'PagBank'}]"
+          <Schedule :speakers="[{img: SpeakerThiagoMiranda, name: 'Thiago Miranda de Paula', role: 'Analista de Segurança Ofensiva', company: 'Grupo Energisa'}]"
             :types="[{id: 'security', name: 'Segurança'}]" time="14:30 - 15:30" location="Sala: Deploy da Sexta"
-            class="schedule-two-rows"
-            title="Mentalidade ofensiva: como proteger suas aplicações pensando como um atacante"
-            description="Vamos explorar a segurança de aplicações sob a perspectiva do atacante. Em vez de focar apenas em boas práticas, propomos uma mudança de mentalidade: entender como sistemas são analisados, explorados e comprometidos, e como a mentalidade ofensiva permite identificar vulnerabilidades antes que sejam exploradas." />
+            title="Segurança Ofensiva: Uma alavanca de qualidade no desenvolvimento"
+            description="Você já se perguntou como um invasor enxerga o seu código? Vamos inverter os papéis e mergulhar no universo da Segurança Ofensiva. Entenda por que o Pentest não deve ser o 'fim da linha', mas sim um parceiro estratégico no processo de desenvolvimento." />
 
           <ScheduleTile time="15:30 - 16:00" title="Coffee Break"/>
 
