@@ -42,6 +42,7 @@
     <div class="schedule-description">
       <p class="schedule-description-text">{{ description }}</p>
     </div>
+    <button v-if="expanded" class="schedule-close" @click.stop="expanded = false" aria-label="Fechar detalhes">×</button>
   </div>
 </template>
 
@@ -305,18 +306,45 @@ onUnmounted(unregister)
   white-space: pre-line
 }
 
-/* Hover só em dispositivos que realmente têm hover (desktop). */
-@media (hover: hover) {
+/* Hover só em dispositivos com mouse de verdade (evita hover "grudado" em touch). */
+@media (hover: hover) and (pointer: fine) {
   .schedule-card:hover .schedule-description {
     height: 101%;
     transform: translateY(-100%);
   }
 }
 
+/* Botão de fechar o overlay (mobile) — sempre acessível quando expandido. */
+.schedule-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 3;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule-close:active,
+.schedule-close:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
 /* No toque (mobile), a descrição abre ao tocar no card. */
 .schedule-card.is-expanded .schedule-description {
   height: 101%;
   transform: translateY(-100%);
+  /* espaço no topo pra primeira linha não ficar sob o botão de fechar */
+  padding-top: 44px;
 }
 
 .schedule-card {
