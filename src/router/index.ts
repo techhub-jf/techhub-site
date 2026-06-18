@@ -30,7 +30,7 @@ const router = createRouter({
       component: () => import('../views/SorteadorView.vue')
     },
     {
-      path: '/fotos',
+      path: '/conf/2026/fotos',
       name: 'fotos',
       beforeEnter() {
         window.location.href = 'https://drive.google.com/drive/folders/13lIFfVrlZrR0qM6JcGrX5FgC_GCe9tkJ?usp=sharing'
