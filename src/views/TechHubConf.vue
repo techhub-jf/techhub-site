@@ -85,6 +85,8 @@
           <button v-if="eventLive" class="now-jump-button" @click="goToSchedule">
             <span class="now-jump-dot"></span>ACONTECENDO AGORA
           </button>
+          <a href="https://drive.google.com/drive/folders/13lIFfVrlZrR0qM6JcGrX5FgC_GCe9tkJ?usp=sharing" target="_blank"
+            class="homeButton">FOTOS</a>
           <a href="#schedule" class="homeButton" @click.prevent="goToProgramacao">PROGRAMAÇÃO</a>
           <InstallButton />
           <!-- <a href="https://forms.gle/64jwQb4AKkdc2cFu9" target="_blank"
