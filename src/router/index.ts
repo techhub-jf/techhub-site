@@ -32,8 +32,19 @@ const router = createRouter({
     {
       path: '/conf/2026/fotos',
       name: 'fotos',
-      beforeEnter() {
-        window.location.href = 'https://drive.google.com/drive/folders/13lIFfVrlZrR0qM6JcGrX5FgC_GCe9tkJ?usp=sharing'
+      // Lê o destino de um arquivo estático com no-store, para que o link do
+      // Drive possa ser trocado depois (editando fotos-link.txt) sem ficar preso
+      // ao cache do navegador nem ao precache do service worker (PWA).
+      async beforeEnter() {
+        const fallback = 'https://drive.google.com/drive/folders/13lIFfVrlZrR0qM6JcGrX5FgC_GCe9tkJ?usp=sharing'
+        try {
+          const res = await fetch('/conf/2026/fotos-link.txt', { cache: 'no-store' })
+          const url = (await res.text()).trim()
+          window.location.href = url || fallback
+        } catch {
+          window.location.href = fallback
+        }
+        return false
       },
       component: () => import('../views/TechHubConf.vue')
     }
