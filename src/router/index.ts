@@ -37,12 +37,15 @@ const router = createRouter({
       // ao cache do navegador nem ao precache do service worker (PWA).
       async beforeEnter() {
         const fallback = 'https://drive.google.com/drive/folders/13lIFfVrlZrR0qM6JcGrX5FgC_GCe9tkJ?usp=sharing'
+        // replace() em vez de href = ...: não cria entrada no histórico, então
+        // o botão "voltar" do navegador pula a página /fotos (que não renderiza
+        // nada) e volta direto para a página anterior, sem tela em branco.
         try {
           const res = await fetch('/conf/2026/fotos-link.txt', { cache: 'no-store' })
           const url = (await res.text()).trim()
-          window.location.href = url || fallback
+          window.location.replace(url || fallback)
         } catch {
-          window.location.href = fallback
+          window.location.replace(fallback)
         }
         return false
       },
